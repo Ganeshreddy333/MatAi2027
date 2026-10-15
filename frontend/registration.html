@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration — MatAi 2027</title>
+  <meta name="description" content="Online registration for MatAi 2027 in Berlin — choose your category, exhibition or sponsorship, set quantities, and see your total update live. All fees in EUR (€).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Registration</div>
+      <h1>Online Registration</h1>
+      <p>Register for MatAi 2027 — October 13–14, 2027, Berlin, Germany. Select your category, set the quantity, and your total updates automatically. All fees are stated in EUR (€).</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center reveal"><span class="eyebrow">Registration Process</span><h2>Five Simple Steps</h2></div>
+      <div class="grid cols-3 mt-2">
+        <div class="session-card reveal"><div class="num">STEP 1</div><h4>Enter Your Details</h4><p>Provide accurate participant and billing information.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 2</div><h4>Select Your Fees</h4><p>Set the quantity for each registration, exhibition, sponsorship, or add-on item.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 3</div><h4>Review the Summary</h4><p>Check the itemized summary and the total price before paying.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 4</div><h4>Choose Payment</h4><p>Complete payment for the applicable fee according to the registration period.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 5</div><h4>Receive Confirmation</h4><p>Confirmation is issued following successful verification of registration and payment.</p></div>
+      </div>
+      <div class="callout warn reveal mt-2"><h4>Payment Information</h4><p>All fees are stated in EUR (€). Applicable taxes/VAT, bank charges, payment gateway fees, transaction charges, or currency conversion charges may be additional to the published fees. The active registration period and its rates are set by the conference organizers; the period deadlines and prices shown below are updated on this website.</p></div>
+    </div>
+  </section>
+  <section class="section alt" id="register-form">
+    <div class="container">
+      <div class="center reveal"><span class="eyebrow">Register Now</span><h2>Registration</h2><p class="lead">Complete the participant details, select the applicable category or add-ons, review the registration summary, and proceed to register. All fees are in EUR (€).</p></div>
+
+      <form class="form-card reveal mt-2" data-form="register">
+        <div class="form-status"></div>
+
+        <!-- Payment methods -->
+        <h3 class="fm-head">Payment Methods</h3>
+        <div class="pay-methods" aria-label="Accepted payment methods">
+          <span class="pb stripe">stripe</span>
+          <span class="pb paypal">PayPal</span>
+          <span class="pb razorpay">Razorpay</span>
+          <span class="pb visa">VISA</span>
+          <span class="pb mc">Mastercard</span>
+          <span class="pb amex">AMEX</span>
+        </div>
+        <p class="pay-note text-muted">Choose a configured secure payment provider, or select Bank Transfer for organizer follow-up.</p>
+
+        <!-- Currency -->
+        <div class="cur-row">
+          <label for="currency-sel">Choose Your Currency</label>
+          <select name="currency" id="currency-sel">
+            <option value="EUR">EUR — Euro (€)</option>
+            <option value="USD">USD — US Dollar ($)</option>
+            <option value="GBP">GBP — British Pound (£)</option>
+          </select>
+          <span class="cur-hint text-muted">Displayed non-EUR amounts are indicative; registration is billed in EUR (€).</span>
+        </div>
+
+        <!-- Participant details -->
+        <h3 class="fm-head">Participant Details</h3>
+        <div class="form-grid">
+          <div class="field"><label>Title <span class="req">*</span></label>
+            <select name="title" required><option value="">Select</option><option>Dr</option><option>Prof</option><option>Assoc Prof</option><option>Assist Prof</option><option>Mr</option><option>Ms</option><option>Mx</option><option>Prefer not to say</option></select><div class="error-msg">Required</div>
+          </div>
+          <div class="field"><label>Name <span class="req">*</span></label>
+            <input type="text" name="fullName" placeholder="Enter your full name" required><div class="error-msg">Required</div>
+          </div>
+          <div class="field"><label>Email <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="Enter your email" required><div class="error-msg">Valid email required</div>
+          </div>
+          <div class="field"><label>Phone</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="field"><label>Alt Email</label>
+            <input type="email" name="altEmail" placeholder="Alternative email">
+          </div>
+          <div class="field"><label>WhatsApp Number</label>
+            <input type="tel" name="whatsapp" placeholder="WhatsApp number">
+          </div>
+          <div class="field"><label>Organization <span class="req">*</span></label>
+            <input type="text" name="institution" placeholder="Organization / institution" required><div class="error-msg">Required</div>
+          </div>
+          <div class="field"><label>Country <span class="req">*</span></label>
+            <select name="country" required>
+              <option value="">Select country</option>
+              <option>Germany</option><option>United Kingdom</option><option>France</option><option>Italy</option><option>Spain</option><option>Netherlands</option><option>Belgium</option><option>Switzerland</option><option>Austria</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Poland</option><option>Portugal</option><option>Ireland</option><option>Greece</option><option>Czech Republic</option><option>United States</option><option>Canada</option><option>Brazil</option><option>Mexico</option><option>India</option><option>China</option><option>Japan</option><option>South Korea</option><option>Singapore</option><option>Australia</option><option>New Zealand</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Qatar</option><option>South Africa</option><option>Egypt</option><option>Nigeria</option><option>Turkey</option><option>Other</option>
+            </select><div class="error-msg">Required</div>
+          </div>
+          <div class="field"><label>Category of Participation</label>
+            <select name="category"><option>Oral Presentation</option><option>Poster Presentation</option><option>Keynote Presentation</option><option>Workshop</option><option>Symposium</option><option>Delegate / Listener</option><option>Virtual Presentation</option><option>Exhibitor</option><option>Sponsor</option></select>
+          </div>
+        </div>
+
+        <!-- Billing information -->
+        <h3 class="fm-head">Billing Information</h3>
+        <label class="chk same-as"><input type="checkbox" name="billingSame" id="billing-same"> If billing information is the same as above, click here.</label>
+        <div class="form-grid" id="billing-grid">
+          <div class="field"><label>Billing Name</label>
+            <input type="text" name="billingName" placeholder="Name for the invoice">
+          </div>
+          <div class="field"><label>Billing Email</label>
+            <input type="email" name="billingEmail" placeholder="Email for the invoice">
+          </div>
+          <div class="field"><label>Billing Country</label>
+            <select name="billingCountry">
+              <option value="">Select country</option>
+              <option>Germany</option><option>United Kingdom</option><option>France</option><option>Italy</option><option>Spain</option><option>Netherlands</option><option>Belgium</option><option>Switzerland</option><option>Austria</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Poland</option><option>Portugal</option><option>Ireland</option><option>Greece</option><option>Czech Republic</option><option>United States</option><option>Canada</option><option>Brazil</option><option>Mexico</option><option>India</option><option>China</option><option>Japan</option><option>South Korea</option><option>Singapore</option><option>Australia</option><option>New Zealand</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Qatar</option><option>South Africa</option><option>Egypt</option><option>Nigeria</option><option>Turkey</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>City</label>
+            <input type="text" name="billingCity" placeholder="City">
+          </div>
+          <div class="field full"><label>Billing Address</label>
+            <textarea name="billingAddress" placeholder="Enter your billing address" style="min-height:80px"></textarea>
+          </div>
+        </div>
+        <!-- Fee table -->
+        <h3 class="fm-head">Registration Fees</h3>
+        <p class="text-muted" style="font-size:.9rem;margin:-.2rem 0 .6rem">Set a quantity beside any item to add it. The <strong>Early Bird</strong>, <strong>Mid-Term</strong>, and <strong>On-Spot</strong> columns follow the reference registration format; deadlines for MatAi 2027 will be announced officially.</p>
+        <div class="table-wrap fee-wrap">
+          <table class="tbl fee-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="tier-h eb">Early Bird Registration<small>Deadline: To Be Announced</small></th>
+                <th class="tier-h">Mid Term Registration<small>Deadline: To Be Announced</small></th>
+                <th class="tier-h">On-spot Registration<small>Deadline: To Be Announced</small></th>
+                <th class="qty-h">Qty</th>
+                <th class="tot-h">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="grp"><td colspan="6">Participation Registration</td></tr>
+              <tr data-item="Speaker Registration" data-eb="649" data-mt="749" data-os="849">
+                <td class="it">Speaker Registration</td>
+                <td class="fp eb" data-base="649">€649</td><td class="fp" data-base="749">€749</td><td class="fp" data-base="849">€849</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_speaker" data-qty aria-label="Quantity — Speaker Registration"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Delegate Registration" data-eb="749" data-mt="849" data-os="949">
+                <td class="it">Delegate Registration</td>
+                <td class="fp eb" data-base="749">€749</td><td class="fp" data-base="849">€849</td><td class="fp" data-base="949">€949</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_delegate" data-qty aria-label="Quantity — Delegate Registration"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Poster Presentation" data-eb="549" data-mt="649" data-os="749">
+                <td class="it">Poster Presentation</td>
+                <td class="fp eb" data-base="549">€549</td><td class="fp" data-base="649">€649</td><td class="fp" data-base="749">€749</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_poster" data-qty aria-label="Quantity — Poster Presentation"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Student Registration" data-eb="399" data-mt="499" data-os="599">
+                <td class="it">Student Registration</td>
+                <td class="fp eb" data-base="399">€399</td><td class="fp" data-base="499">€499</td><td class="fp" data-base="599">€599</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_student" data-qty aria-label="Quantity — Student Registration"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Virtual Registration" data-eb="299" data-mt="399" data-os="499">
+                <td class="it">Virtual Registration</td>
+                <td class="fp eb" data-base="299">€299</td><td class="fp" data-base="399">€399</td><td class="fp" data-base="499">€499</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_virtual" data-qty aria-label="Quantity — Virtual Registration"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr class="grp"><td colspan="6">Exhibition <span class="grp-note">— fixed fee</span></td></tr>
+              <tr data-item="Standard Exhibition Booth (3 × 2 m)" data-fixed data-price-key="exhibition_standard" data-price="3500">
+                <td class="it">Standard Exhibition Booth — 3 × 2 m</td>
+                <td class="fp fx" data-base="3500" colspan="3">€3,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ex_standard" data-qty aria-label="Quantity — Standard Exhibition Booth"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Premium Exhibition Booth (3 × 3 m)" data-fixed data-price-key="exhibition_premium" data-price="4500">
+                <td class="it">Premium Exhibition Booth — 3 × 3 m</td>
+                <td class="fp fx" data-base="4500" colspan="3">€4,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ex_premium" data-qty aria-label="Quantity — Premium Exhibition Booth"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Start-Up Pavilion" data-fixed data-price-key="exhibition_startup" data-price="1500">
+                <td class="it">Start-Up Pavilion</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ex_startup" data-qty aria-label="Quantity — Start-Up Pavilion"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr class="grp"><td colspan="6">Sponsorship <span class="grp-note">— fixed fee</span></td></tr>
+              <tr data-item="Diamond Sponsor" data-fixed data-price-key="sponsor_diamond" data-price="10000">
+                <td class="it">Diamond Sponsor</td>
+                <td class="fp fx" data-base="10000" colspan="3">€10,000</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_sp_diamond" data-qty aria-label="Quantity — Diamond Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Platinum Sponsor" data-fixed data-price-key="sponsor_platinum" data-price="7500">
+                <td class="it">Platinum Sponsor</td>
+                <td class="fp fx" data-base="7500" colspan="3">€7,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_sp_platinum" data-qty aria-label="Quantity — Platinum Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Gold Sponsor" data-fixed data-price-key="sponsor_gold" data-price="4500">
+                <td class="it">Gold Sponsor</td>
+                <td class="fp fx" data-base="4500" colspan="3">€4,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_sp_gold" data-qty aria-label="Quantity — Gold Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Silver Sponsor" data-fixed data-price-key="sponsor_silver" data-price="2000">
+                <td class="it">Silver Sponsor</td>
+                <td class="fp fx" data-base="2000" colspan="3">€2,000</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_sp_silver" data-qty aria-label="Quantity — Silver Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Bronze / Supporting Sponsor" data-fixed data-price-key="sponsor_bronze" data-price="1500">
+                <td class="it">Bronze / Supporting Sponsor</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_sp_bronze" data-qty aria-label="Quantity — Bronze Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr class="grp"><td colspan="6">Special Sponsorship <span class="grp-note">— fixed fee</span></td></tr>
+              <tr data-item="Keynote Session Sponsor" data-fixed data-price-key="sponsor_keynote" data-price="1500">
+                <td class="it">Keynote Session Sponsor</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_keynote" data-qty aria-label="Quantity — Keynote Session Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Plenary Session Sponsor" data-fixed data-price-key="sponsor_plenary" data-price="1500">
+                <td class="it">Plenary Session Sponsor</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_plenary" data-qty aria-label="Quantity — Plenary Session Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Advertising Sponsor" data-fixed data-price-key="sponsor_advertising" data-price="1500">
+                <td class="it">Advertising Sponsor</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_advertising" data-qty aria-label="Quantity — Advertising Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Coffee Break Sponsor" data-fixed data-price-key="sponsor_coffee" data-price="1500">
+                <td class="it">Coffee Break Sponsor</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_coffee" data-qty aria-label="Quantity — Coffee Break Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Lunch Sponsor (per day)" data-fixed data-price-key="sponsor_lunch" data-price="2500">
+                <td class="it">Lunch Sponsor <span class="text-muted">(per day)</span></td>
+                <td class="fp fx" data-base="2500" colspan="3">€2,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_lunch" data-qty aria-label="Quantity — Lunch Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Conference Reception Sponsor" data-fixed data-price-key="sponsor_reception" data-price="3500">
+                <td class="it">Conference Reception Sponsor</td>
+                <td class="fp fx" data-base="3500" colspan="3">€3,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_reception" data-qty aria-label="Quantity — Conference Reception Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Conference Kit Sponsor" data-fixed data-price-key="sponsor_kit" data-price="2000">
+                <td class="it">Conference Kit Sponsor</td>
+                <td class="fp fx" data-base="2000" colspan="3">€2,000</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_kit" data-qty aria-label="Quantity — Conference Kit Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Lanyard &amp; Badge Sponsor" data-fixed data-price-key="sponsor_lanyard" data-price="1500">
+                <td class="it">Lanyard &amp; Badge Sponsor</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_lanyard" data-qty aria-label="Quantity — Lanyard and Badge Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Awards &amp; Young Researcher Sponsor" data-fixed data-price-key="sponsor_awards" data-price="2000">
+                <td class="it">Awards &amp; Young Researcher Sponsor</td>
+                <td class="fp fx" data-base="2000" colspan="3">€2,000</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_awards" data-qty aria-label="Quantity — Awards and Young Researcher Sponsor"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Delegate Kit Insert" data-fixed data-price-key="sponsor_insert" data-price="500">
+                <td class="it">Delegate Kit Insert</td>
+                <td class="fp fx" data-base="500" colspan="3">€500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_insert" data-qty aria-label="Quantity — Delegate Kit Insert"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Industry Presentation" data-fixed data-price-key="sponsor_industry" data-price="1500">
+                <td class="it">Industry Presentation</td>
+                <td class="fp fx" data-base="1500" colspan="3">€1,500</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_ss_industry" data-qty aria-label="Quantity — Industry Presentation"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr class="grp"><td colspan="6">Add-Ons <span class="grp-note">— fixed fee</span></td></tr>
+              <tr data-item="Social &amp; Networking Event" data-fixed data-price-key="addon_social" data-price="149">
+                <td class="it">Social &amp; Networking Event <span class="text-muted">(per ticket)</span></td>
+                <td class="fp fx" data-base="149" colspan="3">€149</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_social" data-qty aria-label="Quantity — Social and Networking Event"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Accompanying Person" data-fixed data-price-key="addon_accompanying" data-price="200">
+                <td class="it">Accompanying Person <span class="text-muted">(per person)</span></td>
+                <td class="fp fx" data-base="200" colspan="3">€200</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_accompanying" data-qty aria-label="Quantity — Accompanying Person"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Accommodation — Single Occupancy (per night)" data-fixed data-price-key="addon_accommodation_single" data-price="180">
+                <td class="it">Accommodation — Single Occupancy <span class="text-muted">(per night, incl. taxes &amp; breakfast)</span></td>
+                <td class="fp fx" data-base="180" colspan="3">€180</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_accom_single" data-qty aria-label="Nights — Single Occupancy"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+              <tr data-item="Accommodation — Double Occupancy (per night)" data-fixed data-price-key="addon_accommodation_double" data-price="195">
+                <td class="it">Accommodation — Double Occupancy <span class="text-muted">(per night, incl. taxes &amp; breakfast)</span></td>
+                <td class="fp fx" data-base="195" colspan="3">€195</td>
+                <td class="qty"><input type="number" min="0" value="0" name="qty_accom_double" data-qty aria-label="Nights — Double Occupancy"></td>
+                <td class="rtot" data-line>€0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout warn mt-2"><h4>⚠ Accommodation Notice</h4><p>MatAi 2027 does <strong>not</strong> work with any third parties to arrange accommodation. Please beware of any emails or calls from third parties offering accommodation. The only trusted source is this official website and communication from <a href="mailto:info@matai2027.org">info@matai2027.org</a>.</p></div>
+
+        <div class="registration-tools mt-2">
+          <div class="field">
+            <label>No. of Participants (under selected categories)</label>
+            <input type="number" name="participantCount" id="participant-count" value="0" readonly>
+          </div>
+          <div class="field coupon-field">
+            <label>Apply Coupon</label>
+            <div class="coupon-row">
+              <input type="text" name="couponCode" id="coupon-code" placeholder="Apply Coupon">
+              <button type="button" class="btn btn-dark btn-sm" id="coupon-apply">Apply Coupon</button>
+            </div>
+            <div class="coupon-msg text-muted" id="coupon-msg">Enter a conference coupon code if one has been provided.</div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <h3 class="fm-head">Registration Summary</h3>
+        <div class="summary-box">
+          <div class="table-wrap">
+            <table class="tbl sum-table">
+              <thead><tr><th>Name</th><th class="c">Qty</th><th class="r">Price</th><th class="r">Total</th></tr></thead>
+              <tbody id="sum-body"><tr class="sum-empty"><td colspan="4">No items selected yet — set a quantity above.</td></tr></tbody>
+            </table>
+          </div>
+          <div class="reference-summary">
+            <div class="srow"><span>A. Registration Price:</span><span class="amt" id="summary-registration-price">€0</span></div>
+            <div class="srow"><span>B. Participants:</span><span class="amt" id="summary-participants">0</span></div>
+            <div class="srow discount"><span>C. Discount:</span><span class="amt" id="summary-discount">-€0</span></div>
+            <div class="srow"><span>D. Total Registration Price:</span><span class="amt" id="summary-subtotal">€0</span></div>
+            <div class="srow"><span>I. Service Charge:</span><span class="amt" id="summary-service">€0</span></div>
+          </div>
+          <div class="stotal"><span>TOTAL PRICE</span><span id="sum-total">€0</span></div>
+          <div class="sfoot">
+            <div class="field" id="selection-field" style="max-width:520px;margin:0 auto 1rem">
+              <label>Selected Items <span class="req">*</span></label>
+              <input type="text" name="selectedItems" id="selected-items" readonly required placeholder="Set a quantity above to add items">
+              <div class="error-msg">Please select at least one item above.</div>
+            </div>
+            <div class="total-field"><span class="cur" id="total-cur">€</span><input type="text" name="totalPrice" id="total-input" value="0" readonly aria-label="Total price"></div>
+            <input type="hidden" name="totalPriceEUR" id="total-eur" value="0">
+            <input type="hidden" name="period" id="registration-period" value="Early Bird">
+            <input type="hidden" name="paymentMethod" id="payment-method-hidden" value="Stripe / Card Payment">
+
+            <!-- Choose payment -->
+            <h3 class="fm-head" style="text-align:center;border:0">Payment Gateway</h3>
+            <div class="field" style="max-width:520px;margin:0 auto 1.2rem;text-align:left">
+              <label>Payment Gateway <span class="req">*</span></label>
+              <select name="paymentGateway" id="payment-gateway" required>
+                <option value="">Select</option>
+                <option value="Stripe / Card Payment" selected>Stripe / Card Payment</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Razorpay">Razorpay</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+              </select>
+              <div class="error-msg">Please select a payment gateway</div>
+            </div>
+
+            <div class="captcha-box">
+              <label>Captcha Verification <span class="req">*</span></label>
+              <div class="captcha-row"><span id="captcha-question">-</span><input type="text" name="captchaAnswer" id="captcha-answer" placeholder="Enter answer" required></div>
+              <div class="error-msg">Solve the captcha before continuing.</div>
+            </div>
+
+            <p class="summary-note">By clicking "Proceed to Register", you agree to the <a href="information.html#privacy">privacy policy</a>, terms &amp; conditions, and <a href="information.html#refund">cancellation policy</a>. Final billing is in EUR (€).</p>
+            <div class="field full" style="max-width:520px;margin:0 auto 1.2rem;text-align:left"><label class="chk"><input type="checkbox" name="terms" id="terms-check" required> I have read and agree to the <a href="#" id="terms-open">Terms &amp; Conditions</a>. <span class="req">*</span></label><div class="error-msg">Please accept the terms &amp; conditions</div></div>
+            <div class="btn-row center"><button type="reset" class="btn btn-dark">Reset</button><button type="submit" class="btn btn-primary">Proceed to Register</button></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="section" id="reg-terms">
+    <div class="container narrow">
+      <div class="center reveal"><span class="eyebrow">Before You Register</span><h2>What's Included &amp; Registration Policies</h2><p class="lead">Please review what your registration includes and the applicable policies.</p></div>
+      <div class="policy-wrap reveal mt-2">
+        <details class="policy-accordion" open>
+          <summary>Registration Includes</summary>
+          <div class="policy-body">
+            <ul class="check-list">
+              <li>Access to all keynote, plenary, and scientific sessions across both days.</li>
+              <li>Conference kit, program, and delegate materials.</li>
+              <li>Coffee breaks and lunch on both conference days.</li>
+              <li>Certificate of participation / presentation.</li>
+              <li>Inclusion of accepted abstracts in the conference proceedings (subject to guidelines).</li>
+            </ul>
+            <p class="text-muted" style="font-size:.85rem">Accommodation, the social &amp; networking event, and accompanying-person access are optional add-ons and are charged separately as selected in the fee table above.</p>
+          </div>
+        </details>
+        <details class="policy-accordion">
+          <summary>Terms &amp; Conditions</summary>
+          <div class="policy-body">
+            <ul class="check-list">
+              <li>Registration is confirmed after successful payment and verification.</li>
+              <li>Participants must provide accurate registration information.</li>
+              <li>Student registration may require valid proof of student status.</li>
+              <li>Abstract acceptance and registration are separate processes.</li>
+              <li>Registration does not guarantee publication.</li>
+              <li>Accepted presenters are expected to participate according to the assigned program.</li>
+              <li>The organizers may make reasonable changes to speakers, sessions, schedules, or venue arrangements.</li>
+              <li>Registration transfers require prior approval.</li>
+              <li>Visa approval is the responsibility of the participant.</li>
+              <li>Travel, accommodation, insurance, and visa expenses are not included unless explicitly stated.</li>
+              <li>Exhibition and sponsorship benefits are subject to the applicable package and organizer approval.</li>
+              <li>Promotional, advertising, and branding materials must comply with organizer specifications.</li>
+              <li>Participants and organizations must comply with the MatAi 2027 Code of Conduct.</li>
+              <li>The organizers reserve the right to refuse or withdraw participation where serious violations of conference policies occur.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="policy-accordion">
+          <summary>Cancellation &amp; Refund Policy</summary>
+          <div class="policy-body">
+            <p>Cancellation and refund requests are handled according to the official MatAi 2027 policy. Refund eligibility depends on the date of cancellation relative to the conference dates, and administrative or transaction charges may be deducted.</p>
+            <p class="mt-1">See the full <a href="information.html#refund">Cancellation &amp; Refund Policy</a> for complete details.</p>
+          </div>
+        </details>
+        <details class="policy-accordion">
+          <summary>Payment &amp; Governing Terms</summary>
+          <div class="policy-body">
+            <p>All fees are stated in EUR (€). Applicable taxes/VAT, bank charges, payment gateway fees, or currency conversion charges may be additional to the published fees. By completing registration you agree to the conference <a href="information.html#privacy">privacy policy</a> and these registration terms.</p>
+          </div>
+        </details>
+      </div>
+      <p class="placeholder-note mt-2">See full <a href="information.html">conference information</a> for complete details.</p>
+    </div>
+  </section>
+  <!-- Terms & Conditions modal -->
+  <div class="tc-modal" id="tc-modal" aria-hidden="true">
+    <div class="tc-dialog" role="dialog" aria-modal="true" aria-labelledby="tc-title">
+      <div class="tc-head">
+        <h3 id="tc-title">Terms &amp; Conditions</h3>
+        <button type="button" class="tc-x" id="tc-close" aria-label="Close">×</button>
+      </div>
+      <div class="tc-body" id="tc-body">
+        <p class="text-muted">Please read the following terms &amp; conditions for MatAi 2027. You must accept them to complete your registration. All fees are stated in EUR (€).</p>
+
+        <h4>Registration Terms &amp; Conditions</h4>
+        <ol class="tc-list">
+          <li>Registration is confirmed after successful payment and verification.</li>
+          <li>Participants must provide accurate registration information.</li>
+          <li>Student registration may require valid proof of student status.</li>
+          <li>Abstract acceptance and registration are separate processes.</li>
+          <li>Registration does not guarantee publication.</li>
+          <li>Accepted presenters are expected to participate according to the assigned program.</li>
+          <li>The organizers may make reasonable changes to speakers, sessions, schedules, or venue arrangements.</li>
+          <li>Registration transfers require prior approval.</li>
+          <li>Visa approval is the responsibility of the participant.</li>
+          <li>Travel, accommodation, insurance, and visa expenses are not included unless explicitly stated.</li>
+          <li>Exhibition and sponsorship benefits are subject to the applicable package and organizer approval.</li>
+          <li>Promotional, advertising, and branding materials must comply with organizer specifications.</li>
+          <li>Participants and organizations must comply with the MatAi 2027 Code of Conduct.</li>
+          <li>The organizers reserve the right to refuse or withdraw participation where serious violations of conference policies occur.</li>
+        </ol>
+
+        <h4>Payment Information</h4>
+        <p>All fees are stated in EUR (€). Participants and organizations are responsible for selecting the correct category and applicable registration period. Applicable taxes/VAT, bank charges, payment gateway fees, transaction charges, or currency conversion charges, where applicable, may be additional to the published fees. Payment instructions will be provided through the official conference registration process.</p>
+        <h4>Cancellation &amp; Refund Policy</h4>
+        <p>Participants who are unable to attend MatAi 2027 may request cancellation according to the following schedule:</p>
+        <div class="table-wrap mt-1">
+          <table class="tbl">
+            <thead><tr><th>Cancellation Period</th><th>Refund</th></tr></thead>
+            <tbody>
+              <tr><td>60 days or more before the conference</td><td>60% refund</td></tr>
+              <tr><td>50–59 days before the conference</td><td>50% refund</td></tr>
+              <tr><td>40–49 days before the conference</td><td>50% refund</td></tr>
+              <tr><td>30–39 days before the conference</td><td>30% refund</td></tr>
+              <tr><td>Less than 30 days before the conference</td><td>No refund</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-1"><strong>Cancellation Procedure.</strong> Cancellation requests must be submitted in writing through the official conference contact channel. The effective cancellation date will be the date on which the written request is received by the organizing team.</p>
+        <p><strong>Refund Processing.</strong> Approved refunds will normally be processed through the original payment method where technically possible. Payment gateway, bank, transaction, currency conversion, and applicable administrative charges may be deducted from the refundable amount.</p>
+        <p><strong>Non-Refundable Expenses.</strong> The following are generally not covered by the registration refund: visa expenses, travel expenses, accommodation, travel insurance, bank charges, currency conversion charges, third-party service charges, and other personal expenses.</p>
+        <p><strong>Exhibition &amp; Sponsorship Cancellation.</strong> Exhibition and sponsorship cancellations are subject to the same published cancellation schedule unless a separate written agreement specifies different terms. Benefits already delivered or services already provided may not be refundable.</p>
+        <p><strong>Conference Postponement or Cancellation.</strong> If MatAi 2027 is postponed, relocated, or cancelled due to circumstances beyond the reasonable control of the organizers, registered participants, exhibitors, and sponsors will be informed of the available arrangements.</p>
+
+        <h4>Important Registration Notice</h4>
+        <p>Early Bird fees represent the base published rates. Mid-Term fees are €100 higher than the Early Bird rates, and On-Spot fees are €200 higher than the Early Bird rates. The applicable fee is determined by the date on which the registration, exhibition booking, or sponsorship commitment is completed according to the official conference registration schedule.</p>
+
+        <h4>Privacy</h4>
+        <p>Information provided during registration may be used for conference administration, communication, scheduling, certificates, and related organizational purposes in accordance with the <a href="information.html#privacy" target="_blank" rel="noopener">Privacy Policy</a>. Customized sponsorship packages may also be arranged based on organizational requirements and subject to approval by the conference organizing team.</p>
+      </div>
+      <div class="tc-foot">
+        <button type="button" class="btn btn-dark" id="tc-deny">Deny</button>
+        <button type="button" class="btn btn-primary" id="tc-accept">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/site.js?v=20261010-live-sync2"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/register.js"></script>
+  <script src="js/terms-modal.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,3410 @@
+===== PAGE 1 =====
+Hi Ganesh Bro, 
+I have organized the MatAi 2027 website structure using two different colours for easy 
+identification. 
+  GREEN COLOUR — MAIN WEBSITE PAGES 
+The following are the main navigation/page names of the website: 
+• HOME 
+• ABOUT THE CONFERENCE 
+• SCIENTIFIC COMMITTEE 
+• SPEAKERS 
+• ABSTRACT SUBMISSION 
+• VENUE 
+• INFORMATION 
+• SPONSORS & EXHIBITION 
+• REGISTRATION 
+• CONTACT 
+These Green-coloured items should be treated as the main website pages/navigation 
+menu. 
+  YELLOW COLOUR — SUBTOPICS / SECTIONS 
+The items marked in Yellow are the subtopics or sections that belong to the respective 
+main pages. 
+Please organize these Yellow sections under their corresponding Green main page. They 
+should be used as: 
+• Page sections 
+• Dropdown menu items, where appropriate 
+• Sub-pages, if required by the website structure 
+• Internal navigation/anchors, depending on the final website design 
+IMPORTANT — PLEASE CHECK THE STRUCTURE 
+Please review the complete list carefully and check whether: 
+1. Every Yellow subtopic is placed under the correct Green main page. 
+2. There are any duplicate or repeated sections. 
+3. Any page or subtopic appears to be missing. 
+4. Any title or section name needs clarification. 
+5. Any section should be a separate page instead of a subsection. 
+6. The overall navigation structure is technically suitable for the website. 
+I have already organized the content according to the intended website structure, so please 
+follow the Green and Yellow colour coding when developing the website. 
+
+===== PAGE 2 =====
+If you have any doubts, confusion, missing information, or questions about where a 
+particular section should be placed, please contact me before making changes to the 
+structure. 
+Please do not remove, rename, merge, or relocate any section without confirming with me 
+first. 
+Thank you. 
+ 
+Reference Conference Website Links: 
+• https://crgconferences.com/materialscience 
+•  
+•  
+• https://materials.unitedscientificgroup.org 
+•  
+•  
+• https://materials.noblescienceconsortium.com 
+•  
+•  
+• https://materialsconferenceeurope.com 
+•  
+•  
+• https://www.scitechseries.com/nanotechnology 
+•  
+•  
+• https://materialsconferences.mindauthors.com 
+•  
+•  
+• https://materials.noblescienceconsortium.com 
+•  
+•  
+• https://materialscienceconferences.com 
+•  
+•  
+• https://materials.mindauthors.com 
+https://appliedscienceconference.com  
+ 
+ 
+ 
+
+===== PAGE 3 =====
+Conference Start 
+ 
+ 
+ 
+Right said add Organizer Logo: 
+ 
+Conference Name: International Conference on Materials Science, Engineering & Artificial 
+Intelligence 
+Short Name: ICMSE-AI 2027 or MatAI 2027 
+Date:  
+Venue: Berlin, Germany 
+Conference theme: Advancing Materials Innovation through Science, Engineering & 
+Artificial Intelligence 
+ 
+ 
+Home Page 
+HOME | ABOUT THE CONFERENCE | SCIENTIFIC COMMITTEE | SPEAKERS | ABSTRACT 
+SUBMISSION | VENUE | INFORMATION | SPONSORS & EXHIBITION | REGISTRATION | 
+CONTACT 
+ 
+[SUBMIT ABSTRACT]    [BROCHURE]     [PROGRAM]  [REGISTER NOW] 
+ 
+Advancing Materials Innovation through Science, Engineering & Artificial Intelligence 
+ 
+MATAI 2027 — the International Conference on Materials Science, Engineering & Artificial 
+Intelligence — provides an international platform for researchers, scientists, engineers, 
+academics, technology experts, and industry professionals to exchange knowled ge and present 
+advances across the rapidly evolving fields of materials science, engineering, and artificial 
+intelligence. 
+ 
+The conference focuses on the convergence of advanced materials research, engineering 
+innovation, computational methodologies, and artificial intelligence, with particular emphasis on 
+emerging approaches to materials discovery, design, modelling, characterization, manufacturing, 
+and sustainable technological development. 
+ 
+
+===== PAGE 4 =====
+MATAI 2027 brings together diverse scientific perspectives to examine how data -driven 
+methods, machine learning, computational materials science, and intelligent engineering are 
+reshaping the way advanced materials and next -generation technologies are rese arched and 
+developed. 
+ 
+Through keynote and plenary lectures, invited presentations, oral and poster sessions, technical 
+discussions, and interdisciplinary scientific exchange, the conference aims to foster meaningful 
+dialogue across academic, research, and industrial communities and to advance collaboration in 
+emerging areas of materials and AI-enabled engineering. 
+ 
+October 13–14, 2027 | Berlin, Germany 
+ 
+## About the Conference 
+ 
+MatAi 2027 — International Conference on Materials Science, Engineering & Artificial 
+Intelligence** will be held on **October 13–14, 2027, in Berlin, Germany**, bringing together an 
+international community of researchers, scientists, engineers, academics, and i ndustry 
+professionals working across materials science, engineering, and artificial intelligence. 
+ 
+The conference is dedicated to examining emerging developments at the intersection of 
+**advanced materials research, engineering innovation, computational science, and artificial 
+intelligence**. It provides a multidisciplinary platform for presenting signi ficant research 
+findings, exchanging scientific knowledge, and discussing evolving methodologies and 
+technologies that are shaping the future of materials development. 
+ 
+Particular emphasis is placed on the growing application of **artificial intelligence, machine 
+learning, materials informatics, computational modelling, and data -driven approaches** to 
+materials discovery, design, characterization, processing, and manufact uring. The conference 
+also encompasses developments in advanced materials, nanomaterial’s, polymers and 
+composites, metals and alloys, ceramics, biomaterials, energy materials, smart materials, and 
+sustainable materials engineering. 
+ 
+**MatAi 2027** welcomes **original research, technical contributions, experimental and 
+theoretical studies, computational investigations, and interdisciplinary perspectives** from 
+academia, research institutions, and industry. Through keynote and plenary lectures , invited 
+presentations, oral and poster sessions, and scientific discussions, the conference aims to 
+facilitate meaningful exchange across disciplines and encourage international research 
+collaboration. 
+ 
+
+===== PAGE 5 =====
+By bringing together expertise from materials science, engineering, and artificial intelligence, 
+**MatAi 2027 seeks to provide a focused international forum for advancing knowledge, exploring 
+emerging research directions, and addressing the scientific and technological challenges 
+associated with next-generation materials and intelligent engineering.** 
+ 
+Aims & Objectives 
+ 
+Aim* 
+MatAi 2027** aims to provide an international scientific platform for advancing knowledge and 
+fostering interdisciplinary exchange at the convergence of **Materials Science, Engineering, and 
+Artificial Intelligence**. The conference brings together researchers, academics, engineers, and 
+industry professionals to examine emerging scientific developments, methodologies, and 
+technologies shaping the future of materials research and engineering. 
+ 
+Objectives 
+ 
+* **Advance Scientific Knowledge** 
+  Present and discuss recent research findings, emerging methodologies, and scientific 
+developments across materials science, engineering, and artificial intelligence. 
+* **Promote Interdisciplinary Research** 
+  Foster interaction among materials scientists, engineers, AI specialists, computational 
+researchers, and related scientific disciplines. 
+* **Explore AI-Driven Materials Research** 
+  Examine the application of artificial intelligence, machine learning, materials informatics, and 
+computational approaches to materials discovery, design, modelling, characterization, and 
+optimization. 
+*Address Emerging Materials & Engineering Challenges** 
+  Discuss advances and challenges in advanced materials, nanomaterials, composites, energy 
+materials, biomaterials, smart materials, sustainable materials, and advanced engineering 
+technologies. 
+*Strengthen International Research Collaboration** 
+  Encourage scientific exchange and collaborative research among universities, research 
+institutions, laboratories, and industry organizations worldwide. 
+Support Emerging Researchers & Knowledge Exchange** 
+  Provide opportunities for PhD scholars, early-career researchers, academics, and professionals 
+to present research, exchange expertise, and engage with the wider international scientific 
+community. 
+
+===== PAGE 6 =====
+ 
+Why Attend MatAi 2027? 
+MatAi 2027 provides an international forum for researchers, scientists, engineers, academics, 
+and industry professionals to exchange knowledge, present research, and engage with 
+emerging developments at the convergence of Materials Science, Engineering, and 
+Artificial Intelligence. 
+Present and Discuss Research 
+Share original research, scientific findings, technical developments, and emerging 
+methodologies with an international community of specialists. 
+Explore Emerging Scientific Developments 
+Gain insights into advances in advanced materials, materials engineering, nanotechnology, 
+computational materials science, materials informatics, machine learning, and AI-enabled 
+materials research. 
+Connect Across Disciplines 
+Engage with experts from complementary fields and explore perspectives that extend beyond 
+traditional research boundaries. 
+Build International Research Networks 
+Establish professional connections with researchers, academic institutions, laboratories, 
+technology organizations, and industry representatives from different regions. 
+Discover AI-Enabled Approaches 
+Examine how artificial intelligence, machine learning, computational modelling, and data-
+driven methods are transforming materials discovery, design, characterization, processing, 
+and manufacturing. 
+Engage with Industry 
+Explore the relationship between scientific research and real-world engineering applications 
+through interaction with industry and R&D professionals. 
+Support Early-Career Researchers 
+PhD scholars, postdoctoral researchers, and early-career scientists can present their work, 
+exchange knowledge, and engage with an international scientific community. 
+Experience Scientific Exchange in Berlin 
+
+===== PAGE 7 =====
+Take part in a focused two-day international conference in Berlin, Germany, bringing 
+together diverse perspectives from materials science, engineering, and artificial intelligence. 
+Target Audience 
+MatAi 2027 welcomes an international community of professionals and researchers working 
+across Materials Science, Engineering, Artificial Intelligence, and related disciplines. 
+The conference is particularly relevant to: 
+1. Academic & Research Professionals 
+• Professors and Faculty Members 
+• Materials Scientists 
+• Materials Science & Engineering Researchers 
+• Research Scientists 
+• Computational Materials Researchers 
+• University and Research Institution Representatives 
+2. Artificial Intelligence & Computational Specialists 
+• Artificial Intelligence Researchers 
+• Machine Learning Specialists 
+• Data Scientists 
+• Materials Informatics Researchers 
+• Computational Modelling Specialists 
+• AI-Driven Research Professionals 
+3. Engineering & Technology Professionals 
+• Materials Engineers 
+• Mechanical and Chemical Engineers 
+• Manufacturing and Process Engineers 
+• Nanotechnology Professionals 
+• Advanced Manufacturing Specialists 
+• Technology and Innovation Professionals 
+4. Early-Career Researchers & Students 
+• PhD Scholars 
+• Doctoral Researchers 
+• Postdoctoral Researchers 
+• Early-Career Scientists 
+• Graduate and Research Students 
+5. Industry & R&D Community 
+• Industrial R&D Professionals 
+• Technology Developers 
+
+===== PAGE 8 =====
+• Product Development Specialists 
+• Research and Innovation Managers 
+• Technical and Engineering Professionals 
+• Industry Representatives 
+Related Fields 
+Researchers and professionals from related disciplines are also welcome, including 
+Nanotechnology, Energy Materials, Biomaterials, Polymers and Composites, 
+Sustainable Materials, Digital Engineering, Data Science, Additive Manufacturing, and 
+Intelligent Manufacturing. 
+International Scientific Community 
+MatAi 2027 provides a multidisciplinary setting for participants from universities, research 
+institutions, laboratories, technology organizations, and industry to exchange knowledge, 
+present research, and engage with developments across materials science, engineering, and 
+artificial intelligence. 
+October 13–14, 2027 | Berlin, Germany 
+Conference Agenda:  
+DAY 1 — October 13, 2027 
+Materials Science, Advanced Materials & Intelligent Materials 
+Time Session 
+09:00 – 09:30 Registration & Welcome Coffee 
+09:30 – 09:45 Opening Ceremony & Welcome Remarks 
+09:45 – 10:00 Conference Introduction & Scientific Program Overview 
+10:00 – 10:45 Keynote Lecture I 
+10:45 – 11:30 Plenary Lecture I 
+11:30 – 11:50 Coffee & Networking Break 
+11:50 – 13:00 Session I: Advanced Materials & Materials Engineering 
+13:00 – 14:00 Lunch & Networking 
+14:00 – 15:10 Session II: Nanomaterials & Nanotechnology 
+15:10 – 15:30 Coffee & Networking Break 
+15:30 – 16:30 Session III: Polymers, Composites, Metals & Ceramics 
+
+===== PAGE 9 =====
+Time Session 
+16:30 – 17:30 Session IV: Smart, Functional & Sustainable Materials 
+17:30 – 18:10 Poster Presentation & Scientific Interaction 
+18:10 – 18:30 Day 1 Summary & Closing Remarks 
+ 
+DAY 2 — October 14, 2027 
+Artificial Intelligence, Computational Materials & Emerging Technologies 
+Time Session 
+09:00 – 09:20 Morning Registration & Networking 
+09:20 – 09:30 Day 2 Welcome & Program Overview 
+09:30 – 10:15 Keynote Lecture II 
+10:15 – 11:00 Plenary Lecture II 
+11:00 – 11:20 Coffee & Networking Break 
+11:20 – 12:30 Session V: Artificial Intelligence in Materials Science 
+12:30 – 13:00 Session VI: Machine Learning & Materials Informatics 
+13:00 – 14:00 Lunch & Networking 
+14:00 – 15:10 Session VII: Computational Materials Science & Predictive Modelling 
+15:10 – 15:30 Coffee & Networking Break 
+15:30 – 16:30 Session VIII: AI-Driven Materials Discovery, Design & Characterization 
+16:30 – 17:20 Session IX: Intelligent Manufacturing & Emerging Engineering Technologies 
+17:20 – 17:50 Industry & Academic Perspectives / Panel Discussion 
+17:50 – 18:15 Poster Highlights & Young Researcher Recognition 
+18:15 – 18:30 Closing Ceremony & Conference Conclusion 
+Program Format 
+09:00 AM – 06:30 PM 
+2 Full Scientific Days 
+
+===== PAGE 10 =====
+Keynote Lectures 
+Plenary Lectures 
+Invited Presentations 
+Oral Technical Sessions 
+Poster Presentations 
+Thematic Scientific Sessions 
+Industry & Academic Interaction 
+Networking Sessions 
+Closing Ceremony 
+The detailed presentation order, speaker names, and individual presentation times will be 
+published in the final scientific program. 
+ 
+Conference Highlights 
+MatAi 2027 brings together the global Materials Science, Engineering, and Artificial 
+Intelligence community through a focused two-day scientific program designed for research 
+presentation, knowledge exchange, and interdisciplinary interaction. 
+International Scientific Program 
+A focused two-day program covering current research and emerging developments across 
+materials science, engineering, computational research, and artificial intelligence. 
+Keynote & Plenary Lectures 
+Distinguished scientific contributions addressing significant developments, emerging 
+research directions, and broader perspectives within the conference scope. 
+Invited & Technical Presentations 
+Specialized presentations featuring current research, methodologies, technologies, and 
+applications from academic and professional communities. 
+Oral & Poster Presentations 
+Dedicated platforms for researchers and emerging scientists to present original work and 
+engage in scientific discussion. 
+Thematic Scientific Sessions 
+Focused sessions covering advanced materials, nanotechnology, materials engineering, 
+sustainable materials, computational materials science, AI, machine learning, and materials 
+informatics. 
+Materials Science & AI Integration 
+
+===== PAGE 11 =====
+A central focus on the convergence of materials research with artificial intelligence, machine 
+learning, computational modelling, and data-driven methodologies. 
+Interdisciplinary Scientific Exchange 
+Interaction across materials science, engineering, computational science, artificial 
+intelligence, and related research disciplines. 
+Academic & Industry Interaction 
+Engagement between academic researchers, research institutions, technology professionals, 
+and industry representatives to discuss research applications and emerging technological 
+directions. 
+Early-Career Research Participation 
+Dedicated opportunities for PhD scholars, postdoctoral researchers, and early-career 
+scientists to present their work and participate in scientific discussions. 
+International Networking 
+A global setting for researchers and professionals to establish scientific connections and 
+exchange perspectives across institutions, disciplines, and regions. 
+Berlin, Germany 
+An international conference setting in Berlin, bringing together scientific and professional 
+communities within one of Europe's major research and technology centres. 
+ 
+MatAi 2027 at a Glance 
+2 Days | Keynote & Plenary Lectures | Oral Presentations | Poster Sessions | Thematic 
+Sessions | AI & Materials Research | Academic–Industry Exchange | International 
+Participation 
+ 
+2 Scientific Committee Page 
+The MatAi 2027 Scientific Committee brings together established researchers, academics, 
+scientists, and subject-matter experts representing the broad fields of Materials Science, 
+Engineering, Artificial Intelligence, and related disciplines. 
+The committee provides scientific direction for the conference and supports the development 
+of a rigorous, relevant, and interdisciplinary scientific program. 
+
+===== PAGE 12 =====
+Scientific Committee 
+Experts contributing to the scientific direction, thematic development, and overall academic 
+quality of MatAi 2027. 
+International Advisory Committee 
+Senior academics, researchers, and professionals providing strategic and scientific guidance 
+from an international perspective. 
+Technical Committee 
+Subject specialists supporting the development of technical sessions, research tracks, 
+presentations, and emerging scientific topics. 
+Organizing Committee 
+Professionals responsible for coordinating the conference program, participant experience, 
+communications, and operational arrangements. 
+Committee Responsibilities 
+• Providing scientific and technical guidance 
+• Supporting the development of conference sessions and research tracks 
+• Advising on emerging areas within Materials Science, Engineering, and Artificial 
+Intelligence 
+• Supporting the review and evaluation of submitted abstracts 
+• Contributing to the scientific quality and relevance of the program 
+• Encouraging international and interdisciplinary participation 
+• Supporting academic and industry engagement 
+Scientific Committee 
+Primary Role: Academic and scientific leadership. 
+Responsibilities: 
+• Advise on the overall scientific direction of the conference 
+• Define and refine scientific themes and research areas 
+• Contribute to the development of the technical program 
+• Support the evaluation of submitted abstracts and scientific contributions 
+• Identify emerging research areas relevant to the conference 
+• Promote scientific quality and interdisciplinary engagement 
+Members: 
+Prof. [Full Name] 
+[Department / Research Area] 
+[University / Research Institution] — [Country] 
+
+===== PAGE 13 =====
+Prof. [Full Name] 
+[Department / Research Area] 
+[University / Research Institution] — [Country] 
+Dr. [Full Name] 
+[Research Area / Specialization] 
+[University / Research Institution] — [Country] 
+ 
+International Advisory Committee 
+Primary Role: International scientific and strategic advice. 
+Responsibilities: 
+• Provide senior-level guidance on the international direction of the conference 
+• Advise on emerging global research trends 
+• Support international academic engagement 
+• Recommend potential speakers and scientific contributors 
+• Encourage participation from institutions and researchers across different regions 
+Members: 
+ 
+Join the Scientific Community 
+MatAi 2027 welcomes established researchers and subject experts interested in contributing 
+to the scientific development of the conference. 
+[VIEW COMMITTEE MEMBERS] 
+ 
+Speakers Page 
+Conference Speaker Overview 
+MatAi 2027 — International Conference on Materials Science, Engineering & Artificial 
+Intelligence brings together an international community of researchers, scientists, engineers, 
+academics, and industry professionals to present and discuss developments across Materials 
+Science, Engineering, Artificial Intelligence, and related interdisciplinary fields. 
+The conference speaker program is structured to provide a balanced scientific perspective 
+through Keynote Lectures, Plenary Presentations, Invited Talks, Oral Presentations, and 
+Poster Presentations. Contributions will address established research areas as well as 
+emerging developments in advanced materials, materials engineering, computational 
+
+===== PAGE 14 =====
+materials science, artificial intelligence, machine learning, materials informatics, and AI-
+enabled materials research. 
+The program is intended to facilitate high-level scientific exchange, interdisciplinary 
+discussion, and knowledge sharing among participants from universities, research 
+institutions, laboratories, and industry. 
+ 
+Keynote Speakers 
+Distinguished Perspectives on Emerging Research 
+Keynote Speakers at MatAi 2027 will present high-level perspectives on significant 
+developments, emerging research directions, and transformative approaches across Materials 
+Science, Engineering, and Artificial Intelligence. 
+Keynote lectures are intended to provide broad scientific perspectives, highlight important 
+advances, and stimulate discussion on the future direction of interdisciplinary materials and 
+AI research. 
+ [Keynote Speaker Name] 
+[Title / Position] 
+[Institution / Organization] 
+[Country] 
+[Keynote Speaker Name] 
+[Title / Position] 
+[Institution / Organization] 
+[Country] 
+[VIEW KEYNOTE SPEAKERS] 
+ 
+Plenary Speakers 
+Plenary Speakers at MatAi 2027 will address significant scientific and technological themes 
+relevant to the wider conference community. 
+Plenary presentations will provide cross-disciplinary perspectives on advances in materials 
+research, engineering, computational methodologies, artificial intelligence, and 
+emerging technologies, with emphasis on topics of broad relevance across the conference. 
+ [Plenary Speaker Name] 
+[Title / Position] 
+[Institution / Organization] 
+[Country] 
+
+===== PAGE 15 =====
+[Plenary Speaker Name] 
+[Title / Position] 
+[Institution / Organization] 
+[Country] 
+[VIEW PLENARY SPEAKERS] 
+ 
+Featured Speakers 
+Specialized Expertise & Emerging Research 
+Featured Speakers at MatAi 2027 will highlight specialized areas of research, emerging 
+technologies, and innovative applications relevant to the conference scope. 
+Their presentations will provide focused perspectives on developments across advanced 
+materials, materials engineering, nanotechnology, materials informatics, machine 
+learning, computational materials science, AI-driven materials discovery, and 
+intelligent manufacturing. 
+[Invited Speaker Name] 
+[Research Area / Specialization] 
+[Institution / Organization] 
+[Country] 
+[Invited Speaker Name] 
+[Research Area / Specialization] 
+[Institution / Organization] 
+[Country] 
+[VIEW INVITED SPEAKERS] 
+ 
+Oral & Poster Presentations 
+Researchers, academics, PhD scholars, postdoctoral researchers, and industry professionals 
+are invited to contribute original research through oral and poster presentations. 
+Contributions may include experimental studies, theoretical investigations, computational 
+research, engineering developments, AI-driven methodologies, and interdisciplinary 
+research within the conference scope. 
+[PRESENTATION GUIDELINES] 
+[SUBMIT ABSTRACT] 
+ 
+
+===== PAGE 16 =====
+Scientific Areas Represented 
+The speaker program may cover research across: 
+• Advanced Materials & Materials Engineering 
+• Nanomaterials & Nanotechnology 
+• Polymers & Composite Materials 
+• Metals, Alloys & Ceramics 
+• Smart & Functional Materials 
+• Energy & Sustainable Materials 
+• Biomaterials & Biomedical Materials 
+• Computational Materials Science 
+• Materials Informatics 
+• Artificial Intelligence in Materials Science 
+• Machine Learning & Predictive Modelling 
+• AI-Driven Materials Discovery & Design 
+• AI-Assisted Materials Characterization 
+• Intelligent & Advanced Manufacturing 
+ 
+Speaker Participation 
+MatAi 2027 welcomes qualified researchers, scientists, engineers, academics, and industry 
+professionals interested in contributing to the scientific program. 
+All proposed presentations are subject to the applicable abstract submission, review, 
+acceptance, and program scheduling procedures. 
+[SUBMIT ABSTRACT]  [SPEAKER GUIDELINES] 
+MatAi 2027 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+October 13–14, 2027 | Berlin, Germany 
+Abstract Submission page 
+Call for Abstracts 
+MatAi 2027 — International Conference on Materials Science, Engineering & Artificial 
+Intelligence invites researchers, scientists, engineers, academics, PhD scholars, postdoctoral 
+researchers, and industry professionals to submit abstracts presenting original research and 
+technical contributions relevant to the conference scope. 
+
+===== PAGE 17 =====
+The conference welcomes experimental, theoretical, computational, methodological, and 
+applied research addressing current developments across Materials Science, Engineering, 
+Artificial Intelligence, and related interdisciplinary fields. 
+Abstracts should clearly communicate the research focus, objectives, methodology or 
+approach, principal findings, and significance of the work where applicable. 
+Conference Focus 
+Submissions are welcomed across areas including: 
+• Advanced Materials & Materials Engineering 
+• Nanomaterials & Nanotechnology 
+• Polymers & Composite Materials 
+• Metals, Alloys & Ceramics 
+• Smart & Functional Materials 
+• Energy & Sustainable Materials 
+• Biomaterials & Biomedical Materials 
+• Computational Materials Science 
+• Materials Informatics 
+• Artificial Intelligence in Materials Science 
+• Machine Learning & Predictive Modelling 
+• AI-Driven Materials Discovery & Design 
+• AI-Assisted Materials Characterization 
+• Intelligent & Advanced Manufacturing 
+[VIEW ALL SCIENTIFIC SESSIONS] 
+ 
+Presentation Categories 
+Authors may submit their work for consideration in one of the following formats: 
+Oral Presentation 
+A technical presentation of original research followed by discussion and questions. 
+Poster Presentation 
+A visual presentation designed to communicate research findings and facilitate focused 
+scientific discussion. 
+Invited Presentation 
+Specialized contributions presented by researchers invited to participate in selected scientific 
+sessions. 
+Keynote & Plenary Contributions 
+
+===== PAGE 18 =====
+Extended presentations addressing significant developments and broader research 
+perspectives within the conference scope. 
+ 
+Abstract Preparation Guidelines 
+Authors should prepare abstracts that are: 
+• Clear, concise, and scientifically structured 
+• Relevant to the scope of MatAi 2027 
+• Based on original research or a substantive technical contribution 
+• Written in professional academic English 
+• Supported by appropriate scientific information 
+• Free from plagiarism and unauthorized third-party material 
+Recommended Abstract Structure 
+Title 
+Concise and representative of the research. 
+Authors & Affiliations 
+Full names, institutional affiliations, and corresponding author details. 
+Background / Context 
+Brief description of the research problem or scientific context. 
+Objectives 
+Clear statement of the purpose or research question. 
+Methodology / Approach 
+Summary of the methods, computational approaches, experiments, or techniques used. 
+Results / Findings 
+Principal findings or expected outcomes, where applicable. 
+Conclusion / Significance 
+Key conclusions and relevance of the research. 
+Keywords 
+Relevant scientific keywords identifying the main subject areas. 
+ 
+Abstract Submission Requirements 
+Please ensure that your submission includes: 
+• Abstract title 
+
+===== PAGE 19 =====
+• Full author names 
+• Institutional affiliations 
+• Corresponding author details 
+• Abstract text 
+• Relevant keywords 
+• Preferred presentation category 
+• Selected scientific session or research area 
+Specific word limits, formatting requirements, and submission fields will be provided 
+through the official submission system. 
+[DOWNLOAD ABSTRACT TEMPLATE] 
+ 
+Submission & Review Process 
+Step 1 — Prepare Your Abstract 
+Prepare your contribution according to the MatAi 2027 abstract guidelines. 
+Step 2 — Submit 
+Submit the abstract through the designated online submission system. 
+Step 3 — Scientific Review 
+Submitted abstracts will be evaluated for relevance, scientific content, clarity, and alignment 
+with the conference scope. 
+Step 4 — Decision 
+Authors will receive notification regarding the outcome of the abstract review. 
+Step 5 — Registration & Program Inclusion 
+Accepted presenters should complete the applicable registration requirements within the 
+specified timeframe to confirm participation and program inclusion. 
+ 
+Important Dates 
+Abstract Submission Opens: To Be Announced 
+Abstract Submission Deadline: To Be Announced 
+Notification of Acceptance: To Be Announced 
+
+===== PAGE 20 =====
+Early Registration Deadline: To Be Announced 
+Conference Dates: October 13–14, 2027 
+[VIEW IMPORTANT DATES] 
+ 
+Before You Submit 
+Please ensure that: 
+☐ Your abstract is relevant to the conference scope 
+☐ The title accurately represents your research 
+☐ All authors and affiliations are correctly listed 
+☐ The abstract follows the submission guidelines 
+☐ The presentation category is selected 
+☐ Your contact information is accurate 
+☐ The work complies with applicable research integrity requirements 
+ 
+Presentation Categories & Eligibility 
+Authors may indicate their preferred presentation format when submitting an abstract. The 
+final presentation category may be determined by the conference scientific program and 
+review process. 
+Oral Presentation 
+Suitable for: Researchers, scientists, academics, engineers, PhD scholars, postdoctoral 
+researchers, and industry professionals presenting original research or substantial technical 
+work. 
+Oral presentations are intended for contributions with clear research objectives, methodology, 
+findings, and scientific or technical significance. 
+Poster Presentation 
+Suitable for: Researchers, PhD scholars, students, early-career researchers, and professionals 
+presenting original research, preliminary findings, case studies, or focused technical studies. 
+Poster presentations provide an opportunity for detailed scientific discussion in a dedicated 
+presentation setting. 
+Invited Presentation 
+
+===== PAGE 21 =====
+Suitable for: Researchers, academics, scientists, engineers, and industry experts specifically 
+invited by the conference scientific or organizing committee. 
+Invited presentations address selected scientific or technical topics aligned with the 
+conference program. 
+Plenary Presentation 
+Suitable for: Established researchers and recognized experts invited to provide broad 
+perspectives on significant scientific or technological themes relevant to the conference. 
+Plenary presentations are scheduled as part of the main scientific program. 
+Keynote Presentation 
+Suitable for: Distinguished researchers, senior academics, scientific leaders, or recognized 
+experts invited to deliver an extended presentation addressing major developments, emerging 
+directions, or broader challenges within the conference scope. 
+Keynote presentations are reserved for specially selected contributors. 
+ 
+At a Glance 
+Presentation Category Eligibility 
+Keynote Distinguished experts by invitation 
+Plenary Established experts by invitation 
+Invited Selected experts by invitation 
+Oral Authors with accepted research contributions 
+Poster Authors with accepted research contributions 
+Note: Submission of an abstract does not guarantee a specific presentation category. The 
+final format is subject to scientific review, program requirements, and availability. 
+Submit Your Abstract 
+Share your research with an international scientific community at MatAi 2027 and contribute 
+to discussions at the intersection of Materials Science, Engineering, and Artificial 
+Intelligence. 
+Submit your research. Present your findings. Contribute to the scientific 
+program. 
+
+===== PAGE 22 =====
+[SUBMIT ABSTRACT] 
+MatAi 2027 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+October 13–14, 2027 | Berlin, Germany 
+ 
+ 
+MatAi 2027 
+30 Scientific Sessions & Sub-Topics 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+October 13–14, 2027 | Berlin, Germany 
+ 
+SESSION 01 — Advanced Materials & Materials Engineering 
+• Advanced Structural Materials 
+• High-Performance Materials 
+• Materials Design and Engineering 
+• Structure–Property Relationships 
+• Materials Synthesis and Processing 
+• Surface and Interface Engineering 
+• Materials Performance and Reliability 
+SESSION 02 — Nanomaterial’s & Nanotechnology 
+• Nanomaterials Synthesis 
+• Nanostructured Materials 
+• Nanocomposites 
+• 2D Materials 
+• Carbon Nanomaterials 
+• Nanoelectronics 
+• AI-Assisted Nanomaterial Design 
+SESSION 03 — Polymers & Advanced Polymer Materials 
+• Functional Polymers 
+• Polymer Blends 
+• Polymer Nanocomposites 
+• High-Performance Polymers 
+• Smart Polymers 
+• Sustainable Polymers 
+• Polymer Processing 
+
+===== PAGE 23 =====
+SESSION 04 — Composite Materials & Hybrid Structures 
+• Fiber-Reinforced Composites 
+• Polymer Matrix Composites 
+• Metal Matrix Composites 
+• Ceramic Matrix Composites 
+• Hybrid Composites 
+• Lightweight Structures 
+• Composite Manufacturing 
+SESSION 05 — Metals, Alloys & Metallurgical Engineering 
+• Advanced Alloys 
+• High-Entropy Alloys 
+• Lightweight Alloys 
+• Alloy Design 
+• Microstructure Engineering 
+• Metallic Materials Processing 
+• Materials Performance 
+SESSION 06 — Advanced Ceramics & Functional Ceramics 
+• Structural Ceramics 
+• Functional Ceramics 
+• Ceramic Composites 
+• Electroceramics 
+• Bioceramics 
+• Ceramic Processing 
+• Ceramic Characterization 
+SESSION 07 — Smart & Multifunctional Materials 
+• Smart Materials 
+• Multifunctional Materials 
+• Stimuli-Responsive Materials 
+• Shape-Memory Materials 
+• Self-Healing Materials 
+• Adaptive Materials 
+• Functional Surfaces 
+SESSION 08 — Sustainable Materials & Green Engineering 
+• Sustainable Materials 
+• Green Materials Processing 
+• Circular Materials Economy 
+• Recyclable Materials 
+• Bio-Based Materials 
+• Low-Carbon Materials 
+• Sustainable Materials Manufacturing 
+
+===== PAGE 24 =====
+SESSION 09 — Energy Storage Materials 
+• Battery Materials 
+• Lithium-Ion Batteries 
+• Sodium-Ion Batteries 
+• Solid-State Batteries 
+• Supercapacitor Materials 
+• Electrode Materials 
+• AI for Energy Materials 
+SESSION 10 — Energy Conversion & Renewable Energy Materials 
+• Photovoltaic Materials 
+• Fuel Cell Materials 
+• Hydrogen Materials 
+• Thermoelectric Materials 
+• Catalytic Materials 
+• Energy Conversion Materials 
+• AI-Driven Energy Materials Discovery 
+SESSION 11 — Biomaterials & Biomedical Materials 
+• Biocompatible Materials 
+• Bioactive Materials 
+• Tissue Engineering 
+• Implant Materials 
+• Drug Delivery Materials 
+• Nanobiomaterials 
+• AI in Biomedical Materials 
+SESSION 12 — Electronic, Semiconductor & Photonic Materials 
+• Semiconductor Materials 
+• Electronic Materials 
+• Dielectric Materials 
+• Photonic Materials 
+• Optoelectronic Materials 
+• Magnetic Materials 
+• Functional Electronic Materials 
+SESSION 13 — Quantum Materials & Emerging Functional Materials 
+• Quantum Materials 
+• Topological Materials 
+• Superconducting Materials 
+• Spintronic Materials 
+• Magnetic Materials 
+• Quantum Devices 
+• Computational Quantum Materials 
+
+===== PAGE 25 =====
+SESSION 14 — Artificial Intelligence in Materials Science 
+• AI for Materials Research 
+• Machine Learning 
+• Deep Learning 
+• Generative AI 
+• AI-Based Materials Modelling 
+• AI-Assisted Experimentation 
+• Explainable AI 
+SESSION 15 — Machine Learning & Materials Informatics 
+• Materials Informatics 
+• Materials Databases 
+• Materials Data Science 
+• Machine Learning Algorithms 
+• Structure–Property Prediction 
+• Feature Engineering 
+• High-Throughput Materials Screening 
+SESSION 16 — AI-Driven Materials Discovery & Design 
+• AI-Driven Materials Discovery 
+• Inverse Materials Design 
+• Generative Materials Design 
+• Property Prediction 
+• Materials Optimization 
+• Machine Learning-Guided Synthesis 
+• Autonomous Materials Discovery 
+SESSION 17 — Computational Materials Science 
+• Density Functional Theory 
+• Molecular Dynamics 
+• Monte Carlo Methods 
+• Phase-Field Modelling 
+• Atomistic Modelling 
+• Computational Thermodynamics 
+• Simulation-Driven Materials Design 
+SESSION 18 — Multiscale Modelling & Predictive Materials Engineering 
+• Multiscale Materials Modelling 
+• Computational Mechanics 
+• Predictive Modelling 
+• Process–Structure–Property Relationships 
+• Finite Element Modelling 
+• Materials Behaviour Prediction 
+• AI-Enhanced Multiscale Simulation 
+
+===== PAGE 26 =====
+SESSION 19 — AI-Assisted Materials Characterization 
+• AI-Based Microscopy 
+• Computer Vision 
+• Automated Image Analysis 
+• Microstructure Recognition 
+• Spectroscopy Data Analysis 
+• Automated Characterization 
+• Machine Learning for Materials Characterization 
+SESSION 20 — Advanced Materials Characterization & Analytical 
+Techniques 
+• Electron Microscopy 
+• Scanning Electron Microscopy 
+• Transmission Electron Microscopy 
+• X-Ray Diffraction 
+• Atomic Force Microscopy 
+• Spectroscopy 
+• In-Situ and Operando Characterization 
+SESSION 21 — Additive Manufacturing & 3D-Printed Materials 
+• Metal Additive Manufacturing 
+• Polymer 3D Printing 
+• Ceramic Additive Manufacturing 
+• Powder Bed Fusion 
+• Directed Energy Deposition 
+• 3D-Printed Functional Materials 
+• AI for Additive Manufacturing 
+SESSION 22 — Intelligent Manufacturing & Smart Processing 
+• AI in Manufacturing 
+• Intelligent Materials Processing 
+• Process Optimization 
+• Smart Manufacturing 
+• Autonomous Manufacturing 
+• Robotics and Automation 
+• AI-Based Quality Control 
+SESSION 23 — Digital Twins & Digital Materials Engineering 
+• Digital Twins 
+• Digital Materials Design 
+• Digital Engineering 
+• Virtual Materials Testing 
+• Process Simulation 
+• Real-Time Materials Monitoring 
+
+===== PAGE 27 =====
+• AI-Enabled Digital Twins 
+SESSION 24 — Materials Processing & Manufacturing Technologies 
+• Advanced Materials Processing 
+• Casting and Forming 
+• Welding and Joining 
+• Heat Treatment 
+• Surface Engineering 
+• Powder Processing 
+• Process–Microstructure Relationships 
+SESSION 25 — Surface Engineering, Coatings & Interfaces 
+• Functional Coatings 
+• Protective Coatings 
+• Thin Films 
+• Surface Modification 
+• Interface Engineering 
+• Corrosion-Resistant Materials 
+• AI for Surface Characterization 
+SESSION 26 — Materials for Environmental & Climate Technologies 
+• Environmental Materials 
+• Carbon Capture Materials 
+• Water Purification Materials 
+• Photocatalytic Materials 
+• Waste-Derived Materials 
+• Climate-Resilient Materials 
+• AI for Environmental Materials 
+SESSION 27 — Materials for Aerospace, Automotive & Advanced 
+Engineering 
+• Aerospace Materials 
+• Lightweight Automotive Materials 
+• High-Temperature Materials 
+• Structural Composites 
+• Materials for Electric Vehicles 
+• Advanced Transportation Materials 
+• AI-Assisted Engineering Materials Design 
+SESSION 28 — Reliability, Degradation, Failure & Materials Performance 
+• Materials Failure Analysis 
+• Fatigue and Fracture 
+• Corrosion 
+• Wear and Tribology 
+
+===== PAGE 28 =====
+• Degradation Mechanisms 
+• Reliability Engineering 
+• Predictive Materials Performance 
+SESSION 29 — Autonomous Laboratories & AI-Enabled Experimental 
+Research 
+• Self-Driving Laboratories 
+• Autonomous Materials Synthesis 
+• Robotic Experimentation 
+• Closed-Loop Materials Research 
+• AI-Guided Experimental Design 
+• Automated Materials Screening 
+• Human–AI Collaboration in Research 
+SESSION 30 — Future Directions in Materials Science, Engineering & AI 
+• Emerging Materials Technologies 
+• Next-Generation Materials 
+• AI–Materials Convergence 
+• Generative AI in Engineering 
+• Autonomous Materials Research 
+• Intelligent Materials Systems 
+• Future Manufacturing Technologies 
+• Materials Innovation and Sustainability 
+ 
+CROSS-DISCIPLINARY RESEARCH THEMES 
+The 30 sessions are connected through four major scientific pillars: 
+MATERIALS SCIENCE 
+Advanced Materials • Nanomaterials • Polymers • Composites • Metals • Alloys • Ceramics • 
+Biomaterials • Energy Materials • Smart Materials 
+ARTIFICIAL INTELLIGENCE 
+Artificial Intelligence • Machine Learning • Deep Learning • Generative AI • Materials 
+Informatics • Computer Vision • Physics-Informed AI • Autonomous Research 
+ENGINEERING 
+Materials Engineering • Advanced Manufacturing • Additive Manufacturing • Digital 
+Engineering • Intelligent Manufacturing • Surface Engineering • Reliability Engineering 
+COMPUTATIONAL SCIENCE 
+
+===== PAGE 29 =====
+Computational Materials Science • Multiscale Modelling • Molecular Dynamics • Density 
+Functional Theory • Predictive Modelling • Digital Twins • Simulation-Driven Design 
+ 
+PRESENTATION CATEGORIES 
+All 30 scientific sessions may accommodate: 
+Keynote Lectures 
+Plenary Lectures 
+Invited Presentations 
+Oral Presentations 
+Poster Presentations 
+Industry Presentations 
+Young Researcher Presentations 
+Conference Focus 
+MatAi 2027 welcomes experimental, theoretical, computational, data-driven, AI-enabled, 
+and interdisciplinary research addressing the development, understanding, processing, 
+characterization, optimization, and application of advanced materials and intelligent 
+engineering systems. 
+Add this page abstract submission sub Sessions page 
+Main Scientific Sessions & Research Topics 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+October 13–14, 2027 | Berlin, Germany 
+ 
+SESSION 01 — Advanced Materials & Materials 
+Engineering 
+Session Overview 
+This session focuses on the development, design, processing, characterization, and 
+engineering applications of advanced materials with enhanced mechanical, thermal, 
+electrical, optical, and functional properties. Contributions addressing innovative materials 
+systems and emerging engineering applications are encouraged. 
+Key Topics 
+• Advanced Structural Materials 
+• High-Performance Materials 
+• Materials Design and Engineering 
+
+===== PAGE 30 =====
+• Structure–Property Relationships 
+• Materials Synthesis and Processing 
+• Surface and Interface Engineering 
+• Materials Optimization 
+• High-Temperature Materials 
+• Lightweight Engineering Materials 
+• Materials Performance and Reliability 
+ 
+SESSION 02 — Nanomaterials & Nanotechnology 
+Session Overview 
+This session addresses research in nanoscale materials, structures, and technologies, covering 
+synthesis, processing, characterization, modelling, and applications. Particular interest is 
+given to advanced nanomaterials and AI-assisted approaches for nanoscale materials 
+discovery and design. 
+Key Topics 
+• Nanomaterials Synthesis 
+• Nanostructured Materials 
+• Nanocomposites 
+• Two-Dimensional Materials 
+• Carbon Nanomaterials 
+• Quantum Nanostructures 
+• Nanoelectronics 
+• Nanophotonics 
+• Nanoscale Characterization 
+• AI-Assisted Nanomaterial Design 
+ 
+SESSION 03 — Polymers & Advanced Polymer Materials 
+Session Overview 
+This session explores emerging polymeric materials and engineering strategies for improving 
+performance, functionality, processability, and sustainability. Research covering advanced 
+polymer architectures, functional systems, composites, and data-driven polymer design is 
+welcomed. 
+Key Topics 
+• Functional Polymers 
+• High-Performance Polymers 
+• Polymer Blends 
+• Polymer Nanocomposites 
+• Smart Polymers 
+• Sustainable Polymers 
+
+===== PAGE 31 =====
+• Bio-Based Polymers 
+• Polymer Processing 
+• Polymer Characterization 
+• Computational Polymer Science 
+ 
+SESSION 04 — Composite Materials & Hybrid 
+Structures 
+Session Overview 
+This session focuses on advanced composite and hybrid materials designed to achieve 
+improved strength, stiffness, durability, lightweight performance, and multifunctionality. 
+Contributions may address material design, manufacturing, characterization, modelling, and 
+engineering applications. 
+Key Topics 
+• Fiber-Reinforced Composites 
+• Polymer Matrix Composites 
+• Metal Matrix Composites 
+• Ceramic Matrix Composites 
+• Hybrid Composites 
+• Nanocomposites 
+• Lightweight Composite Structures 
+• Composite Manufacturing 
+• Damage and Failure Analysis 
+• AI-Assisted Composite Design 
+ 
+SESSION 05 — Metals, Alloys & Metallurgical 
+Engineering 
+Session Overview 
+This session covers advances in metallic materials, alloy development, microstructure 
+engineering, processing technologies, and performance optimization. Emphasis is placed on 
+emerging alloys and computational or AI-enabled approaches to metallic materials design. 
+Key Topics 
+• Advanced Metallic Materials 
+• High-Entropy Alloys 
+• Lightweight Alloys 
+• Alloy Design 
+• Microstructure Engineering 
+• Metal Processing 
+• Heat Treatment 
+
+===== PAGE 32 =====
+• Additive Manufacturing of Metals 
+• Mechanical Performance 
+• AI-Assisted Alloy Design 
+ 
+SESSION 06 — Advanced Ceramics & Functional 
+Ceramics 
+Session Overview 
+This session examines advanced ceramic materials with structural, electrical, thermal, optical, 
+magnetic, and biomedical functionality. Research covering processing, microstructure, 
+characterization, modelling, and technological applications is included. 
+Key Topics 
+• Structural Ceramics 
+• Functional Ceramics 
+• Ceramic Composites 
+• Electroceramics 
+• Bioceramics 
+• Dielectric Materials 
+• Ceramic Processing 
+• Ceramic Coatings 
+• High-Temperature Ceramics 
+• Computational Ceramic Materials 
+ 
+SESSION 07 — Smart & Multifunctional Materials 
+Session Overview 
+This session explores materials capable of responding to external stimuli or performing 
+multiple functions within advanced engineering systems. Research on adaptive, responsive, 
+self-healing, and intelligent material systems is particularly relevant. 
+Key Topics 
+• Smart Materials 
+• Multifunctional Materials 
+• Stimuli-Responsive Materials 
+• Shape-Memory Materials 
+• Self-Healing Materials 
+• Adaptive Materials 
+• Functional Surfaces 
+• Responsive Polymers 
+• Intelligent Material Systems 
+• Smart Structures 
+
+===== PAGE 33 =====
+ 
+SESSION 08 — Sustainable Materials & Green 
+Engineering 
+Session Overview 
+This session addresses materials research supporting resource efficiency, circularity, reduced 
+environmental impact, and sustainable engineering. Contributions may focus on sustainable 
+material development, processing, recycling, and life-cycle assessment. 
+Key Topics 
+• Sustainable Materials 
+• Green Materials Processing 
+• Circular Materials Economy 
+• Recyclable Materials 
+• Bio-Based Materials 
+• Low-Carbon Materials 
+• Sustainable Manufacturing 
+• Materials Recycling 
+• Life-Cycle Assessment 
+• AI for Sustainable Materials Design 
+ 
+SESSION 09 — Energy Storage Materials 
+Session Overview 
+This session focuses on materials and technologies for efficient energy storage, including 
+emerging battery chemistries and electrochemical storage systems. Both experimental and 
+computational approaches to improving energy density, stability, safety, and lifetime are 
+welcomed. 
+Key Topics 
+• Lithium-Ion Battery Materials 
+• Sodium-Ion Batteries 
+• Solid-State Batteries 
+• Battery Electrodes 
+• Electrolyte Materials 
+• Supercapacitor Materials 
+• Energy Storage Interfaces 
+• Battery Degradation 
+• Computational Battery Materials 
+• AI for Energy Materials Discovery 
+ 
+
+===== PAGE 34 =====
+SESSION 10 — Energy Conversion & Renewable Energy 
+Materials 
+Session Overview 
+This session examines materials enabling efficient energy conversion and renewable energy 
+technologies. Research on photovoltaic, hydrogen, fuel-cell, catalytic, thermoelectric, and 
+related functional materials is included. 
+Key Topics 
+• Photovoltaic Materials 
+• Solar Cell Materials 
+• Fuel Cell Materials 
+• Hydrogen Materials 
+• Hydrogen Storage 
+• Thermoelectric Materials 
+• Catalytic Materials 
+• Energy Conversion Materials 
+• Photocatalytic Materials 
+• AI-Driven Energy Materials Discovery 
+ 
+SESSION 11 — Biomaterials & Biomedical Materials 
+Session Overview 
+This session covers materials designed for biomedical, healthcare, and biological 
+applications, with emphasis on biocompatibility, functionality, therapeutic performance, and 
+advanced fabrication. Contributions combining biomaterials research with computational and 
+AI methods are encouraged. 
+Key Topics 
+• Biomaterials 
+• Biomedical Materials 
+• Biocompatible Materials 
+• Bioactive Materials 
+• Tissue Engineering 
+• Implant Materials 
+• Drug Delivery Materials 
+• Nanobiomaterials 
+• Biofabrication 
+• AI in Biomedical Materials 
+ 
+
+===== PAGE 35 =====
+SESSION 12 — Electronic, Semiconductor & Photonic 
+Materials 
+Session Overview 
+This session focuses on materials enabling next-generation electronic, semiconductor, optical, 
+and photonic technologies. Research addressing materials design, processing, 
+characterization, and device-related performance is welcomed. 
+Key Topics 
+• Semiconductor Materials 
+• Electronic Materials 
+• Dielectric Materials 
+• Photonic Materials 
+• Optoelectronic Materials 
+• Magnetic Materials 
+• Thin-Film Materials 
+• Electronic Interfaces 
+• Functional Electronic Materials 
+• AI for Electronic Materials 
+ 
+SESSION 13 — Quantum Materials & Emerging 
+Functional Materials 
+Session Overview 
+This session explores emerging materials with unusual electronic, magnetic, optical, and 
+quantum properties. Research on quantum phenomena, advanced functional materials, 
+computational approaches, and potential technological applications is encouraged. 
+Key Topics 
+• Quantum Materials 
+• Topological Materials 
+• Superconducting Materials 
+• Spintronic Materials 
+• Magnetic Materials 
+• Quantum Nanostructures 
+• Correlated Materials 
+• Quantum Devices 
+• Computational Quantum Materials 
+• AI-Assisted Quantum Materials Design 
+ 
+SESSION 14 — Artificial Intelligence in Materials Science 
+
+===== PAGE 36 =====
+Session Overview 
+This session examines how artificial intelligence is transforming materials research through 
+data-driven modelling, prediction, experimentation, and optimization. Contributions 
+demonstrating practical applications of AI across the materials research workflow are 
+particularly relevant. 
+Key Topics 
+• Artificial Intelligence for Materials Science 
+• Machine Learning 
+• Deep Learning 
+• Generative AI 
+• AI-Based Materials Modelling 
+• Materials Property Prediction 
+• AI-Assisted Experimentation 
+• Automated Materials Research 
+• Explainable AI 
+• AI-Based Materials Optimization 
+ 
+SESSION 15 — Machine Learning & Materials 
+Informatics 
+Session Overview 
+This session focuses on the integration of materials science, data science, and machine 
+learning to extract knowledge from complex materials datasets and accelerate materials 
+development. 
+Key Topics 
+• Materials Informatics 
+• Materials Databases 
+• Materials Data Science 
+• Machine Learning Algorithms 
+• Structure–Property Prediction 
+• Property–Performance Prediction 
+• Feature Engineering 
+• Graph Neural Networks 
+• Physics-Informed Machine Learning 
+• High-Throughput Materials Screening 
+ 
+SESSION 16 — AI-Driven Materials Discovery & Design 
+Session Overview 
+This session focuses on AI-enabled strategies for discovering, designing, and optimizing 
+
+===== PAGE 37 =====
+materials with targeted properties. Research combining computational prediction, generative 
+approaches, and experimental validation is particularly relevant. 
+Key Topics 
+• AI-Driven Materials Discovery 
+• Inverse Materials Design 
+• Generative Materials Design 
+• Materials Property Prediction 
+• Materials Optimization 
+• Machine Learning-Guided Synthesis 
+• AI-Based Screening 
+• Autonomous Materials Discovery 
+• Closed-Loop Materials Design 
+• Experimental Validation 
+ 
+SESSION 17 — Computational Materials Science 
+Session Overview 
+This session covers computational approaches used to understand materials structure, 
+properties, behaviour, and performance across different length and time scales. 
+Key Topics 
+• Density Functional Theory 
+• Molecular Dynamics 
+• Monte Carlo Methods 
+• Phase-Field Modelling 
+• Atomistic Modelling 
+• Computational Thermodynamics 
+• Electronic Structure Calculations 
+• Computational Materials Design 
+• Simulation-Based Materials Research 
+• AI-Enhanced Computational Modelling 
+ 
+SESSION 18 — Multiscale Modelling & Predictive 
+Materials Engineering 
+Session Overview 
+This session addresses predictive modelling approaches that connect atomic, microstructural, 
+component, and system-level behaviour. Contributions integrating simulation, experimental 
+data, and machine learning are encouraged. 
+Key Topics 
+
+===== PAGE 38 =====
+• Multiscale Materials Modelling 
+• Computational Mechanics 
+• Predictive Modelling 
+• Finite Element Analysis 
+• Process–Structure–Property Relationships 
+• Materials Behaviour Prediction 
+• Microstructure Modelling 
+• Mechanical Modelling 
+• Uncertainty Quantification 
+• AI-Enhanced Multiscale Simulation 
+ 
+SESSION 19 — AI-Assisted Materials Characterization 
+Session Overview 
+This session explores the use of AI, computer vision, and machine learning to automate and 
+enhance materials characterization and interpretation of experimental data. 
+Key Topics 
+• AI-Based Microscopy 
+• Computer Vision 
+• Automated Image Analysis 
+• Microstructure Recognition 
+• Spectroscopy Data Analysis 
+• Automated Characterization 
+• Defect Detection 
+• Materials Image Segmentation 
+• Machine Learning for Microscopy 
+• AI-Based Materials Analysis 
+ 
+SESSION 20 — Advanced Materials Characterization & 
+Analytical Techniques 
+Session Overview 
+This session focuses on advanced experimental methods for investigating material structure, 
+composition, interfaces, defects, and properties from nanoscale to macroscopic dimensions. 
+Key Topics 
+• Electron Microscopy 
+• Scanning Electron Microscopy 
+• Transmission Electron Microscopy 
+• X-Ray Diffraction 
+• Atomic Force Microscopy 
+
+===== PAGE 39 =====
+• Spectroscopy 
+• Surface Characterization 
+• Microstructural Analysis 
+• In-Situ Characterization 
+• Operando Materials Characterization 
+ 
+SESSION 21 — Additive Manufacturing & 3D-Printed 
+Materials 
+Session Overview 
+This session examines additive manufacturing technologies and their role in producing 
+complex, customized, and high-performance materials and components. Research combining 
+advanced materials with AI-based process optimization is encouraged. 
+Key Topics 
+• Metal Additive Manufacturing 
+• Polymer 3D Printing 
+• Ceramic Additive Manufacturing 
+• Powder Bed Fusion 
+• Directed Energy Deposition 
+• Material Extrusion 
+• Process Monitoring 
+• Additive Manufacturing Defects 
+• AI-Based Process Optimization 
+• 3D-Printed Functional Materials 
+ 
+SESSION 22 — Intelligent Manufacturing & Smart 
+Processing 
+Session Overview 
+This session explores the integration of AI, automation, sensing, and data analytics into 
+materials processing and manufacturing systems to improve productivity, quality, efficiency, 
+and adaptability. 
+Key Topics 
+• AI in Manufacturing 
+• Intelligent Materials Processing 
+• Smart Manufacturing 
+• Process Optimization 
+• Autonomous Manufacturing 
+• Robotics and Automation 
+• Process Monitoring 
+
+===== PAGE 40 =====
+• Predictive Maintenance 
+• AI-Based Quality Control 
+• Human–Machine Collaboration 
+ 
+SESSION 23 — Digital Twins & Digital Materials 
+Engineering 
+Session Overview 
+This session focuses on digital representations of materials, processes, and engineering 
+systems that enable simulation, monitoring, prediction, and optimization throughout the 
+materials lifecycle. 
+Key Topics 
+• Digital Twins 
+• Digital Materials Design 
+• Digital Engineering 
+• Virtual Materials Testing 
+• Process Simulation 
+• Real-Time Materials Monitoring 
+• Predictive Digital Models 
+• Data Integration 
+• AI-Enabled Digital Twins 
+• Digital Lifecycle Management 
+ 
+SESSION 24 — Materials Processing & Manufacturing 
+Technologies 
+Session Overview 
+This session addresses advanced processing and manufacturing methods used to control 
+material structure, properties, quality, and performance. Both conventional and emerging 
+processing technologies are considered. 
+Key Topics 
+• Advanced Materials Processing 
+• Casting and Forming 
+• Welding and Joining 
+• Heat Treatment 
+• Powder Processing 
+• Surface Treatment 
+• Materials Processing Simulation 
+• Microstructure Control 
+• Process–Property Relationships 
+
+===== PAGE 41 =====
+• Advanced Manufacturing Technologies 
+ 
+SESSION 25 — Surface Engineering, Coatings & 
+Interfaces 
+Session Overview 
+This session focuses on engineered surfaces, coatings, thin films, and interfaces designed to 
+improve materials performance, durability, corrosion resistance, wear resistance, and 
+functionality. 
+Key Topics 
+• Functional Coatings 
+• Protective Coatings 
+• Thin Films 
+• Surface Modification 
+• Interface Engineering 
+• Corrosion-Resistant Materials 
+• Wear-Resistant Coatings 
+• Surface Characterization 
+• Advanced Deposition Technologies 
+• AI for Surface Engineering 
+ 
+SESSION 26 — Materials for Environmental & Climate 
+Technologies 
+Session Overview 
+This session explores materials designed to address environmental challenges and support 
+climate-related technologies. Research spanning environmental remediation, resource 
+recovery, carbon management, and sustainable materials is included. 
+Key Topics 
+• Environmental Materials 
+• Carbon Capture Materials 
+• Water Purification Materials 
+• Photocatalytic Materials 
+• Waste-Derived Materials 
+• Climate-Resilient Materials 
+• Environmental Catalysts 
+• Resource Recovery 
+• Sustainable Environmental Technologies 
+• AI for Environmental Materials 
+
+===== PAGE 42 =====
+ 
+SESSION 27 — Materials for Aerospace, Automotive & 
+Advanced Engineering 
+Session Overview 
+This session addresses advanced materials developed for demanding engineering 
+environments, including aerospace, automotive, transportation, and next-generation mobility 
+applications. 
+Key Topics 
+• Aerospace Materials 
+• Lightweight Automotive Materials 
+• High-Temperature Materials 
+• Structural Composites 
+• Materials for Electric Vehicles 
+• Battery Materials for Mobility 
+• Advanced Transportation Materials 
+• High-Performance Alloys 
+• Materials for Extreme Environments 
+• AI-Assisted Engineering Materials Design 
+ 
+SESSION 28 — Reliability, Degradation, Failure & 
+Materials Performance 
+Session Overview 
+This session examines mechanisms governing materials degradation, damage, failure, 
+durability, and long-term performance. Predictive and data-driven approaches to reliability 
+assessment are also encouraged. 
+Key Topics 
+• Materials Failure Analysis 
+• Fatigue and Fracture 
+• Corrosion 
+• Wear and Tribology 
+• Degradation Mechanisms 
+• Damage Mechanics 
+• Reliability Engineering 
+• Lifetime Prediction 
+• Predictive Materials Performance 
+• AI for Failure Prediction 
+ 
+
+===== PAGE 43 =====
+SESSION 29 — Autonomous Laboratories & AI-Enabled 
+Experimental Research 
+Session Overview 
+This emerging session focuses on the integration of AI, robotics, automation, and 
+experimental science to create accelerated and increasingly autonomous materials research 
+workflows. 
+Key Topics 
+• Self-Driving Laboratories 
+• Autonomous Materials Synthesis 
+• Robotic Experimentation 
+• Closed-Loop Materials Research 
+• AI-Guided Experimental Design 
+• Automated Materials Screening 
+• Robotic Materials Processing 
+• Autonomous Characterization 
+• Human–AI Research Collaboration 
+• AI-Enabled Scientific Discovery 
+ 
+SESSION 30 — Future Directions in Materials Science, 
+Engineering & AI 
+Session Overview 
+This forward-looking session brings together emerging concepts at the convergence of 
+materials science, engineering, computation, and artificial intelligence. It provides a platform 
+for discussing transformative research directions and technologies shaping the next 
+generation of materials innovation. 
+Key Topics 
+• Next-Generation Materials 
+• AI–Materials Convergence 
+• Generative AI in Materials Science 
+• Autonomous Materials Research 
+• Intelligent Materials Systems 
+• Emerging Materials Technologies 
+• Future Manufacturing Technologies 
+• Digital Materials Innovation 
+• Sustainable Materials Development 
+• Future Research Directions 
+ 
+
+===== PAGE 44 =====
+CROSS-CUTTING RESEARCH AREAS 
+The scientific programme of MatAi 2027 spans four interconnected research pillars: 
+MATERIALS SCIENCE 
+Advanced Materials • Nanomaterials • Polymers • Composites • Metals • Alloys • Ceramics • 
+Biomaterials • Energy Materials • Smart Materials 
+ARTIFICIAL INTELLIGENCE 
+Machine Learning • Deep Learning • Generative AI • Materials Informatics • Computer 
+Vision • Physics-Informed AI • Autonomous Research 
+ENGINEERING 
+Materials Engineering • Advanced Manufacturing • Additive Manufacturing • Digital 
+Engineering • Intelligent Manufacturing • Surface Engineering • Reliability Engineering 
+COMPUTATIONAL SCIENCE 
+Computational Materials Science • Multiscale Modelling • Molecular Dynamics • Density 
+Functional Theory • Predictive Modelling • Digital Twins • Simulation-Driven Design 
+ 
+CONTRIBUTION TYPES 
+MatAi 2027 welcomes: 
+Experimental Research 
+Theoretical Research 
+Computational Studies 
+Data-Driven Research 
+AI & Machine Learning Applications 
+Engineering Developments 
+Industrial Research 
+Interdisciplinary Studies 
+Presentation Formats 
+Keynote Lectures | Plenary Lectures | Invited Presentations | Oral Presentations | Poster 
+Presentations | Industry Presentations | Young Researcher Presentations 
+ 
+
+===== PAGE 45 =====
+VENUE 
+Venue Page 
+Berlin, Germany 
+October 13–14, 2027 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+[HERO IMAGE: High-quality professional Berlin conference venue / modern 
+conference hall] 
+The International Conference on Materials Science, Engineering & Artificial 
+Intelligence (MatAi 2027) will be held in Berlin, Germany, bringing together researchers, 
+scientists, engineers, academics, technology professionals, and industry representatives for 
+two days of scientific presentations, technical exchange, and interdisciplinary discussion. 
+The conference venue will provide a professional environment for keynote and plenary 
+lectures, invited presentations, oral communications, poster sessions, technical 
+discussions, networking activities, and industry–academic interaction. 
+ 
+Conference Venue 
+[IMAGE: Exterior of the Confirmed Conference Venue] 
+Venue Information 
+Conference: MatAi 2027 
+Venue: [Confirmed Venue Name] 
+Address: [Full Venue Address] 
+City: Berlin 
+Country: Germany 
+Dates: October 13–14, 2027 
+Conference Hours: 09:00 AM – 06:30 PM 
+The final venue name, address, room allocation, and access information will be published on 
+this page once confirmed. 
+ 
+Venue Facilities 
+[IMAGE: Modern Conference Auditorium] 
+
+===== PAGE 46 =====
+The conference venue will be selected to support the scientific and technical requirements of 
+an international research conference. 
+Main Conference Auditorium 
+[IMAGE: Large Conference Auditorium / Stage] 
+A dedicated auditorium for: 
+• Opening Ceremony 
+• Keynote Lectures 
+• Plenary Lectures 
+• Special Lectures 
+• Panel Discussions 
+• Closing Ceremony 
+The main auditorium will be equipped to support professional scientific presentations and 
+audience interaction. 
+ 
+Technical Presentation Rooms 
+[IMAGE: Professional Meeting / Presentation Room] 
+Dedicated rooms will accommodate parallel technical sessions, invited presentations, and oral 
+research communications. 
+Facilities may include: 
+• Presentation screen 
+• Projection system 
+• Audio system 
+• Microphones 
+• Speaker presentation equipment 
+• Wi-Fi connectivity 
+• Technical assistance 
+ 
+Poster Presentation Area 
+[IMAGE: Professional Scientific Poster Exhibition] 
+The poster area will provide dedicated space for researchers and early-career scientists to 
+present their work and engage directly with participants. 
+Poster topics may cover: 
+
+===== PAGE 47 =====
+• Advanced Materials 
+• Nanomaterials 
+• Polymers & Composites 
+• Metals & Alloys 
+• Ceramics 
+• Energy Materials 
+• Biomaterials 
+• Smart Materials 
+• Materials Informatics 
+• Artificial Intelligence 
+• Computational Materials Science 
+• Sustainable Materials 
+The poster area will also support informal scientific discussion and researcher networking. 
+ 
+Registration & Information Desk 
+[IMAGE: Professional Conference Registration Desk] 
+A dedicated registration and information desk will assist participants throughout the 
+conference. 
+Services may include: 
+• Participant registration 
+• Badge collection 
+• Conference programme information 
+• Venue directions 
+• Speaker assistance 
+• Session information 
+• General conference enquiries 
+• Certificate information 
+The registration desk will be available during designated conference hours. 
+ 
+Speaker Preparation Area 
+[IMAGE: Speaker Ready Room / Presentation Preparation Area] 
+A dedicated speaker preparation area may be available for invited and oral presenters to: 
+• Review presentations 
+• Test presentation files 
+• Coordinate with technical staff 
+• Confirm session arrangements 
+
+===== PAGE 48 =====
+• Prepare for scheduled presentations 
+Speakers are encouraged to submit or check their presentation materials according to the 
+instructions provided by the Conference Secretariat. 
+ 
+Networking & Discussion Areas 
+[IMAGE: Modern Conference Networking Lounge] 
+The venue will provide suitable areas for informal interaction among participants. 
+Networking spaces will support: 
+• Research discussions 
+• Academic networking 
+• Industry interaction 
+• Collaborative discussions 
+• Speaker–participant interaction 
+• Professional connections 
+ 
+Exhibition & Sponsor Area 
+[IMAGE: Scientific / Technology Exhibition Booths] 
+An exhibition area may be arranged for participating organizations, research institutions, 
+technology companies, publishers, and service providers. 
+Exhibitors may showcase: 
+• Materials technologies 
+• Research equipment 
+• Characterization systems 
+• Computational tools 
+• AI and machine-learning technologies 
+• Scientific software 
+• Laboratory solutions 
+• Advanced manufacturing technologies 
+• Research services 
+• Publications and educational resources 
+Detailed exhibition information will be provided through the Sponsors & Exhibition 
+section. 
+ 
+
+===== PAGE 49 =====
+Catering & Refreshments 
+[IMAGE: Professional Conference Coffee Break / Catering Area] 
+Refreshment arrangements will be provided during scheduled breaks. 
+The programme includes designated periods for: 
+• Welcome Coffee 
+• Morning Coffee Break 
+• Lunch 
+• Afternoon Coffee Break 
+• Networking Refreshments 
+Catering arrangements will be communicated to registered participants before the conference. 
+ 
+Accessibility 
+[IMAGE: Accessible Conference Venue Entrance] 
+MatAi 2027 aims to provide an accessible and inclusive conference environment. 
+Venue accessibility may include: 
+• Accessible entrances 
+• Step-free access where available 
+• Accessible restrooms 
+• Elevator access 
+• Accessible seating arrangements 
+Participants requiring specific accessibility assistance are encouraged to contact the 
+Conference Secretariat in advance. 
+ 
+Venue Technology 
+[IMAGE: Professional AV and Conference Technology Setup] 
+The conference venue will support the technical requirements of scientific presentations. 
+Expected facilities may include: 
+• High-quality projection/display systems 
+• Professional audio equipment 
+• Wireless microphones 
+
+===== PAGE 50 =====
+• Presentation computers or connectivity 
+• High-speed internet access 
+• Technical support 
+• Digital presentation facilities 
+Final technical specifications will depend on the confirmed venue. 
+ 
+Conference Room Arrangement 
+[IMAGE: Conference Room Seating Layout] 
+The venue will be arranged to support different programme formats. 
+Main Auditorium 
+For: 
+Keynote Lectures • Plenary Lectures • Opening Ceremony • Panel Discussions • Closing 
+Ceremony 
+Technical Rooms 
+For: 
+Oral Presentations • Invited Talks • Thematic Sessions 
+Poster Area 
+For: 
+Poster Presentations • Scientific Interaction • Young Researcher Presentations 
+Exhibition Area 
+For: 
+Sponsors • Exhibitors • Industry Participation 
+ 
+Venue Location Map 
+[MAP: Interactive Map Showing the Conference Venue in Berlin] 
+The interactive map should display: 
+
+===== PAGE 51 =====
+📍 MatAi 2027 Conference Venue 
+The map should also identify nearby: 
+• Berlin Brandenburg Airport 
+• Berlin Hauptbahnhof 
+• U-Bahn stations 
+• S-Bahn stations 
+• Recommended hotels 
+• Restaurants 
+• Major landmarks 
+• Taxi / transport points 
+[BUTTON: GET DIRECTIONS] 
+The final map location will be updated after confirmation of the conference venue. 
+ 
+Location in Berlin 
+[IMAGE: Berlin City Map / Berlin Skyline] 
+The conference venue will be selected with consideration for accessibility, public 
+transportation, accommodation, and participant convenience. 
+Berlin's extensive transportation network provides connections between the city centre, 
+airport, railway stations, hotels, research institutions, and major attractions. 
+ 
+Nearby Accommodation 
+[IMAGE: High-quality Berlin Hotel Exterior] 
+Participants will have access to a range of accommodation options near the conference venue. 
+Possible accommodation categories include: 
+• Conference Hotels 
+• International Hotels 
+• Business Hotels 
+• Boutique Hotels 
+• Serviced Apartments 
+• Budget Accommodation 
+Once the venue is confirmed, the website can provide a list of recommended hotels with: 
+Hotel Name • Distance from Venue • Address • Website • Booking Information 
+
+===== PAGE 52 =====
+ 
+Nearby Services 
+[IMAGE: Berlin Local Area / Street View] 
+Depending on the final venue location, participants may have convenient access to: 
+• Restaurants and cafés 
+• Hotels 
+• Pharmacies 
+• Supermarkets 
+• Banks and ATMs 
+• Public transportation 
+• Taxi services 
+• Tourist information 
+• Business services 
+A detailed local-area guide will be provided once the venue location is finalized. 
+ 
+Conference Venue Access 
+[IMAGE: Participants Entering a Conference Venue] 
+Participants should arrive at the venue with sufficient time for registration and security 
+procedures. 
+Recommended Arrival 
+First-time participants: Allow additional time to locate the venue and complete registration. 
+Speakers: Arrive early enough to check presentation arrangements with the technical team. 
+Poster presenters: Follow the poster installation and presentation instructions provided by 
+the Conference Secretariat. 
+ 
+Venue Code of Conduct 
+[IMAGE: Professional Conference Audience] 
+Participants are expected to maintain a professional and respectful environment throughout 
+the conference. 
+All attendees are requested to: 
+
+===== PAGE 53 =====
+• Respect speakers and fellow participants 
+• Follow venue regulations 
+• Maintain professional conduct 
+• Observe session schedules 
+• Follow safety instructions 
+• Respect exhibition and poster areas 
+• Follow photography and recording policies 
+• Keep shared spaces clean 
+ 
+Venue Safety 
+[IMAGE: Conference Venue Safety / Emergency Exit Sign] 
+Participants should familiarize themselves with the venue's emergency exits and safety 
+procedures upon arrival. 
+In case of an emergency, participants should follow the instructions of venue personnel and 
+Conference Secretariat representatives. 
+ 
+Conference Venue Highlights 
+[IMAGE: 4-image collage — Auditorium, Presentation Room, Poster Area, Networking 
+Area] 
+Professional Scientific Environment 
+Designed to support high-quality academic and technical exchange. 
+Modern Presentation Facilities 
+Suitable for keynote, plenary, invited, and oral presentations. 
+Dedicated Poster & Exhibition Areas 
+Supporting scientific interaction and industry participation. 
+Networking Environment 
+Spaces for researchers, academics, engineers, and industry professionals to connect. 
+Accessible Location 
+Convenient access to Berlin's public transportation network. 
+
+===== PAGE 54 =====
+International Setting 
+A suitable environment for global scientific participation and interdisciplinary collaboration. 
+ 
+Explore Berlin 
+[IMAGE: Berlin Brandenburg Gate / Reichstag / Museum Island Collage] 
+Beyond the conference programme, participants can explore Berlin's historic, cultural, 
+scientific, and architectural attractions. 
+Recommended places include: 
+• Brandenburg Gate 
+• Reichstag Building 
+• Museum Island 
+• Berlin Cathedral 
+• East Side Gallery 
+• Charlottenburg Palace 
+• Alexanderplatz 
+• Potsdamer Platz 
+• Tiergarten 
+For detailed travel information, please visit the Travel Information section. 
+ 
+Venue Information for Speakers 
+[IMAGE: Speaker Presenting at International Conference] 
+Speakers will receive detailed information regarding: 
+• Session assignment 
+• Presentation format 
+• Presentation duration 
+• Technical requirements 
+• Presentation submission 
+• Speaker preparation 
+• Session room 
+• Arrival instructions 
+The Conference Secretariat will provide speakers with the relevant information before the 
+conference. 
+ 
+
+===== PAGE 55 =====
+Venue Information for Exhibitors 
+[IMAGE: Professional Exhibition Booth] 
+Exhibitors will receive information regarding: 
+• Exhibition space 
+• Booth arrangements 
+• Setup and dismantling 
+• Exhibition hours 
+• Technical requirements 
+• Branding and signage 
+• Shipping and delivery procedures 
+• On-site coordination 
+Detailed exhibitor guidelines will be provided following confirmation of participation. 
+ 
+Venue Information at a Glance 
+Category Details 
+Conference MatAi 2027 
+Location Berlin, Germany 
+Dates October 13–14, 2027 
+Conference Hours 09:00 AM – 06:30 PM 
+Main Auditorium Keynotes, Plenaries & Ceremonies 
+Technical Rooms Oral & Invited Presentations 
+Poster Area Poster Presentations 
+Exhibition Area Sponsors & Exhibitors 
+Networking Areas Scientific & Professional Interaction 
+Registration Desk Participant & Speaker Assistance 
+Airport Berlin Brandenburg Airport (BER) 
+Main Railway Station Berlin Hauptbahnhof 
+ 
+
+===== PAGE 56 =====
+IMPORTANT VENUE NOTICE 
+[IMAGE: Professional Berlin Conference Venue – Wide Banner] 
+The MatAi 2027 Conference Venue will be officially announced and updated on this page 
+once the venue booking is finalized. 
+Participants should refer to the official conference website for the latest information 
+regarding: 
+Venue Name • Full Address • Room Numbers • Access Instructions • Interactive Map • 
+Parking • Accommodation • Transportation • On-Site Facilities 
+ 
+WELCOME TO MATai 2027 
+[HERO IMAGE: Modern Berlin Conference Venue + Berlin Skyline] 
+Science. Engineering. Artificial Intelligence. Berlin. 
+Join the international scientific community in Berlin, Germany, for MatAi 2027, a two-day 
+conference bringing together advances in materials science, engineering, computational 
+research, and artificial intelligence. 
+October 13–14, 2027 | Berlin, Germany 
+[BUTTON: VIEW PROGRAMME] 
+[BUTTON: TRAVEL INFORMATION] 
+[BUTTON: REGISTER NOW] 
+SPONSORS & EXHIBITION Page: 
+Partner with MatAi 2027 
+International Conference on Materials Science, Engineering & Artificial 
+Intelligence 
+October 13–14, 2027 | Berlin, Germany 
+[HERO IMAGE: Modern scientific conference exhibition hall with technology and 
+materials science displays] 
+MatAi 2027 brings together researchers, scientists, engineers, academics, technology 
+specialists, industry professionals, and R&D organizations working across Materials 
+Science, Engineering, Artificial Intelligence, Machine Learning, Materials Informatics, 
+Computational Science, Advanced Manufacturing, and Sustainable Materials. 
+
+===== PAGE 57 =====
+The Sponsors & Exhibition Programme provides organizations with opportunities to 
+present technologies, research capabilities, products, services, and solutions to an 
+international scientific and technical audience. 
+Whether your organization is an established technology company, research institution, 
+scientific equipment provider, software developer, advanced materials manufacturer, 
+engineering organization, or emerging technology company, MatAi 2027 offers flexible ways 
+to participate. 
+ 
+WHY PARTNER WITH MatAi 2027? 
+[IMAGE: Researchers and industry professionals networking at a scientific conference] 
+Partnering with MatAi 2027 provides opportunities to: 
+• Present your organization to an international scientific audience 
+• Increase visibility among researchers and technical professionals 
+• Showcase products, technologies, equipment, and services 
+• Connect with universities and research institutions 
+• Engage with academic and industrial R&D communities 
+• Develop professional and research collaborations 
+• Participate in technical and industry discussions 
+• Demonstrate emerging technologies and solutions 
+• Strengthen your presence within the materials and AI ecosystem 
+• Build relationships with potential research and industry partners 
+ 
+SPONSORSHIP PACKAGES 
+DIAMOND SPONSOR 
+€10,000 
+Limited to 2 organizations 
+The Diamond Sponsorship is the highest-level partnership package, providing prominent 
+visibility throughout the conference and enhanced opportunities for direct engagement. 
+Benefits 
+✓ Premium Diamond Sponsor recognition 
+✓ Premium logo placement on the conference website 
+✓ Logo on the main conference backdrop 
+✓ Logo on selected conference signage 
+
+===== PAGE 58 =====
+✓ Logo in the official conference programme 
+✓ Logo in selected digital conference communications 
+✓ Premium exhibition booth — 3 m × 3 m 
+✓ 5 complimentary full conference registrations 
+✓ Priority exhibition location 
+✓ Opportunity for a 20-minute Industry Presentation 
+✓ Company profile on the conference website 
+✓ Promotional material inclusion in delegate kits 
+✓ Recognition during Opening Ceremony 
+✓ Recognition during Closing Ceremony 
+✓ Sponsor acknowledgement on selected conference slides 
+✓ One full-page advertisement in the conference programme 
+✓ Dedicated sponsor recognition on conference social media 
+✓ Opportunity to display company banner/materials 
+✓ Access to networking and exhibition activities 
+Suitable For 
+Technology companies, advanced materials manufacturers, major R&D organizations, 
+scientific equipment providers, engineering companies, AI/ML companies, and established 
+industry partners. 
+ 
+PLATINUM SPONSOR 
+€7,500 
+Limited to 4 organizations 
+The Platinum package provides strong visibility combined with exhibition and direct 
+engagement with conference participants. 
+Benefits 
+✓ Platinum Sponsor recognition 
+✓ Logo on conference website 
+✓ Logo on conference backdrop 
+✓ Logo in conference programme 
+✓ Logo on selected venue signage 
+✓ Premium exhibition booth — 3 m × 3 m 
+✓ 4 complimentary full conference registrations 
+✓ Priority exhibition placement 
+✓ Opportunity for a 15-minute Industry Presentation 
+✓ Company profile on conference website 
+
+===== PAGE 59 =====
+✓ Promotional material in delegate kits 
+✓ Recognition during Opening Ceremony 
+✓ Recognition during Closing Ceremony 
+✓ Sponsor acknowledgement on conference slides 
+✓ Half-page advertisement in conference programme 
+✓ Social media recognition 
+✓ Networking access 
+Suitable For 
+Engineering companies, technology providers, research organizations, scientific instrument 
+manufacturers, software companies, and industrial R&D organizations. 
+ 
+GOLD SPONSOR 
+€4,500 
+Limited to 6 organizations 
+The Gold package provides a balanced combination of exhibition, brand visibility, and 
+participant engagement. 
+Benefits 
+✓ Gold Sponsor recognition 
+✓ Logo on conference website 
+✓ Logo in conference programme 
+✓ Logo on selected conference signage 
+✓ Standard exhibition booth — 3 m × 2 m 
+✓ 3 complimentary full conference registrations 
+✓ Company profile on conference website 
+✓ Promotional material inclusion in delegate kits 
+✓ Recognition during Opening Ceremony 
+✓ Recognition during Closing Ceremony 
+✓ Sponsor acknowledgement on selected conference slides 
+✓ Half-page advertisement in conference programme 
+✓ Social media recognition 
+✓ Networking and exhibition access 
+Suitable For 
+Materials companies, laboratories, engineering firms, scientific service providers, software 
+companies, technology start-ups, and research organizations. 
+
+===== PAGE 60 =====
+ 
+SILVER SPONSOR 
+€2,000 
+Limited to 8 organizations 
+The Silver package provides professional brand visibility and participation in the conference 
+exhibition environment. 
+Benefits 
+✓ Silver Sponsor recognition 
+✓ Logo on conference website 
+✓ Logo in conference programme 
+✓ Logo on selected venue signage 
+✓ Standard exhibition space — 2 m × 2 m 
+✓ 2 complimentary full conference registrations 
+✓ Company profile on conference website 
+✓ Promotional material inclusion in delegate kits 
+✓ Recognition during Opening Ceremony 
+✓ Sponsor acknowledgement on selected conference slides 
+✓ Social media recognition 
+✓ Networking access 
+Suitable For 
+Research groups, specialist technology providers, scientific service companies, start-ups, 
+laboratories, publishers, and emerging businesses. 
+ 
+BRONZE / SUPPORTING SPONSOR 
+€1,500 
+Limited availability 
+A cost-effective option for organizations seeking visibility and association with the scientific 
+programme. 
+Benefits 
+✓ Supporting Sponsor recognition 
+✓ Logo on conference website 
+
+===== PAGE 61 =====
+✓ Logo in conference programme 
+✓ Logo on selected sponsor signage 
+✓ 1 complimentary conference registration 
+✓ Company name and profile on sponsor page 
+✓ Sponsor acknowledgement during the conference 
+✓ Social media recognition 
+✓ Networking access 
+ 
+SPONSORSHIP COMPARISON 
+Benefits Diamond Platinum Gold Silver Bronze 
+Sponsorship Fee €10,000 €7,500 €4,500 €2,000 €1,500 
+Complimentary Registrations 5 4 3 2 1 
+Exhibition Space 3×3 m 3×3 m 3×2 m 2×2 m — 
+Priority Booth Location ✓ ✓ — — — 
+Industry Presentation 20 min 15 min — — — 
+Website Logo Premium Premium ✓ ✓ ✓ 
+Main Backdrop Logo ✓ ✓ — — — 
+Venue Signage Premium ✓ ✓ ✓ ✓ 
+Programme Logo ✓ ✓ ✓ ✓ ✓ 
+Company Profile ✓ ✓ ✓ ✓ ✓ 
+Delegate Kit Insert ✓ ✓ ✓ ✓ — 
+Programme Advertisement Full Page Half Page Half Page — — 
+Opening Recognition ✓ ✓ ✓ ✓ ✓ 
+Closing Recognition ✓ ✓ ✓ — — 
+Social Media Recognition Dedicated ✓ ✓ ✓ ✓ 
+Networking Access ✓ ✓ ✓ ✓ ✓ 
+ 
+
+===== PAGE 62 =====
+EXHIBITION OPPORTUNITIES 
+Showcase Your Technology, Products & Research 
+[IMAGE: Scientific exhibition booth / materials technology demonstration] 
+The MatAi 2027 exhibition area provides organizations with a dedicated environment to 
+demonstrate technologies, products, services, equipment, software, and research capabilities. 
+STANDARD EXHIBITION BOOTH 
+€3,500 
+Booth Size: 3 m × 2 m 
+Includes 
+✓ Dedicated exhibition space 
+✓ Company name and logo display 
+✓ Listing on conference website 
+✓ Listing in conference programme 
+✓ 2 exhibition staff passes 
+✓ Table and chairs 
+✓ Standard booth identification 
+✓ Access to exhibition and networking areas 
+✓ Opportunity to distribute company materials 
+ 
+PREMIUM EXHIBITION BOOTH 
+€4,500 
+Booth Size: 3 m × 3 m 
+Includes 
+✓ Premium booth location 
+✓ Larger exhibition space 
+✓ Company logo on exhibition area signage 
+✓ Company profile on conference website 
+✓ 3 exhibition staff passes 
+✓ Table and chairs 
+✓ Standard booth furniture 
+
+===== PAGE 63 =====
+✓ Priority placement 
+✓ Promotional material display 
+✓ Networking access 
+✓ Recognition as Premium Exhibitor 
+ 
+START-UP & EMERGING TECHNOLOGY PAVILION 
+€1,500 
+Designed specifically for early-stage technology companies, research spin-offs, and emerging 
+ventures. 
+Includes 
+✓ Dedicated display table 
+✓ Company logo on conference website 
+✓ Start-Up Pavilion listing 
+✓ 1 complimentary conference registration 
+✓ Opportunity to display product or technology information 
+✓ Networking access 
+✓ Start-Up recognition during the conference 
+Suitable For 
+• AI and Machine Learning Start-ups 
+• Materials Technology Start-ups 
+• Scientific Software Companies 
+• Advanced Manufacturing Start-ups 
+• Materials Informatics Companies 
+• Laboratory Technology Ventures 
+• Engineering Technology Start-ups 
+ 
+EXHIBITOR BENEFITS 
+[IMAGE: Industry representatives interacting with researchers at an exhibition booth] 
+Exhibitors can use their space to: 
+• Demonstrate products and technologies 
+• Display scientific equipment 
+• Present software platforms 
+• Showcase materials and samples 
+• Demonstrate AI and ML solutions 
+
+===== PAGE 64 =====
+• Introduce laboratory technologies 
+• Present research services 
+• Meet potential customers and collaborators 
+• Connect with researchers and engineers 
+• Discuss industry–academia collaboration 
+ 
+SPECIAL SPONSORSHIP OPPORTUNITIES 
+In addition to the main sponsorship packages, organizations may support specific conference 
+activities. 
+ 
+KEYNOTE SESSION SPONSOR 
+€1,500 
+Benefits 
+✓ Sponsor recognition associated with one keynote session 
+✓ Logo displayed on session introduction slide 
+✓ Logo on selected session signage 
+✓ Sponsor recognition on conference website 
+✓ Company profile on sponsor page 
+✓ 2 complimentary conference registrations 
+✓ Acknowledgement by the session moderator 
+ 
+PLENARY SESSION SPONSOR 
+€1,500 
+Benefits 
+✓ Plenary Session Sponsor recognition 
+✓ Logo on session slides 
+✓ Website recognition 
+✓ Programme recognition 
+✓ 2 complimentary registrations 
+✓ On-site sponsor acknowledgement 
+ 
+
+===== PAGE 65 =====
+ADVERTISING SPONSOR 
+€1,500 
+Promote Your Organization Across MatAi 2027 
+The Advertising Sponsor package provides organizations with dedicated promotional 
+visibility across selected MatAi 2027 conference communication channels and materials. 
+Benefits 
+✓ Advertising Sponsor recognition 
+✓ Company logo on the conference website 
+✓ Company advertisement in the official conference programme 
+✓ Full-page advertisement in the conference programme 
+✓ Company name and profile on the sponsor page 
+✓ Logo on selected digital conference communications 
+✓ Promotional banner placement on selected conference materials 
+✓ Social media recognition 
+✓ Opportunity to provide an approved digital or printed promotional material 
+✓ 1 complimentary full conference registration 
+✓ Sponsor acknowledgement during the conference 
+Suitable For 
+• Materials & Technology Companies 
+• Scientific Equipment Providers 
+• Engineering Companies 
+• AI & Software Companies 
+• Research Institutions 
+• Laboratories 
+• Publishers 
+• Scientific Service Providers 
+• Technology Start-ups 
+Advertising materials are subject to organizer approval and applicable artwork 
+specifications. 
+ 
+COFFEE BREAK SPONSOR 
+€1,500 
+Benefits 
+
+===== PAGE 66 =====
+✓ Recognition as Coffee Break Sponsor 
+✓ Logo at refreshment area 
+✓ Logo on selected conference signage 
+✓ Website recognition 
+✓ Programme recognition 
+✓ 1 complimentary registration 
+ 
+LUNCH SPONSOR 
+€2,500 / Day 
+Benefits 
+✓ Recognition as Lunch Sponsor 
+✓ Logo at dining area 
+✓ Sponsor acknowledgement in programme 
+✓ Website recognition 
+✓ On-site signage 
+✓ 2 complimentary registrations 
+ 
+CONFERENCE RECEPTION SPONSOR 
+€3,500 
+Benefits 
+✓ Reception Sponsor recognition 
+✓ Prominent signage at reception 
+✓ Website recognition 
+✓ Programme recognition 
+✓ Sponsor acknowledgement 
+✓ 3 complimentary registrations 
+ 
+CONFERENCE KIT SPONSOR 
+€2,000 
+Support the official delegate materials provided to conference participants. 
+
+===== PAGE 67 =====
+Benefits 
+✓ Logo on selected conference materials 
+✓ Sponsor recognition on website 
+✓ Programme recognition 
+✓ Opportunity to provide approved promotional material 
+✓ 2 complimentary registrations 
+ 
+LANYARD & BADGE SPONSOR 
+€1,500 
+Benefits 
+✓ Company logo on conference lanyards or badges 
+✓ Website recognition 
+✓ Programme recognition 
+✓ On-site sponsor acknowledgement 
+✓ 1 complimentary registration 
+Production specifications and artwork approval apply. 
+ 
+AWARDS & YOUNG RESEARCHER SPONSOR 
+€2,000 
+Support recognition of emerging researchers participating in MatAi 2027. 
+Benefits 
+✓ Recognition as Young Researcher / Awards Sponsor 
+✓ Logo associated with the award presentation 
+✓ Website recognition 
+✓ Programme recognition 
+✓ On-site acknowledgement 
+✓ 2 complimentary registrations 
+ 
+
+===== PAGE 68 =====
+DELEGATE KIT INSERT 
+€500 
+Sponsors may provide an approved flyer, brochure, catalogue, or promotional item for 
+inclusion in delegate materials. 
+Requirements 
+• Materials supplied by sponsor 
+• Maximum size and quantity subject to organizer approval 
+• Production and delivery costs are the responsibility of the sponsor 
+ 
+INDUSTRY PRESENTATION 
+15-Minute Industry Presentation — €1,500 
+A dedicated short presentation opportunity for organizations wishing to introduce a 
+technology, research application, engineering solution, or industry perspective. 
+Suitable Topics 
+• Advanced Materials Technologies 
+• AI & Machine Learning Solutions 
+• Materials Characterization Equipment 
+• Scientific Software 
+• Computational Materials Platforms 
+• Advanced Manufacturing Technologies 
+• Sustainable Materials Technologies 
+• Industrial R&D Applications 
+Important: Industry presentations are subject to scientific and programme approval and 
+should provide relevant technical or research content rather than purely promotional material. 
+ 
+CUSTOM SPONSORSHIP 
+Build Your Own Partnership 
+MatAi 2027 also welcomes customized sponsorship arrangements for organizations with 
+specific objectives. 
+Possible combinations include: 
+
+===== PAGE 69 =====
+Exhibition Booth + Industry Presentation 
+Session Sponsorship + Exhibition Booth 
+Lunch Sponsorship + Exhibition 
+Young Researcher Awards + Branding 
+Conference Kit + Exhibition 
+Advertising + Exhibition 
+Technology Demonstration + Exhibition 
+Customized packages are subject to availability and organizer approval. 
+ 
+WHO CAN PARTICIPATE? 
+The Sponsors & Exhibition Programme welcomes organizations working in: 
+Materials & Manufacturing 
+• Advanced Materials 
+• Metals & Alloys 
+• Polymers 
+• Composites 
+• Ceramics 
+• Nanomaterials 
+• Additive Manufacturing 
+AI & Computational Technologies 
+• Artificial Intelligence 
+• Machine Learning 
+• Materials Informatics 
+• Scientific Computing 
+• Simulation Software 
+• Data Analytics 
+• Digital Twins 
+Scientific Technology 
+• Microscopy 
+• Spectroscopy 
+• Materials Characterization 
+• Laboratory Equipment 
+• Testing & Measurement 
+
+===== PAGE 70 =====
+• Research Software 
+Engineering & Industry 
+• Engineering Services 
+• Manufacturing 
+• Automotive 
+• Aerospace 
+• Energy 
+• Electronics 
+• Semiconductor Technologies 
+Research & Academic Organizations 
+• Universities 
+• Research Institutes 
+• Laboratories 
+• Scientific Societies 
+• Publishers 
+• Technology Transfer Organizations 
+ 
+SPONSOR VISIBILITY 
+[IMAGE: Conference stage with sponsor logos / digital conference branding] 
+Depending on the selected package, sponsors may receive visibility through: 
+Digital Visibility 
+• Conference Website 
+• Sponsor Directory 
+• Digital Programme 
+• Conference Communications 
+• Social Media 
+On-Site Visibility 
+• Conference Backdrop 
+• Directional Signage 
+• Exhibition Area 
+• Registration Area 
+• Session Slides 
+• Sponsor Boards 
+Publication Visibility 
+• Conference Programme 
+
+===== PAGE 71 =====
+• Delegate Materials 
+• Approved Promotional Inserts 
+• Advertisements 
+ 
+EXHIBITION GUIDELINES 
+[IMAGE: Professional exhibition floor plan] 
+Exhibition Hours 
+Exhibition activities will be scheduled around the scientific programme, coffee breaks, lunch, 
+networking periods, and designated exhibition hours. 
+Exhibitor Responsibilities 
+Exhibitors are responsible for: 
+• Providing approved promotional materials 
+• Providing product samples where applicable 
+• Following venue regulations 
+• Meeting installation and dismantling deadlines 
+• Ensuring their display complies with safety requirements 
+• Arranging shipment and delivery of materials where required 
+Detailed technical and logistical instructions will be provided to confirmed exhibitors. 
+ 
+SPONSORSHIP TERMS 
+Pricing 
+All sponsorship and exhibition fees are stated in EUR (€). 
+Applicable taxes, VAT, venue charges, payment processing fees, or other statutory charges, if 
+applicable, will be communicated in the sponsorship agreement or invoice. 
+Availability 
+Sponsorship categories and exhibition spaces are subject to availability. 
+Premium positions may be allocated on the basis of confirmed booking and payment. 
+Logo & Artwork 
+
+===== PAGE 72 =====
+Sponsors must provide logos and artwork in the required formats and within the deadlines 
+specified by the Conference Secretariat. 
+Advertising Materials 
+All advertisements, promotional materials, banners, digital assets, and programme artwork 
+are subject to organizer approval and must be submitted according to the specified artwork 
+guidelines and deadlines. 
+Speaking Opportunities 
+Industry presentations are subject to programme approval and should contain relevant 
+technical, scientific, engineering, or industry content. 
+Cancellation 
+Sponsorship and exhibition cancellation terms will be governed by the applicable sponsorship 
+agreement. 
+ 
+BECOME A SPONSOR 
+Partner with MatAi 2027 
+[IMAGE: Scientific networking / industry-academic collaboration] 
+Connect your organization with an international community working at the intersection of: 
+Materials Science + Engineering + Artificial Intelligence 
+Whether you are seeking brand visibility, technology demonstration, scientific 
+engagement, industry networking, advertising exposure, or research collaboration, 
+MatAi 2027 offers flexible participation options. 
+Sponsorship Packages 
+Diamond — €10,000 
+Platinum — €7,500 
+Gold — €4,500 
+Silver — €2,000 
+Bronze — €1,500 
+Exhibition 
+Premium Booth — €4,500 
+Standard Booth — €3,500 
+Start-Up Pavilion — €1,500 
+
+===== PAGE 73 =====
+Special Sponsorship 
+Keynote Session — €1,500 
+Plenary Session — €1,500 
+Advertising Sponsor — €1,500 
+Reception — €3,500 
+Lunch — €2,500/day 
+Coffee Break — €1,500 
+Conference Kit — €2,000 
+Awards — €2,000 
+Lanyard & Badge — €1,500 
+Industry Presentation — €1,500 
+Delegate Kit Insert — €500 
+ 
+REQUEST THE SPONSORSHIP PROSPECTUS 
+For detailed sponsorship arrangements, exhibition specifications, availability, branding 
+requirements, and customized partnership options: 
+MatAi 2027 Sponsorship & Exhibition Team 
+Email: [Sponsorship Email] 
+Website: [Conference Website] 
+[BUTTON: REQUEST SPONSORSHIP PROSPECTUS] 
+[BUTTON: BECOME A SPONSOR] 
+[BUTTON: BOOK AN EXHIBITION BOOTH] 
+ 
+MATai 2027 
+Science. Engineering. Artificial Intelligence. Industry. 
+October 13–14, 2027 | Berlin, Germany 
+Join the scientific and industrial community at MatAi 2027 and showcase your organization's 
+contribution to the future of materials innovation, intelligent engineering, and AI-enabled 
+research. 
+ 
+
+===== PAGE 74 =====
+INFORMATION 
+Conference Information Page 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+(MatAi 2027) 
+October 13–14, 2027 | Berlin, Germany 
+The Information section provides essential guidelines and policies for authors, speakers, 
+presenters, delegates, students, exhibitors, sponsors, and other participants of MatAi 2027. 
+ 
+1. ABSTRACT SUBMISSION GUIDELINES 
+Call for Abstracts 
+MatAi 2027 welcomes original scientific and technical contributions covering materials 
+science, engineering, artificial intelligence, computational research, materials informatics, 
+advanced manufacturing, and related interdisciplinary fields. 
+Abstracts may be submitted for consideration under the following presentation categories: 
+• Keynote Presentation 
+• Plenary Presentation 
+• Invited Presentation 
+• Oral Presentation 
+• Poster Presentation 
+Submissions should present original research, significant technical findings, experimental or 
+theoretical studies, computational investigations, methodological developments, or relevant 
+interdisciplinary work. 
+Abstract Preparation 
+Authors should prepare abstracts using the following structure: 
+Title 
+A concise and informative title reflecting the research. 
+Authors & Affiliations 
+Full names of all authors, institutional affiliations, city, and country. 
+Background / Research Context 
+Briefly describe the scientific context and research problem. 
+Objectives 
+Clearly state the principal objectives or research questions. 
+
+===== PAGE 75 =====
+Methodology 
+Summarize the experimental, theoretical, computational, analytical, or data-driven methods 
+used. 
+Results / Findings 
+Present the principal results, observations, or scientific findings. 
+Conclusion 
+Summarize the main conclusions and scientific significance. 
+Keywords 
+Provide approximately 3–6 relevant keywords. 
+Submission Requirements 
+• Abstracts should be written in clear scientific English. 
+• The title should accurately represent the submitted research. 
+• Author names and affiliations should be checked carefully. 
+• Submitted work should be original. 
+• Plagiarized, fabricated, or misleading content will not be accepted. 
+• References may be included where appropriate. 
+• Tables, figures, equations, or special formatting should follow the submission 
+instructions. 
+• The presenting author should be clearly identified. 
+• Abstracts should be submitted through the official submission process. 
+Abstract Review 
+Submitted abstracts may be evaluated based on: 
+• Scientific quality 
+• Originality 
+• Relevance to the conference scope 
+• Technical significance 
+• Clarity 
+• Methodological soundness 
+• Potential contribution to the field 
+The scientific committee may accept an abstract, request clarification or revision, recommend 
+an alternative presentation category, or decline a submission that does not meet the 
+conference requirements. 
+Abstract submission does not guarantee acceptance or a specific presentation category. 
+ 
+
+===== PAGE 76 =====
+2. SPEAKER GUIDELINES 
+MatAi 2027 aims to maintain a structured and professional environment for scientific 
+presentations. 
+Presentation Categories 
+• Keynote Lectures 
+• Plenary Lectures 
+• Invited Talks 
+• Oral Presentations 
+• Poster Presentations 
+Speaker Preparation 
+Speakers are requested to: 
+• Prepare content relevant to the accepted topic. 
+• Present scientifically accurate information. 
+• Clearly identify authors and institutional affiliations. 
+• Acknowledge collaborators and funding sources where applicable. 
+• Use appropriate scientific references. 
+• Avoid unsupported scientific claims. 
+• Submit presentation materials within the timeframe communicated by the organizers. 
+• Follow instructions provided by the session chair and technical team. 
+Presentation Format 
+Presentation format, technical requirements, session assignment, and allocated presentation 
+time will be communicated to accepted speakers by the conference organizers. 
+Speakers should arrive at the designated presentation area before their session. 
+Speaker Checklist 
+Before the conference, speakers should confirm: 
+• Presentation title 
+• Author information 
+• Affiliation 
+• Presentation category 
+• Session assignment 
+• Presentation file 
+• Audio/video requirements 
+• Technical compatibility 
+• Registration status 
+ 
+
+===== PAGE 77 =====
+3. CONFERENCE GUIDELINES 
+All participants are expected to follow the general scientific and organizational guidelines of 
+MatAi 2027. 
+Participants should: 
+• Provide accurate registration and submission information. 
+• Follow the official conference schedule. 
+• Respect speakers, researchers, delegates, organizers, and staff. 
+• Maintain professional communication. 
+• Follow venue safety and access requirements. 
+• Use conference facilities responsibly. 
+• Respect intellectual property and research ownership. 
+• Follow photography, recording, and media policies. 
+• Comply with applicable laws and venue regulations. 
+The organizers reserve the right to modify schedules, sessions, speakers, or operational 
+arrangements where necessary. 
+ 
+4. PARTICIPATION GUIDELINES 
+MatAi 2027 welcomes participation from: 
+• Researchers and Scientists 
+• University Faculty and Academics 
+• Materials Scientists 
+• Engineers and Technical Professionals 
+• AI and Machine Learning Specialists 
+• Computational Researchers 
+• PhD Scholars 
+• Postdoctoral Researchers 
+• Students and Early-Career Researchers 
+• Industry and R&D Professionals 
+• Technology and Manufacturing Professionals 
+Participants may attend as: 
+• Delegates 
+• Speakers 
+• Oral Presenters 
+• Poster Presenters 
+• Invited Participants 
+• Sponsors 
+• Exhibitors 
+
+===== PAGE 78 =====
+Participants are responsible for providing accurate personal, professional, and registration 
+information. 
+ 
+5. PRESENTATION GUIDELINES 
+Oral Presentation Guidelines 
+Presenters are encouraged to organize their presentation in a clear scientific sequence: 
+1. Title & Author Information 
+2. Research Background 
+3. Research Problem 
+4. Objectives 
+5. Methodology 
+6. Results 
+7. Discussion 
+8. Conclusions 
+9. Future Research Directions 
+10. Acknowledgements 
+Presentations should remain focused on the accepted research topic and comply with the 
+presentation time communicated by the organizers. 
+Technical Preparation 
+Presenters should ensure that: 
+• Presentation files open correctly. 
+• Fonts and graphics display correctly. 
+• Figures and tables are readable. 
+• Videos and animations function properly. 
+• Audio is tested where applicable. 
+• The presentation is available in the required file format. 
+Presenters should coordinate with the technical team before their session when technical 
+assistance is required. 
+ 
+Poster presentations provide an opportunity to communicate research findings through a 
+concise visual format. 
+Recommended Poster Structure 
+• Title 
+• Authors 
+• Affiliations 
+
+===== PAGE 79 =====
+• Background 
+• Objectives 
+• Methodology 
+• Results 
+• Discussion 
+• Conclusions 
+• References 
+• Acknowledgements 
+Posters should use: 
+• Clear section headings 
+• Readable text 
+• Appropriate figures and diagrams 
+• Relevant charts and tables 
+• Concise scientific explanations 
+Poster Display 
+Presenters should: 
+• Display the poster in the assigned location. 
+• Follow the poster dimensions communicated by the organizers. 
+• Be available during the designated poster session. 
+• Engage professionally with delegates and researchers. 
+• Remove the poster according to organizer instructions. 
+Detailed poster dimensions and technical specifications will be communicated to accepted 
+presenters. 
+ 
+6. REGISTRATION GUIDELINES 
+Registration is required for participation in MatAi 2027 according to the applicable 
+registration category. 
+Registration Categories 
+Depending on the final registration structure, categories may include: 
+• Speaker Registration 
+• Oral Presentation Registration 
+• Poster Presentation Registration 
+• Student Registration 
+• Academic Registration 
+• Industry Registration 
+• Delegate Registration 
+• Virtual Participation, where applicable 
+
+===== PAGE 80 =====
+Registration Process 
+Participants should: 
+1. Select the appropriate registration category. 
+2. Complete the registration form. 
+3. Provide accurate participant information. 
+4. Complete the applicable registration payment. 
+5. Retain the registration confirmation. 
+Registration fees, deadlines, inclusions, and applicable taxes or charges are provided on the 
+official Registration page. 
+Registration confirmation may be required for participation, presentation scheduling, 
+certificates, and conference materials. 
+ 
+7. PUBLICATION & PROCEEDINGS 
+MatAi 2027 may provide publication and proceedings options for eligible conference 
+contributions, subject to applicable scientific, editorial, and publisher requirements. 
+Conference Proceedings 
+Accepted abstracts and/or conference contributions may be considered for inclusion in 
+conference-related proceedings or publications where applicable. 
+Publication consideration may depend on: 
+• Scientific quality 
+• Editorial requirements 
+• Submission format 
+• Review procedures 
+• Publisher requirements 
+• Author compliance 
+• Applicable publication policies 
+Acceptance for conference presentation does not automatically guarantee publication. 
+Research Integrity 
+Authors are responsible for ensuring that submitted work is: 
+• Original 
+• Properly attributed 
+• Correctly referenced 
+• Free from plagiarism 
+• Scientifically accurate 
+
+===== PAGE 81 =====
+• Compliant with applicable research and publication standards 
+Authors should disclose relevant conflicts of interest where appropriate. 
+ 
+9. CERTIFICATES 
+Certificates may be issued to eligible participants according to their participation category. 
+Possible certificate categories include: 
+• Participation Certificate 
+• Speaker Certificate 
+• Oral Presentation Certificate 
+• Poster Presentation Certificate 
+• Keynote Speaker Certificate 
+• Plenary Speaker Certificate 
+• Invited Speaker Certificate 
+• Best Poster Certificate 
+• Young Researcher Recognition Certificate 
+• Award Certificate 
+Certificate eligibility may depend on successful registration and participation. 
+Participants should carefully verify their name, affiliation, and other details provided during 
+registration or abstract submission. 
+ 
+10. AWARDS & RECOGNITION 
+MatAi 2027 may recognize selected scientific contributions based on research quality, 
+presentation, relevance, innovation, and contribution to the conference. 
+Best Oral Presentation 
+Recognizes an outstanding oral presentation demonstrating strong scientific content, clarity, 
+technical quality, and effective communication. 
+Best Poster Presentation 
+Recognizes an outstanding poster demonstrating scientific merit, clear visual presentation, 
+research relevance, and effective communication. 
+Young Researcher Recognition 
+May recognize promising contributions from early-career researchers, PhD scholars, or 
+young scientists. 
+
+===== PAGE 82 =====
+Outstanding Scientific Contribution 
+May recognize a notable scientific or technical contribution demonstrating significant 
+relevance to materials science, engineering, artificial intelligence, or related interdisciplinary 
+research. 
+Awards may be evaluated by designated members of the Scientific Committee or Organizing 
+Committee. 
+The organizers reserve the right to modify award categories or selection procedures where 
+necessary. 
+ 
+11. CODE OF CONDUCT 
+MatAi 2027 is committed to maintaining a professional, respectful, inclusive, and 
+scientifically responsible conference environment. 
+All participants are expected to: 
+• Treat other participants with professionalism and respect. 
+• Avoid harassment, discrimination, intimidation, or inappropriate conduct. 
+• Respect different scientific perspectives and professional backgrounds. 
+• Communicate respectfully during presentations and discussions. 
+• Respect intellectual property and research confidentiality. 
+• Follow venue rules and applicable laws. 
+• Use conference communication channels responsibly. 
+Unacceptable conduct may result in removal from a session or conference activity and, where 
+appropriate, cancellation of participation. 
+Concerns regarding participant conduct should be reported to the conference organizing team. 
+ 
+12. TERMS & CONDITIONS 
+By registering for or participating in MatAi 2027, participants acknowledge and agree to the 
+applicable conference terms and conditions. 
+Registration 
+Participants are responsible for selecting the appropriate registration category and providing 
+accurate information. 
+Abstracts & Presentations 
+
+===== PAGE 83 =====
+Submission and acceptance of an abstract do not guarantee a particular presentation format, 
+session, speaker category, or schedule. 
+Program Changes 
+The organizers reserve the right to modify speakers, sessions, schedules, venues, or program 
+arrangements when necessary. 
+Speaker Changes 
+In exceptional circumstances, an invited or scheduled speaker may be replaced, rescheduled, 
+or withdrawn from the program. 
+Intellectual Property 
+Authors and presenters are responsible for ensuring that their presentation materials do not 
+infringe third-party intellectual property rights. 
+Photography & Recording 
+Conference activities may be photographed, recorded, or documented for legitimate 
+conference communication, reporting, archival, or promotional purposes, subject to 
+applicable policies and permissions. 
+Participant Information 
+Information provided during registration and abstract submission may be used for conference 
+administration, communication, scheduling, certificates, and related organizational purposes 
+in accordance with the Privacy Policy. 
+ 
+13. CANCELLATION & REFUND POLICY 
+Participants who are unable to attend MatAi 2027 may request cancellation of their 
+registration subject to the following refund schedule. 
+Refund Schedule 
+Cancellation Period Applicable Refund 
+60 days or more before the conference 60% refund 
+50–59 days before the conference 50% refund 
+40–49 days before the conference 50% refund 
+30–39 days before the conference 30% refund 
+
+===== PAGE 84 =====
+Cancellation Period Applicable Refund 
+Less than 30 days before the conference No refund 
+Cancellation Request 
+All cancellation requests must be submitted in writing to the conference organizing team 
+through the official conference contact channel. 
+The cancellation date will be considered the date on which the written request is received by 
+the organizing team. 
+Participants should provide: 
+• Full Name 
+• Registration ID, if applicable 
+• Affiliation / Organization 
+• Registration Category 
+• Registration Date 
+• Payment / Transaction Reference, where required 
+Refund Processing 
+Approved refunds will be processed following verification of the cancellation request and 
+payment. 
+Refunds will normally be made through the original payment method where technically and 
+administratively possible. 
+Processing time may vary depending on the payment provider, bank, or financial institution. 
+Administrative & Transaction Charges 
+Applicable payment gateway fees, bank charges, transaction fees, currency conversion 
+charges, or administrative processing fees may be deducted from the refundable amount 
+where applicable. 
+Non-Refundable Expenses 
+The following expenses are generally the responsibility of the participant and are not covered 
+by the registration refund policy: 
+• Visa expenses 
+• Travel expenses 
+• Accommodation expenses 
+• Travel insurance 
+• Bank charges 
+• Currency conversion charges 
+• Third-party service charges 
+
+===== PAGE 85 =====
+• Other personal expenses 
+Transfer of Registration 
+Where permitted, participants may request to transfer their registration to another eligible 
+participant instead of requesting a refund. 
+All transfer requests are subject to approval by the conference organizing team. 
+Speaker & Presenter Cancellation 
+Speakers and presenters who are unable to participate should notify the organizers as early as 
+possible. 
+Cancellation of a presentation does not automatically qualify for a refund outside the 
+applicable refund schedule. 
+Conference Postponement or Cancellation 
+If the conference is postponed, relocated, or cancelled due to circumstances beyond the 
+reasonable control of the organizers, the organizing team will communicate the available 
+arrangements to registered participants. 
+Depending on the circumstances, participants may be offered registration transfer, revised 
+participation arrangements, or applicable refund options. 
+Force Majeure 
+The organizers shall not be responsible for circumstances beyond their reasonable control, 
+including natural disasters, governmental restrictions, public emergencies, transportation 
+disruptions, venue-related circumstances, or other events that materially affect the 
+conference. 
+The organizers will make reasonable efforts to communicate alternative arrangements. 
+Important Notice 
+Participants are advised to consider the applicable cancellation period before making travel, 
+accommodation, visa, or other arrangements. 
+The organizers reserve the right to review exceptional cancellation cases at their discretion. 
+ 
+14. PRIVACY POLICY 
+MatAi 2027 respects the privacy of participants, speakers, authors, sponsors, exhibitors, and 
+other stakeholders. 
+
+===== PAGE 86 =====
+Information We May Collect 
+Information provided through registration, abstract submission, speaker forms, 
+correspondence, or related conference activities may include: 
+• Name 
+• Professional title 
+• Institution / Organization 
+• Country 
+• Email address 
+• Contact information 
+• Abstract information 
+• Presentation information 
+• Registration details 
+• Payment confirmation information 
+Use of Information 
+Information may be used to: 
+• Process registrations. 
+• Process abstract submissions. 
+• Organize scientific sessions. 
+• Communicate conference information. 
+• Prepare certificates and conference materials. 
+• Coordinate speakers and presenters. 
+• Process applicable payments. 
+• Provide administrative support. 
+• Communicate relevant conference updates. 
+Protection of Information 
+Reasonable administrative and technical measures may be used to protect participant 
+information from unauthorized access, alteration, disclosure, or misuse. 
+Third-Party Services 
+Conference operations may involve third-party services for registration, payment processing, 
+communication, website hosting, virtual participation, or other administrative functions. 
+Such third-party services may have their own privacy policies and terms. 
+Privacy Requests 
+Participants with questions regarding personal information or privacy matters may contact the 
+MatAi 2027 organizing team through the official conference contact channels. 
+
+===== PAGE 87 =====
+ 
+15. FREQUENTLY ASKED QUESTIONS 
+General Questions 
+What is MatAi 2027? 
+MatAi 2027 is the International Conference on Materials Science, Engineering & 
+Artificial Intelligence, focusing on developments at the intersection of materials science, 
+engineering, computational research, and artificial intelligence. 
+When will MatAi 2027 take place? 
+MatAi 2027 will be held on October 13–14, 2027. 
+Where will the conference be held? 
+The conference will take place in Berlin, Germany. Detailed venue information will be 
+published by the organizers. 
+Who can attend MatAi 2027? 
+Researchers, scientists, academics, engineers, students, PhD scholars, postdoctoral 
+researchers, industry professionals, AI specialists, materials scientists, and professionals 
+working in related fields may participate. 
+ 
+Abstract Submission 
+Can I submit an abstract for an oral presentation? 
+Yes. Original research may be submitted for consideration as an oral presentation, subject to 
+scientific review and program availability. 
+Can I submit a poster? 
+Yes. Poster submissions are welcomed in areas relevant to the conference scope. 
+Can I submit more than one abstract? 
+Multiple submissions may be considered subject to the applicable submission requirements 
+and program capacity. 
+Does submitting an abstract guarantee acceptance? 
+
+===== PAGE 88 =====
+No. Abstracts are subject to scientific and technical review. 
+Can my presentation category be changed? 
+Yes. The Scientific Committee or Organizing Committee may recommend an alternative 
+presentation format based on scientific relevance, program requirements, and availability. 
+ 
+Registration 
+Do I need to register to present my research? 
+Accepted presenters are generally required to complete the applicable registration process to 
+participate in the conference. 
+What does registration include? 
+Registration inclusions depend on the selected registration category and the package 
+published on the official Registration page. 
+Can I register after the early registration deadline? 
+Registration may remain available after an early registration deadline, subject to availability 
+and the applicable registration fee. 
+Will I receive registration confirmation? 
+Yes. Confirmation may be provided after successful completion of registration and payment. 
+ 
+Presentation 
+How long will my presentation be? 
+The allocated presentation time will be communicated by the conference organizers 
+according to the presentation category and final scientific program. 
+What format should my presentation use? 
+Technical specifications and accepted presentation formats will be communicated to 
+presenters before the conference. 
+Can I update my presentation? 
+Presenters may generally update their presentation materials before the conference according 
+to the instructions and deadlines communicated by the organizers. 
+
+===== PAGE 89 =====
+ 
+Poster Presentation 
+What size should my poster be? 
+Poster dimensions and display specifications will be communicated to accepted poster 
+presenters. 
+Do I need to be present during the poster session? 
+Presenters are expected to be available during their designated poster session to discuss their 
+research with participants. 
+ 
+Certificates & Awards 
+Will I receive a certificate? 
+Eligible registered participants and presenters may receive a certificate corresponding to their 
+participation category. 
+Are awards available? 
+MatAi 2027 may provide recognition for selected oral presentations, poster presentations, 
+young researchers, and other scientific contributions. 
+ 
+Travel & Visa 
+Do I need a visa to attend the conference? 
+Visa requirements depend on your nationality and individual circumstances. Participants 
+should check the applicable German and Schengen visa requirements well in advance. 
+Can I request an invitation letter? 
+Eligible registered participants may request a conference invitation letter according to the 
+applicable conference procedure. 
+An invitation letter does not guarantee visa approval. 
+Is accommodation provided? 
+
+===== PAGE 90 =====
+Participants are responsible for arranging their own accommodation unless an official 
+accommodation arrangement is announced by the organizers. 
+ 
+Publication 
+Will my abstract be published? 
+Accepted abstracts may be included in conference materials or proceedings where applicable. 
+Does conference acceptance guarantee journal publication? 
+No. Journal publication is subject to the independent editorial and peer-review requirements 
+of the relevant journal or publisher. 
+ 
+Cancellation & Refund 
+Can I cancel my registration? 
+Yes. Cancellation requests may be submitted according to the applicable Cancellation & 
+Refund Policy. 
+What is the refund structure? 
+• 60 days or more: 60% refund 
+• 50–59 days: 50% refund 
+• 40–49 days: 50% refund 
+• 30–39 days: 30% refund 
+• Less than 30 days: No refund 
+Are travel and accommodation expenses refundable? 
+No. Travel, accommodation, visa, insurance, and other personal expenses are the 
+responsibility of the participant. 
+What happens if the conference is postponed? 
+The organizers will communicate the available participation, transfer, or refund arrangements 
+to registered participants according to the circumstances. 
+ 
+CONTACT INFORMATION 
+For questions regarding: 
+
+===== PAGE 91 =====
+• Abstract Submission 
+• Registration 
+• Speaker Participation 
+• Oral Presentations 
+• Poster Presentations 
+• Certificates 
+• Publication & Proceedings 
+• Sponsorship 
+• Exhibition 
+• Visa Documentation 
+• General Conference Information 
+please contact the MatAi 2027 Organizing Team through the official conference contact 
+channels. 
+MatAi 2027 
+International Conference on Materials Science, Engineering & Artificial Intelligence 
+October 13–14, 2027 | Berlin, Germany 
+Website: [Official Conference Website] 
+Email: [Official Conference Email] 
+ 
+QUICK INFORMATION 
+Conference: MatAi 2027 
+Full Name: International Conference on Materials Science, Engineering & Artificial 
+Intelligence 
+Date: October 13–14, 2027 
+Location: Berlin, Germany 
+Format: In-Person Conference 
+Abstracts: Oral & Poster Presentations 
+Scientific Areas: Materials Science, Engineering, Artificial Intelligence, Materials 
+Informatics, Computational Materials Science, Advanced Manufacturing & Related Fields 
+ 
+REGISTRATION FEES Page:  
+All fees are stated in EUR (€). 
+PARTICIPATION REGISTRATION 
+Registration Category Early Bird Mid-Term On-Spot 
+Speaker Registration €649 €749 €849 
+
+===== PAGE 92 =====
+Registration Category Early Bird Mid-Term On-Spot 
+Delegate Registration €749 €849 €949 
+Poster Presentation €549 €649 €749 
+Student Registration €399 €499 €599 
+Virtual Registration €299 €399 €499 
+Pricing: 
+• Early Bird: Base registration fee 
+• Mid-Term: Early Bird + €100 
+• On-Spot: Early Bird + €200 
+ 
+EXHIBITION FEES 
+Exhibition fees are fixed and do not have Mid-Term or On-Spot rates. 
+Exhibition Category Fee 
+Standard Exhibition Booth — 3 × 2 m €3,500 
+Premium Exhibition Booth — 3 × 3 m €4,500 
+Start-Up Pavilion €1,500 
+Standard Exhibition Booth — €3,500 
+✓ 3 × 2 m exhibition booth 
+✓ Company name and logo display 
+✓ Exhibitor listing on conference website 
+✓ Exhibitor listing in conference programme, where applicable 
+✓ 2 complimentary staff registrations 
+✓ Exhibition area access 
+✓ Approved company promotional materials 
+✓ Networking with participants 
+✓ Exhibitor acknowledgement 
+Premium Exhibition Booth — €4,500 
+✓ 3 × 3 m premium exhibition booth 
+✓ Company name and logo display 
+✓ Exhibitor listing on conference website 
+
+===== PAGE 93 =====
+✓ Conference programme recognition 
+✓ 3 complimentary staff registrations 
+✓ Exhibition area access 
+✓ Approved promotional materials 
+✓ Enhanced exhibition presence 
+✓ Networking with researchers and industry professionals 
+✓ Exhibitor acknowledgement 
+Start-Up Pavilion — €1,500 
+✓ Dedicated display table 
+✓ Company name and logo display 
+✓ Start-up listing on conference website 
+✓ Approved promotional materials 
+✓ 1 complimentary conference registration 
+✓ Exhibition access 
+✓ Networking opportunities 
+✓ Start-up acknowledgement 
+ 
+SPONSORSHIP FEES 
+Sponsorship fees are fixed and do not have Mid-Term or On-Spot rates. 
+MAIN SPONSORSHIP PACKAGES 
+Sponsorship Package Fee 
+Diamond Sponsor €10,000 
+Platinum Sponsor €7,500 
+Gold Sponsor €4,500 
+Silver Sponsor €2,000 
+Bronze / Supporting Sponsor €1,500 
+SPECIAL SPONSORSHIP OPTIONS 
+Sponsorship Opportunity Fee 
+Keynote Session Sponsor €1,500 
+
+===== PAGE 94 =====
+Sponsorship Opportunity Fee 
+Plenary Session Sponsor €1,500 
+Advertising Sponsor €1,500 
+Coffee Break Sponsor €1,500 
+Lunch Sponsor €2,500 / day 
+Conference Reception Sponsor €3,500 
+Conference Kit Sponsor €2,000 
+Lanyard & Badge Sponsor €1,500 
+Awards & Young Researcher Sponsor €2,000 
+Delegate Kit Insert €500 
+Industry Presentation €1,500 
+Customized sponsorship packages may also be arranged based on organizational 
+requirements and subject to approval by the conference organizing team. 
+REGISTRATION PROCESS 
+Step 1 — Select Your Category 
+Choose the appropriate registration, exhibition, or sponsorship category. 
+Step 2 — Complete the Registration Form 
+Provide accurate participant or organization information. 
+Step 3 — Complete Payment 
+Pay the applicable fee according to the registration period. 
+Step 4 — Receive Confirmation 
+Confirmation will be issued following successful verification of registration and payment. 
+Step 5 — Receive Conference Information 
+Registered participants, exhibitors, and sponsors will receive the relevant participation 
+instructions and conference information. 
+ 
+
+===== PAGE 95 =====
+PAYMENT INFORMATION 
+All fees are stated in EUR (€). 
+Participants and organizations are responsible for selecting the correct category and 
+applicable registration period. 
+Applicable taxes/VAT, bank charges, payment gateway fees, transaction charges, or 
+currency conversion charges, where applicable, may be additional to the published fees. 
+Payment instructions will be provided through the official conference registration process. 
+ 
+REGISTRATION TERMS & CONDITIONS 
+1. Registration is confirmed after successful payment and verification. 
+2. Participants must provide accurate registration information. 
+3. Student registration may require valid proof of student status. 
+4. Abstract acceptance and registration are separate processes. 
+5. Registration does not guarantee publication. 
+6. Accepted presenters are expected to participate according to the assigned program. 
+7. The organizers may make reasonable changes to speakers, sessions, schedules, or venue 
+arrangements. 
+8. Registration transfers require prior approval. 
+9. Visa approval is the responsibility of the participant. 
+10. Travel, accommodation, insurance, and visa expenses are not included unless explicitly 
+stated. 
+11. Exhibition and sponsorship benefits are subject to the applicable package and organizer 
+approval. 
+12. Promotional, advertising, and branding materials must comply with organizer specifications. 
+13. Participants and organizations must comply with the MatAi 2027 Code of Conduct. 
+14. The organizers reserve the right to refuse or withdraw participation where serious violations 
+of conference policies occur. 
+ 
+CANCELLATION & REFUND POLICY 
+Participants who are unable to attend MatAi 2027 may request cancellation according to the 
+following schedule: 
+Cancellation Period Refund 
+60 days or more before the conference 60% refund 
+50–59 days before the conference 50% refund 
+40–49 days before the conference 50% refund 
+
+===== PAGE 96 =====
+30–39 days before the conference 30% refund 
+Less than 30 days before the conference No refund 
+Cancellation Procedure 
+Cancellation requests must be submitted in writing through the official conference contact 
+channel. 
+The effective cancellation date will be the date on which the written request is received by the 
+organizing team. 
+Refund Processing 
+Approved refunds will normally be processed through the original payment method where 
+technically possible. 
+Payment gateway, bank, transaction, currency conversion, and applicable administrative 
+charges may be deducted from the refundable amount. 
+Non-Refundable Expenses 
+The following are generally not covered by the registration refund: 
+• Visa expenses 
+• Travel expenses 
+• Accommodation 
+• Travel insurance 
+• Bank charges 
+• Currency conversion charges 
+• Third-party service charges 
+• Other personal expenses 
+Exhibition & Sponsorship Cancellation 
+Exhibition and sponsorship cancellations are subject to the same published cancellation 
+schedule unless a separate written agreement specifies different terms. 
+Benefits already delivered or services already provided may not be refundable. 
+Conference Postponement or Cancellation 
+If MatAi 2027 is postponed, relocated, or cancelled due to circumstances beyond the 
+reasonable control of the organizers, registered participants, exhibitors, and sponsors will be 
+informed of the available arrangements. 
+ 
+
+===== PAGE 97 =====
+IMPORTANT REGISTRATION NOTICE 
+Early Bird fees represent the base published rates. Mid-Term fees are €100 higher than 
+the Early Bird rates, and On-Spot fees are €200 higher than the Early Bird rates. 
+The applicable fee is determined by the date on which the registration, exhibition booking, or 
+sponsorship commitment is completed according to the official conference registration 
+schedule. 
+ 
+REGISTER FOR MatAi 2027 
+PARTICIPATION 
+Speaker — €649 
+Delegate — €749 
+Poster — €549 
+Student — €399 
+Virtual — €299 
+EXHIBITION 
+Standard Booth — €3,500 
+Premium Booth — €4,500 
+Start-Up Pavilion — €1,500 
+SPONSORSHIP 
+Diamond — €10,000 
+Platinum — €7,500 
+Gold — €4,500 
+Silver — €2,000 
+Bronze / Supporting — €1,500 
+SPECIAL SPONSORSHIP 
+Keynote — €1,500 
+Plenary — €1,500 
+Advertising — €1,500 
+Coffee Break — €1,500 
+Lunch — €2,500/day 
+Reception — €3,500 
+Conference Kit — €2,000 
+Lanyard & Badge — €1,500 
+Awards — €2,000 
+Delegate Kit Insert — €500 
+Industry Presentation — €1,500 
+
+===== PAGE 98 =====
+[REGISTER NOW] 
+[BOOK EXHIBITION] 
+[BECOME A SPONSOR] 

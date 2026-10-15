@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — MatAi 2027</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="login-wrap" id="login-view">
+    <form class="login-card" id="login-form">
+      <div class="logo">Ai</div>
+      <h1>MatAi 2027 Admin</h1>
+      <p>Sign in to manage website pages, registration pricing, and submissions.</p>
+      <label class="a-field-label" for="user">Username</label>
+      <input class="a-input" type="text" id="user" placeholder="Admin username" autocomplete="username" required>
+      <label class="a-field-label" for="pw">Password</label>
+      <input class="a-input" type="password" id="pw" placeholder="Admin password" autocomplete="current-password" required>
+      <div class="a-msg err" id="login-msg" role="alert"></div>
+      <button class="a-btn" type="submit" style="width:100%;margin-top:.4rem">Sign In</button>
+    </form>
+  </div>
+
+  <div class="a-shell" id="shell">
+    <div class="a-topbar">
+      <div class="a-brand"><span class="logo">MS</span><span>Admin Panel <b>2027</b></span></div>
+      <div class="a-top-actions">
+        <span class="a-admin-email">tcmgs04@gmail.com</span>
+        <button class="a-btn ghost sm" id="logout-btn" type="button">Log out</button>
+      </div>
+    </div>
+
+    <nav class="a-nav-tabs" aria-label="Admin sections">
+      <button class="a-tab active" data-view="content" type="button"><span>▦</span>Content</button>
+      <button class="a-tab" data-view="speakers" type="button"><span>♙</span>Speakers</button>
+      <button class="a-tab" data-view="media" type="button"><span>◇</span>Media</button>
+      <button class="a-tab" data-view="data" type="button"><span>▤</span>Data</button>
+      <button class="a-tab" data-view="information" type="button"><span>ⓘ</span>Information</button>
+      <button class="a-tab" data-view="submissions" type="button"><span>▧</span>Submissions</button>
+      <button class="a-tab" data-view="settings" type="button"><span>▦</span>Settings</button>
+      <button class="a-tab" data-view="coupons" type="button"><span>◇</span>Coupons</button>
+      <button class="a-tab" data-view="accommodation" type="button"><span>▱</span>Accommodation</button>
+    </nav>
+
+    <main class="a-main">
+      <div class="a-stats" id="stats" aria-label="Site activity" style="display:none"></div>
+
+      <div class="a-header-actions">
+        <div>
+          <h1 id="main-title">Website &amp; Registration Settings</h1>
+          <p class="a-muted">Saved changes are published to the public website.</p>
+        </div>
+        <div class="a-action-buttons">
+          <button class="a-btn ghost sm" id="refresh-btn" type="button">Refresh</button>
+          <button class="a-btn ghost sm" id="init-defaults" type="button">Init Defaults</button>
+          <button class="a-btn" id="add-section" type="button">＋ Add Section</button>
+          <button class="a-btn" id="save-content" type="button">Save Website Changes</button>
+        </div>
+      </div>
+
+      <section id="content-view">
+        <div class="a-card" id="conference-information">
+          <h2>Conference Details &amp; Announcement</h2>
+          <div class="a-form-grid">
+            <label class="switch"><input type="checkbox" id="c-banner-on"> Show announcement banner</label>
+            <label class="a-field">Banner text
+              <input class="a-input" id="c-banner-text" type="text">
+            </label>
+            <label class="a-field">Conference theme
+              <input class="a-input" id="c-theme" type="text">
+            </label>
+            <label class="a-field">Conference dates
+              <input class="a-input" id="c-dates" type="text">
+            </label>
+            <label class="a-field">Location
+              <input class="a-input" id="c-city" type="text">
+            </label>
+          </div>
+        </div>
+
+        <div class="a-card" id="important-dates">
+          <div class="a-section-heading">
+            <div><h2>Important Dates</h2><p class="a-muted">These dates update wherever the site displays the shared dates list.</p></div>
+            <button class="a-btn ghost sm" id="add-date" type="button">Add date</button>
+          </div>
+          <div id="dates-list"></div>
+        </div>
+
+        <div class="a-card" id="registration-settings">
+          <h2>Registration Periods &amp; Fees</h2>
+          <p class="a-muted">Choose which tier is currently charged, update its public deadline, and edit category fees in EUR.</p>
+          <label class="a-field a-active-period">Active registration pricing period
+            <select class="a-input" id="reg-active"></select>
+          </label>
+          <div id="periods-list"></div>
+          <div class="fees-grid"><table id="fees-table"></table></div>
+        </div>
+
+        <div class="a-card" id="accommodation-prices">
+          <h2>Exhibition, Sponsorship &amp; Add-on Prices</h2>
+          <p class="a-muted">All fixed-price registration items are editable here. Prices are in EUR.</p>
+          <div class="fees-grid"><table id="item-prices"></table></div>
+          <label class="a-field a-service-rate">Service charge (%)
+            <input class="a-input" id="service-rate" type="number" min="0" max="100" step="0.01">
+          </label>
+        </div>
+
+        <div class="a-card" id="coupon-settings">
+          <div class="a-section-heading">
+            <div><h2>Registration Coupons</h2><p class="a-muted">Coupons apply a percentage discount to the order total before the service charge.</p></div>
+            <button class="a-btn ghost sm" id="add-coupon" type="button">Add coupon</button>
+          </div>
+          <div id="coupons-list"></div>
+        </div>
+
+        <div class="a-card" id="media-editor">
+          <div class="a-section-heading">
+            <div><h2>Edit Website Pages</h2><p class="a-muted">Edit the HTML inside each page section. Use “Restore original” to discard an unsaved section edit.</p></div>
+            <div class="a-page-picker">
+              <select class="a-input" id="page-select" aria-label="Choose page"></select>
+              <button class="a-btn ghost sm" id="load-page-sections" type="button">Load page</button>
+            </div>
+          </div>
+          <div id="page-sections-editor"><p class="a-empty">Choose a page to edit its sections.</p></div>
+        </div>
+
+        <details class="a-card" id="committee-editor">
+          <summary><h2>Scientific Committee</h2></summary>
+          <p class="a-muted">Manage committee profiles shown on the committee page.</p>
+          <div id="members-list"></div>
+          <button class="a-btn ghost sm" id="add-member" type="button">Add committee member</button>
+        </details>
+
+        <details class="a-card" id="speaker-editor">
+          <summary><h2>Speakers</h2></summary>
+          <p class="a-muted">Manage speaker profiles shown on the speakers page.</p>
+          <div id="speakers-list"></div>
+          <button class="a-btn ghost sm" id="add-speaker" type="button">Add speaker</button>
+        </details>
+
+        <div class="a-save-bottom">
+          <button class="a-btn" type="button" data-save-content>Save Website Changes</button>
+        </div>
+      </section>
+
+      <section id="sub-view" style="display:none">
+        <div class="a-panelhead">
+          <h2 id="sub-title">All Submissions</h2>
+          <div class="a-action-buttons">
+            <label class="submission-filter">Form
+              <select class="a-select" id="submission-kind">
+                <option value="all">All forms</option>
+                <option value="register">Registrations</option>
+                <option value="abstract">Abstracts</option>
+                <option value="contact">Contacts</option>
+                <option value="brochure">Brochure requests</option>
+              </select>
+            </label>
+            <button class="a-btn ghost sm" id="export-btn" type="button">Export CSV</button>
+            <button class="a-btn ghost sm" data-refresh-submissions type="button">Refresh</button>
+          </div>
+        </div>
+        <div class="a-tablewrap">
+          <table class="a-table"><thead id="thead"></thead><tbody id="tbody"></tbody></table>
+        </div>
+        <div class="a-empty" id="empty" style="display:none">No records yet.</div>
+      </section>
+    </main>
+  </div>
+
+  <div class="a-drawer-bg" id="drawer-bg"></div>
+  <aside class="a-drawer" id="drawer" aria-label="Submission details">
+    <div class="dh"><h3 id="d-title">Record</h3><button class="x-close" id="d-close" type="button" aria-label="Close">&times;</button></div>
+    <div class="db" id="d-body"></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

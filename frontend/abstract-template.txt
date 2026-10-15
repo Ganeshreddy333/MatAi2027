@@ -1,0 +1,62 @@
+========================================================================
+MatAi 2027 — ABSTRACT TEMPLATE
+International Conference on Materials Science, Engineering & Artificial
+Intelligence · October 13–14, 2027 · Berlin, Germany
+========================================================================
+
+Prepare your abstract using the structure below. Keep the writing clear,
+concise, and scientifically structured, in professional academic English.
+Specific word limits and formatting requirements will be confirmed through
+the official submission system.
+
+------------------------------------------------------------------------
+TITLE
+------------------------------------------------------------------------
+[Concise and representative of the research]
+
+------------------------------------------------------------------------
+AUTHORS & AFFILIATIONS
+------------------------------------------------------------------------
+Presenting / corresponding author: [Full name]
+Co-authors: [Full names]
+Affiliation(s): [Institution, City, Country]
+Corresponding author email: [email]
+
+------------------------------------------------------------------------
+BACKGROUND / CONTEXT
+------------------------------------------------------------------------
+[Brief description of the research problem or scientific context]
+
+------------------------------------------------------------------------
+OBJECTIVES
+------------------------------------------------------------------------
+[Clear statement of the purpose or research question]
+
+------------------------------------------------------------------------
+METHODOLOGY / APPROACH
+------------------------------------------------------------------------
+[Summary of methods, computational approaches, experiments, or techniques]
+
+------------------------------------------------------------------------
+RESULTS / FINDINGS
+------------------------------------------------------------------------
+[Principal findings or expected outcomes, where applicable]
+
+------------------------------------------------------------------------
+CONCLUSION / SIGNIFICANCE
+------------------------------------------------------------------------
+[Key conclusions and relevance of the research]
+
+------------------------------------------------------------------------
+KEYWORDS
+------------------------------------------------------------------------
+[3–6 relevant scientific keywords]
+
+------------------------------------------------------------------------
+SUBMISSION DETAILS
+------------------------------------------------------------------------
+Preferred presentation category: [Oral / Poster / Invited / Keynote-Plenary]
+Selected scientific session / research area: [e.g. Session 14 — AI in Materials Science]
+
+Please ensure the work is original, free from plagiarism, and complies with
+applicable research integrity requirements before submitting.
