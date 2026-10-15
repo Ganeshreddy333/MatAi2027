@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261016-color-audit">
 </head>
 <body>
   <div id="site-header"></div>
@@ -207,11 +207,46 @@
           <div class="field"><label>Institution / Affiliation <span class="req">*</span></label><input type="text" name="institution" required><div class="error-msg">Required</div></div>
           <div class="field"><label>Country <span class="req">*</span></label><input type="text" name="country" required><div class="error-msg">Required</div></div>
           <div class="field full"><label>Co-Authors &amp; Affiliations</label><input type="text" name="coAuthors" placeholder="Full names and affiliations"></div>
-          <div class="field full"><label>Scientific Session / Research Area</label><input type="text" name="session" placeholder="e.g. Session 14 — Artificial Intelligence in Materials Science"></div>
+          <div class="field full"><label>Scientific Session / Research Area <span class="req">*</span></label>
+            <select name="session" required>
+              <option value="">Select one scientific session</option>
+              <option>Session 01 — Advanced Materials &amp; Materials Engineering</option>
+              <option>Session 02 — Nanomaterials &amp; Nanotechnology</option>
+              <option>Session 03 — Polymers &amp; Advanced Polymer Materials</option>
+              <option>Session 04 — Composite Materials &amp; Hybrid Structures</option>
+              <option>Session 05 — Metals, Alloys &amp; Metallurgical Engineering</option>
+              <option>Session 06 — Advanced Ceramics &amp; Functional Ceramics</option>
+              <option>Session 07 — Smart &amp; Multifunctional Materials</option>
+              <option>Session 08 — Sustainable Materials &amp; Green Engineering</option>
+              <option>Session 09 — Energy Storage Materials</option>
+              <option>Session 10 — Energy Conversion &amp; Renewable Energy Materials</option>
+              <option>Session 11 — Biomaterials &amp; Biomedical Materials</option>
+              <option>Session 12 — Electronic, Semiconductor &amp; Photonic Materials</option>
+              <option>Session 13 — Quantum Materials &amp; Emerging Functional Materials</option>
+              <option>Session 14 — Artificial Intelligence in Materials Science</option>
+              <option>Session 15 — Machine Learning &amp; Materials Informatics</option>
+              <option>Session 16 — AI-Driven Materials Discovery &amp; Design</option>
+              <option>Session 17 — Computational Materials Science</option>
+              <option>Session 18 — Multiscale Modelling &amp; Predictive Materials Engineering</option>
+              <option>Session 19 — AI-Assisted Materials Characterization</option>
+              <option>Session 20 — Advanced Materials Characterization &amp; Analytical Techniques</option>
+              <option>Session 21 — Additive Manufacturing &amp; 3D-Printed Materials</option>
+              <option>Session 22 — Intelligent Manufacturing &amp; Smart Processing</option>
+              <option>Session 23 — Digital Twins &amp; Digital Materials Engineering</option>
+              <option>Session 24 — Materials Processing &amp; Manufacturing Technologies</option>
+              <option>Session 25 — Surface Engineering, Coatings &amp; Interfaces</option>
+              <option>Session 26 — Materials for Environmental &amp; Climate Technologies</option>
+              <option>Session 27 — Materials for Aerospace, Automotive &amp; Advanced Engineering</option>
+              <option>Session 28 — Reliability, Degradation, Failure &amp; Materials Performance</option>
+              <option>Session 29 — Autonomous Laboratories &amp; AI-Enabled Experimental Research</option>
+              <option>Session 30 — Future Directions in Materials Science, Engineering &amp; AI</option>
+            </select><div class="error-msg">Please select a scientific session.</div>
+          </div>
           <div class="field full"><label>Abstract Text <span class="req">*</span></label><textarea name="abstract" required placeholder="Background, objectives, methodology, results, conclusion…"></textarea><div class="error-msg">Required</div></div>
           <div class="field full"><label>Keywords</label><input type="text" name="keywords" placeholder="Comma-separated scientific keywords"></div>
           <div class="field full"><label for="abstract-attachment">Upload Abstract Document (optional)</label><input id="abstract-attachment" type="file" name="attachment" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"><small>PDF or Word document (.doc, .docx), maximum 5 MB.</small><div class="error-msg">Choose a PDF or Word document up to 5 MB.</div></div>
           <div class="field full"><label class="chk"><input type="checkbox" name="integrity" required> I confirm the work is original, free from plagiarism, and complies with applicable research integrity requirements. <span class="req">*</span></label><div class="error-msg">Please confirm</div></div>
+          <div class="field full human-verification" data-human-verification></div>
         </div>
         <div class="btn-row mt-2"><button type="submit" class="btn btn-primary">Submit Abstract</button></div>
       </form>
@@ -219,7 +254,8 @@
   </section>
 
   <div id="site-footer"></div>
-  <script src="js/site.js?v=20261010-live-sync2"></script>
+  <script src="js/site.js?v=20261016-color-audit"></script>
   <script src="js/forms.js"></script>
+  <script src="js/human-verification.js?v=20261016-color-audit"></script>
 </body>
 </html>

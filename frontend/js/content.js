@@ -25,7 +25,7 @@
       active: "Early Bird",
       "Early Bird": { label: "Early Bird Registration", deadline: "To Be Announced" },
       "Mid-Term": { label: "Mid Term Registration", deadline: "To Be Announced" },
-      "On-Spot": { label: "On-spot Registration", deadline: "To Be Announced" }
+      "On-Spot": { label: "Late Registration", deadline: "To Be Announced" }
     },
     pages: {},
     committee: [],
@@ -97,11 +97,19 @@
           !section.classList.contains("page-added-section");
       });
       sections.forEach(function (section, i) {
-        var saved = pageOverrides["sec-" + i];
-        if (saved && saved.html != null) section.innerHTML = saved.html;
+        if (!section.hasAttribute("data-page-section-index")) section.setAttribute("data-page-section-index", String(i));
+      });
+      if (!document.body.hasAttribute("data-page-original-section-count")) {
+        document.body.setAttribute("data-page-original-section-count", String(sections.length));
+      }
+      var originalSectionCount = Number(document.body.getAttribute("data-page-original-section-count")) || sections.length;
+      sections.slice().forEach(function (section) {
+        var saved = pageOverrides["sec-" + section.getAttribute("data-page-section-index")];
+        if (saved && saved.deleted) section.remove();
+        else if (saved && saved.html != null) section.innerHTML = saved.html;
       });
       Object.keys(pageOverrides).filter(function (key) {
-        return /^sec-\d+$/.test(key) && Number(key.slice(4)) >= sections.length;
+        return /^sec-\d+$/.test(key) && Number(key.slice(4)) >= originalSectionCount;
       }).sort(function (a, b) {
         return Number(a.slice(4)) - Number(b.slice(4));
       }).forEach(function (key) {

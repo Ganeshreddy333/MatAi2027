@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin.css?v=20261016-color-audit">
 </head>
 <body>
   <div class="login-wrap" id="login-view">
@@ -36,7 +36,7 @@
     <nav class="a-nav-tabs" aria-label="Admin sections">
       <button class="a-tab active" data-view="content" type="button"><span>▦</span>Content</button>
       <button class="a-tab" data-view="speakers" type="button"><span>♙</span>Speakers</button>
-      <button class="a-tab" data-view="media" type="button"><span>◇</span>Media</button>
+      <button class="a-tab" data-view="pages" type="button"><span>▤</span>Pages</button>
       <button class="a-tab" data-view="data" type="button"><span>▤</span>Data</button>
       <button class="a-tab" data-view="information" type="button"><span>ⓘ</span>Information</button>
       <button class="a-tab" data-view="submissions" type="button"><span>▧</span>Submissions</button>
@@ -55,8 +55,6 @@
         </div>
         <div class="a-action-buttons">
           <button class="a-btn ghost sm" id="refresh-btn" type="button">Refresh</button>
-          <button class="a-btn ghost sm" id="init-defaults" type="button">Init Defaults</button>
-          <button class="a-btn" id="add-section" type="button">＋ Add Section</button>
           <button class="a-btn" id="save-content" type="button">Save Website Changes</button>
         </div>
       </div>
@@ -103,28 +101,15 @@
           <h2>Exhibition, Sponsorship &amp; Add-on Prices</h2>
           <p class="a-muted">All fixed-price registration items are editable here. Prices are in EUR.</p>
           <div class="fees-grid"><table id="item-prices"></table></div>
-          <label class="a-field a-service-rate">Service charge (%)
-            <input class="a-input" id="service-rate" type="number" min="0" max="100" step="0.01">
-          </label>
+          <p class="a-muted">A fixed 5% tax is added to every registration order and its add-ons.</p>
         </div>
 
         <div class="a-card" id="coupon-settings">
           <div class="a-section-heading">
-            <div><h2>Registration Coupons</h2><p class="a-muted">Coupons apply a percentage discount to the order total before the service charge.</p></div>
+            <div><h2>Registration Coupons</h2><p class="a-muted">Coupons apply a percentage discount before tax is calculated.</p></div>
             <button class="a-btn ghost sm" id="add-coupon" type="button">Add coupon</button>
           </div>
           <div id="coupons-list"></div>
-        </div>
-
-        <div class="a-card" id="media-editor">
-          <div class="a-section-heading">
-            <div><h2>Edit Website Pages</h2><p class="a-muted">Edit the HTML inside each page section. Use “Restore original” to discard an unsaved section edit.</p></div>
-            <div class="a-page-picker">
-              <select class="a-input" id="page-select" aria-label="Choose page"></select>
-              <button class="a-btn ghost sm" id="load-page-sections" type="button">Load page</button>
-            </div>
-          </div>
-          <div id="page-sections-editor"><p class="a-empty">Choose a page to edit its sections.</p></div>
         </div>
 
         <details class="a-card" id="committee-editor">
@@ -134,15 +119,34 @@
           <button class="a-btn ghost sm" id="add-member" type="button">Add committee member</button>
         </details>
 
-        <details class="a-card" id="speaker-editor">
-          <summary><h2>Speakers</h2></summary>
+        <div class="a-save-bottom">
+          <button class="a-btn" type="button" data-save-content>Save Website Changes</button>
+        </div>
+      </section>
+
+      <section id="speakers-view" style="display:none">
+        <div class="a-card" id="speaker-editor">
+          <h2>Speakers</h2>
           <p class="a-muted">Manage speaker profiles shown on the speakers page.</p>
           <div id="speakers-list"></div>
           <button class="a-btn ghost sm" id="add-speaker" type="button">Add speaker</button>
-        </details>
+          <div class="a-save-bottom"><button class="a-btn" type="button" data-save-content>Save Speakers</button></div>
+        </div>
+      </section>
 
-        <div class="a-save-bottom">
-          <button class="a-btn" type="button" data-save-content>Save Website Changes</button>
+      <section id="pages-view" style="display:none">
+        <div id="pages-index" class="a-card">
+          <h2>Choose a Website Page</h2>
+          <p class="a-muted">Open one page at a time to update its information.</p>
+          <div id="page-list" class="a-page-list"></div>
+        </div>
+        <div id="page-editor-view" class="a-card" style="display:none">
+          <div class="a-section-heading">
+            <div><button class="a-btn ghost sm" id="back-to-pages" type="button">← All Pages</button><h2 id="page-editor-title" class="mt-1">Edit Page</h2><p class="a-muted">Edit the visible content below. Remove outdated sections or add new ones, then save.</p></div>
+            <div class="a-action-buttons"><button class="a-btn ghost sm" id="init-defaults" type="button">Restore Original Page</button><button class="a-btn" id="add-section" type="button">＋ Add Section</button></div>
+          </div>
+          <div id="page-sections-editor"><p class="a-empty">Choose a page to edit.</p></div>
+          <div class="a-save-bottom"><button class="a-btn" type="button" data-save-content>Save Page Changes</button></div>
         </div>
       </section>
 
@@ -177,6 +181,6 @@
     <div class="db" id="d-body"></div>
   </aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="js/admin.js"></script>
+  <script src="js/admin.js?v=20261016-color-audit"></script>
 </body>
 </html>

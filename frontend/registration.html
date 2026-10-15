@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261016-color-audit">
 </head>
 <body>
   <div id="site-header"></div>
@@ -16,56 +16,35 @@
   <section class="page-hero">
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> / Registration</div>
-      <h1>Online Registration</h1>
-      <p>Register for MatAi 2027 — October 13–14, 2027, Berlin, Germany. Select your category, set the quantity, and your total updates automatically. All fees are stated in EUR (€).</p>
+      <h1>Registration Form</h1>
+      <p>Register for MatAi 2027 — October 13–14, 2027, Berlin, Germany. Select your registration category and review your total, including 5% tax.</p>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="registration-steps">
     <div class="container">
       <div class="center reveal"><span class="eyebrow">Registration Process</span><h2>Five Simple Steps</h2></div>
       <div class="grid cols-3 mt-2">
-        <div class="session-card reveal"><div class="num">STEP 1</div><h4>Enter Your Details</h4><p>Provide accurate participant and billing information.</p></div>
-        <div class="session-card reveal"><div class="num">STEP 2</div><h4>Select Your Fees</h4><p>Set the quantity for each registration, exhibition, sponsorship, or add-on item.</p></div>
-        <div class="session-card reveal"><div class="num">STEP 3</div><h4>Review the Summary</h4><p>Check the itemized summary and the total price before paying.</p></div>
-        <div class="session-card reveal"><div class="num">STEP 4</div><h4>Choose Payment</h4><p>Complete payment for the applicable fee according to the registration period.</p></div>
-        <div class="session-card reveal"><div class="num">STEP 5</div><h4>Receive Confirmation</h4><p>Confirmation is issued following successful verification of registration and payment.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 1</div><h4>Select Your Category</h4><p>Choose the appropriate registration, exhibition, or sponsorship category.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 2</div><h4>Complete the Registration Form</h4><p>Provide accurate participant or organization information.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 3</div><h4>Complete Payment</h4><p>Pay the applicable fee, including 5% tax, according to the active registration period.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 4</div><h4>Receive Confirmation</h4><p>Confirmation will be issued following successful verification of registration and payment.</p></div>
+        <div class="session-card reveal"><div class="num">STEP 5</div><h4>Receive Conference Information</h4><p>Registered participants, exhibitors, and sponsors will receive the relevant participation instructions and conference information.</p></div>
       </div>
-      <div class="callout warn reveal mt-2"><h4>Payment Information</h4><p>All fees are stated in EUR (€). Applicable taxes/VAT, bank charges, payment gateway fees, transaction charges, or currency conversion charges may be additional to the published fees. The active registration period and its rates are set by the conference organizers; the period deadlines and prices shown below are updated on this website.</p></div>
+      <div class="callout warn reveal mt-2"><h4>Payment Information</h4><p>All fees are stated in EUR (€). A 5% tax is added to the order subtotal after any coupon discount. The active registration period, deadlines, and prices are managed by the conference organizers and shown in the registration form below.</p></div>
     </div>
   </section>
+
   <section class="section alt" id="register-form">
+    <span id="registration-details" aria-hidden="true"></span>
     <div class="container">
-      <div class="center reveal"><span class="eyebrow">Register Now</span><h2>Registration</h2><p class="lead">Complete the participant details, select the applicable category or add-ons, review the registration summary, and proceed to register. All fees are in EUR (€).</p></div>
+      <div class="center reveal"><span class="eyebrow">Register Now</span><h2>Registration Form</h2><p class="lead">Complete the participant details, select a registration period and any options, then review your summary. All fees are in EUR (€); a 5% tax is added to every order.</p></div>
 
       <form class="form-card reveal mt-2" data-form="register">
         <div class="form-status"></div>
 
-        <!-- Payment methods -->
-        <h3 class="fm-head">Payment Methods</h3>
-        <div class="pay-methods" aria-label="Accepted payment methods">
-          <span class="pb stripe">stripe</span>
-          <span class="pb paypal">PayPal</span>
-          <span class="pb razorpay">Razorpay</span>
-          <span class="pb visa">VISA</span>
-          <span class="pb mc">Mastercard</span>
-          <span class="pb amex">AMEX</span>
-        </div>
-        <p class="pay-note text-muted">Choose a configured secure payment provider, or select Bank Transfer for organizer follow-up.</p>
-
-        <!-- Currency -->
-        <div class="cur-row">
-          <label for="currency-sel">Choose Your Currency</label>
-          <select name="currency" id="currency-sel">
-            <option value="EUR">EUR — Euro (€)</option>
-            <option value="USD">USD — US Dollar ($)</option>
-            <option value="GBP">GBP — British Pound (£)</option>
-          </select>
-          <span class="cur-hint text-muted">Displayed non-EUR amounts are indicative; registration is billed in EUR (€).</span>
-        </div>
-
         <!-- Participant details -->
-        <h3 class="fm-head">Participant Details</h3>
+        <h3 class="fm-head">Registration Form</h3>
         <div class="form-grid">
           <div class="field"><label>Title <span class="req">*</span></label>
             <select name="title" required><option value="">Select</option><option>Dr</option><option>Prof</option><option>Assoc Prof</option><option>Assist Prof</option><option>Mr</option><option>Ms</option><option>Mx</option><option>Prefer not to say</option></select><div class="error-msg">Required</div>
@@ -76,14 +55,14 @@
           <div class="field"><label>Email <span class="req">*</span></label>
             <input type="email" name="email" placeholder="Enter your email" required><div class="error-msg">Valid email required</div>
           </div>
-          <div class="field"><label>Phone</label>
+          <div class="field"><label>Telephone</label>
             <input type="tel" name="phone" placeholder="Enter your phone number">
           </div>
-          <div class="field"><label>Alt Email</label>
-            <input type="email" name="altEmail" placeholder="Alternative email">
+          <div class="field"><label>City</label>
+            <input type="text" name="city" placeholder="Enter your city">
           </div>
-          <div class="field"><label>WhatsApp Number</label>
-            <input type="tel" name="whatsapp" placeholder="WhatsApp number">
+          <div class="field"><label>Interested In</label>
+            <select name="interestedIn"><option value="">Select an area of interest</option><option>Conference Registration</option><option>Abstract Presentation</option><option>Accommodation</option><option>Exhibition</option><option>Sponsorship</option><option>Other</option></select>
           </div>
           <div class="field"><label>Organization <span class="req">*</span></label>
             <input type="text" name="institution" placeholder="Organization / institution" required><div class="error-msg">Required</div>
@@ -94,37 +73,22 @@
               <option>Germany</option><option>United Kingdom</option><option>France</option><option>Italy</option><option>Spain</option><option>Netherlands</option><option>Belgium</option><option>Switzerland</option><option>Austria</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Poland</option><option>Portugal</option><option>Ireland</option><option>Greece</option><option>Czech Republic</option><option>United States</option><option>Canada</option><option>Brazil</option><option>Mexico</option><option>India</option><option>China</option><option>Japan</option><option>South Korea</option><option>Singapore</option><option>Australia</option><option>New Zealand</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Qatar</option><option>South Africa</option><option>Egypt</option><option>Nigeria</option><option>Turkey</option><option>Other</option>
             </select><div class="error-msg">Required</div>
           </div>
-          <div class="field"><label>Category of Participation</label>
-            <select name="category"><option>Oral Presentation</option><option>Poster Presentation</option><option>Keynote Presentation</option><option>Workshop</option><option>Symposium</option><option>Delegate / Listener</option><option>Virtual Presentation</option><option>Exhibitor</option><option>Sponsor</option></select>
-          </div>
         </div>
 
-        <!-- Billing information -->
-        <h3 class="fm-head">Billing Information</h3>
-        <label class="chk same-as"><input type="checkbox" name="billingSame" id="billing-same"> If billing information is the same as above, click here.</label>
-        <div class="form-grid" id="billing-grid">
-          <div class="field"><label>Billing Name</label>
-            <input type="text" name="billingName" placeholder="Name for the invoice">
-          </div>
-          <div class="field"><label>Billing Email</label>
-            <input type="email" name="billingEmail" placeholder="Email for the invoice">
-          </div>
-          <div class="field"><label>Billing Country</label>
-            <select name="billingCountry">
-              <option value="">Select country</option>
-              <option>Germany</option><option>United Kingdom</option><option>France</option><option>Italy</option><option>Spain</option><option>Netherlands</option><option>Belgium</option><option>Switzerland</option><option>Austria</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Poland</option><option>Portugal</option><option>Ireland</option><option>Greece</option><option>Czech Republic</option><option>United States</option><option>Canada</option><option>Brazil</option><option>Mexico</option><option>India</option><option>China</option><option>Japan</option><option>South Korea</option><option>Singapore</option><option>Australia</option><option>New Zealand</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Qatar</option><option>South Africa</option><option>Egypt</option><option>Nigeria</option><option>Turkey</option><option>Other</option>
-            </select>
-          </div>
-          <div class="field"><label>City</label>
-            <input type="text" name="billingCity" placeholder="City">
-          </div>
+        <!-- Billing address -->
+        <h3 class="fm-head">Billing Address</h3>
+        <div class="form-grid">
           <div class="field full"><label>Billing Address</label>
             <textarea name="billingAddress" placeholder="Enter your billing address" style="min-height:80px"></textarea>
           </div>
         </div>
-        <!-- Fee table -->
-        <h3 class="fm-head">Registration Fees</h3>
-        <p class="text-muted" style="font-size:.9rem;margin:-.2rem 0 .6rem">Set a quantity beside any item to add it. The <strong>Early Bird</strong>, <strong>Mid-Term</strong>, and <strong>On-Spot</strong> columns follow the reference registration format; deadlines for MatAi 2027 will be announced officially.</p>
+        <h3 class="fm-head">Participants</h3>
+        <p class="text-muted">Choose a registration category below and enter the number of participants.</p>
+        <div class="registration-period-cards" id="registration-period-cards"></div>
+        <div class="participant-total"><span>Participants selected</span><input type="number" name="participantCount" id="participant-count" value="0" readonly aria-label="Participants selected"></div>
+
+        <!-- Kept as the price source for live Admin-managed rates. -->
+        <div class="fee-source" aria-hidden="true">
         <div class="table-wrap fee-wrap">
           <table class="tbl fee-table">
             <thead>
@@ -132,7 +96,7 @@
                 <th>Item</th>
                 <th class="tier-h eb">Early Bird Registration<small>Deadline: To Be Announced</small></th>
                 <th class="tier-h">Mid Term Registration<small>Deadline: To Be Announced</small></th>
-                <th class="tier-h">On-spot Registration<small>Deadline: To Be Announced</small></th>
+                <th class="tier-h">Late Registration<small>Deadline: To Be Announced</small></th>
                 <th class="qty-h">Qty</th>
                 <th class="tot-h">Total</th>
               </tr>
@@ -314,16 +278,34 @@
             </tbody>
           </table>
         </div>
+        </div>
+
+        <h3 class="fm-head">Accommodation</h3>
+        <div class="registration-addon-card">
+          <p class="text-muted">Optional accommodation is charged per night. Choose a room type and enter your stay dates.</p>
+          <div class="form-grid">
+            <div class="field"><label>Room Type</label><select name="accommodationType" id="accommodation-type"><option value="">No accommodation</option><option value="single">Single Occupancy</option><option value="double">Double Occupancy</option></select></div>
+            <div class="field accommodation-stay-field" id="accommodation-nights-field" hidden><label>Number of Nights</label><select name="accommodationNights" id="accommodation-nights"><option value="1">1 night</option><option value="2">2 nights</option><option value="3">3 nights</option><option value="4">4 nights</option><option value="5">5 nights</option><option value="6">6 nights</option><option value="7">7 nights</option><option value="8">8 nights</option><option value="9">9 nights</option><option value="10">10 nights</option><option value="11">11 nights</option><option value="12">12 nights</option><option value="13">13 nights</option><option value="14">14 nights</option></select></div>
+            <div class="field accommodation-stay-field" id="accommodation-check-in-field" hidden><label>Check-in Date</label><input type="date" name="checkInDate" id="check-in-date"></div>
+            <div class="field accommodation-stay-field" id="accommodation-check-out-field" hidden><label>Check-out Date</label><input type="date" name="checkOutDate" id="check-out-date" readonly aria-describedby="accommodation-checkout-help"><span class="hint" id="accommodation-checkout-help">Calculated from your check-in date and number of nights.</span></div>
+          </div>
+          <div class="accommodation-rate-note" id="accommodation-rate-note"></div>
+        </div>
+
+        <h3 class="fm-head">Social &amp; Networking Event</h3>
+        <div class="registration-addon-list" id="registration-addon-list"></div>
+
+        <details class="registration-extra-group">
+          <summary>Exhibition &amp; Sponsorship Options</summary>
+          <p class="text-muted">Optional exhibition booths and sponsorship packages.</p>
+          <div class="registration-addon-list" id="sponsorship-options"></div>
+        </details>
 
         <div class="callout warn mt-2"><h4>⚠ Accommodation Notice</h4><p>MatAi 2027 does <strong>not</strong> work with any third parties to arrange accommodation. Please beware of any emails or calls from third parties offering accommodation. The only trusted source is this official website and communication from <a href="mailto:info@matai2027.org">info@matai2027.org</a>.</p></div>
 
         <div class="registration-tools mt-2">
-          <div class="field">
-            <label>No. of Participants (under selected categories)</label>
-            <input type="number" name="participantCount" id="participant-count" value="0" readonly>
-          </div>
           <div class="field coupon-field">
-            <label>Apply Coupon</label>
+            <label>Have a promo code?</label>
             <div class="coupon-row">
               <input type="text" name="couponCode" id="coupon-code" placeholder="Apply Coupon">
               <button type="button" class="btn btn-dark btn-sm" id="coupon-apply">Apply Coupon</button>
@@ -335,6 +317,7 @@
         <!-- Summary -->
         <h3 class="fm-head">Registration Summary</h3>
         <div class="summary-box">
+          <details class="item-breakdown"><summary>View overall summary and item breakdown</summary>
           <div class="table-wrap">
             <table class="tbl sum-table">
               <thead><tr><th>Name</th><th class="c">Qty</th><th class="r">Price</th><th class="r">Total</th></tr></thead>
@@ -342,47 +325,49 @@
             </table>
           </div>
           <div class="reference-summary">
-            <div class="srow"><span>A. Registration Price:</span><span class="amt" id="summary-registration-price">€0</span></div>
-            <div class="srow"><span>B. Participants:</span><span class="amt" id="summary-participants">0</span></div>
-            <div class="srow discount"><span>C. Discount:</span><span class="amt" id="summary-discount">-€0</span></div>
-            <div class="srow"><span>D. Total Registration Price:</span><span class="amt" id="summary-subtotal">€0</span></div>
-            <div class="srow"><span>I. Service Charge:</span><span class="amt" id="summary-service">€0</span></div>
+            <div class="srow"><span>Registration Price</span><span class="amt" id="summary-registration-price">€0</span></div>
+            <div class="srow"><span>Participants</span><span class="amt" id="summary-participants">0</span></div>
+            <div class="srow"><span>Accommodation</span><span class="amt" id="summary-accommodation">€0</span></div>
+            <div class="srow"><span>Social &amp; Networking Event</span><span class="amt" id="summary-social">€0</span></div>
+            <div class="srow"><span>Accompanying</span><span class="amt" id="summary-accompanying">€0</span></div>
+            <div class="srow"><span>Total No. Nights</span><span class="amt" id="summary-nights">—</span></div>
+            <div class="srow"><span>Check-in Date</span><span class="amt" id="summary-check-in">—</span></div>
+            <div class="srow"><span>Check-out Date</span><span class="amt" id="summary-check-out">—</span></div>
+            <div class="srow discount"><span>Discount</span><span class="amt" id="summary-discount">-€0</span></div>
+            <div class="srow"><span>Subtotal</span><span class="amt" id="summary-subtotal">€0</span></div>
+            <div class="srow"><span id="summary-tax-label">Tax (5%):</span><span class="amt" id="summary-tax">€0</span></div>
           </div>
           <div class="stotal"><span>TOTAL PRICE</span><span id="sum-total">€0</span></div>
+          </details>
           <div class="sfoot">
-            <div class="field" id="selection-field" style="max-width:520px;margin:0 auto 1rem">
-              <label>Selected Items <span class="req">*</span></label>
-              <input type="text" name="selectedItems" id="selected-items" readonly required placeholder="Set a quantity above to add items">
-              <div class="error-msg">Please select at least one item above.</div>
-            </div>
+            <input type="hidden" name="selectedItems" id="selected-items" value="">
             <div class="total-field"><span class="cur" id="total-cur">€</span><input type="text" name="totalPrice" id="total-input" value="0" readonly aria-label="Total price"></div>
             <input type="hidden" name="totalPriceEUR" id="total-eur" value="0">
             <input type="hidden" name="period" id="registration-period" value="Early Bird">
-            <input type="hidden" name="paymentMethod" id="payment-method-hidden" value="Stripe / Card Payment">
+            <input type="hidden" name="paymentMethod" id="payment-method-hidden" value="Razorpay">
 
             <!-- Choose payment -->
-            <h3 class="fm-head" style="text-align:center;border:0">Payment Gateway</h3>
-            <div class="field" style="max-width:520px;margin:0 auto 1.2rem;text-align:left">
-              <label>Payment Gateway <span class="req">*</span></label>
-              <select name="paymentGateway" id="payment-gateway" required>
-                <option value="">Select</option>
-                <option value="Stripe / Card Payment" selected>Stripe / Card Payment</option>
-                <option value="PayPal">PayPal</option>
-                <option value="Razorpay">Razorpay</option>
-                <option value="Bank Transfer">Bank Transfer</option>
-              </select>
-              <div class="error-msg">Please select a payment gateway</div>
+            <h3 class="payment-method-heading">Choose your payment method</h3>
+            <p class="payment-security-line"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 10V7a5 5 0 0 1 10 0v3h2v12H5V10h2Zm2 0h6V7a3 3 0 0 0-6 0v3Zm3 4a2 2 0 0 0-1 3.732V20h2v-2.268A2 2 0 0 0 12 14Z"/></svg> Secure checkout <b>•</b> Encrypted payments <b>•</b> Trusted by millions</p>
+            <input type="hidden" name="paymentGateway" id="payment-gateway" value="Razorpay">
+            <div class="payment-method-grid" role="radiogroup" aria-label="Payment Gateway">
+              <label class="payment-method-card">
+                <input type="radio" name="paymentGatewayChoice" value="PayPal">
+                <span class="payment-method-radio" aria-hidden="true"></span>
+                <span class="payment-method-content"><img class="payment-brand-logo" src="assets/paypal-logo.svg" alt="PayPal"><span class="payment-region-pill"><span aria-hidden="true">&#127760;</span> GLOBAL PAYMENTS</span><span class="payment-method-description">Pay securely with PayPal worldwide</span><span class="payment-badges" aria-label="Accepted payment types"><span class="payment-badge"><img src="assets/visa-logo.svg" alt="Visa"></span><span class="payment-badge"><img src="assets/mastercard-logo.svg" alt="Mastercard"></span><span class="payment-badge"><img src="assets/amex-logo.svg" alt="American Express"></span><span class="payment-badge"><span class="payment-wordmark discover">DISCOVER</span></span><span class="payment-badge"><span class="payment-wordmark jcb">JCB</span></span><span class="payment-badge payment-badge-paypal"><img src="assets/paypal-logo.svg" alt="PayPal"></span></span><span class="payment-capabilities">Credit &amp; debit cards <b>|</b> PayPal balance <b>|</b> Bank payments <b>|</b> International payments</span></span>
+              </label>
+              <label class="payment-method-card selected">
+                <input type="radio" name="paymentGatewayChoice" value="Razorpay" checked>
+                <span class="payment-method-radio" aria-hidden="true"></span>
+                <span class="payment-method-content"><img class="payment-brand-logo" src="assets/razorpay-logo.svg" alt="Razorpay"><span class="payment-region-pill"><span aria-hidden="true">&#127760;</span> GLOBAL PAYMENTS</span><span class="payment-method-description">Pay securely with Razorpay (India &amp; International)</span><span class="payment-badges" aria-label="Accepted payment types"><span class="payment-badge"><img src="assets/visa-logo.svg" alt="Visa"></span><span class="payment-badge"><img src="assets/mastercard-logo.svg" alt="Mastercard"></span><span class="payment-badge"><img src="assets/amex-logo.svg" alt="American Express"></span><span class="payment-badge"><img src="assets/upi-logo.svg" alt="UPI"></span><span class="payment-badge"><img src="assets/rupay-logo.svg" alt="RuPay"></span><span class="payment-badge payment-badge-netbanking"><img src="assets/net-banking-icon.svg" alt=""><span>Net Banking</span></span><span class="payment-badge payment-badge-wallet"><span aria-hidden="true">&#128179;</span><span>Wallets</span></span></span><span class="payment-capabilities">Credit &amp; debit cards <b>|</b> UPI <b>|</b> Net banking <b>|</b> Wallets <b>|</b> International cards</span></span>
+              </label>
             </div>
 
-            <div class="captcha-box">
-              <label>Captcha Verification <span class="req">*</span></label>
-              <div class="captcha-row"><span id="captcha-question">-</span><input type="text" name="captchaAnswer" id="captcha-answer" placeholder="Enter answer" required></div>
-              <div class="error-msg">Solve the captcha before continuing.</div>
-            </div>
+            <div class="field full human-verification" data-human-verification></div>
 
-            <p class="summary-note">By clicking "Proceed to Register", you agree to the <a href="information.html#privacy">privacy policy</a>, terms &amp; conditions, and <a href="information.html#refund">cancellation policy</a>. Final billing is in EUR (€).</p>
+            <p class="summary-note">By clicking "Continue to payment", you agree to the <a href="information.html#privacy">privacy policy</a>, terms &amp; conditions, and <a href="information.html#refund">cancellation policy</a>. Final billing is in EUR (€).</p>
             <div class="field full" style="max-width:520px;margin:0 auto 1.2rem;text-align:left"><label class="chk"><input type="checkbox" name="terms" id="terms-check" required> I have read and agree to the <a href="#" id="terms-open">Terms &amp; Conditions</a>. <span class="req">*</span></label><div class="error-msg">Please accept the terms &amp; conditions</div></div>
-            <div class="btn-row center"><button type="reset" class="btn btn-dark">Reset</button><button type="submit" class="btn btn-primary">Proceed to Register</button></div>
+            <div class="payment-action-row"><div class="payment-protection"><span class="payment-protection-icon" aria-hidden="true"><svg viewBox="0 0 48 52"><path d="M24 2 43 9v14c0 13-8 22-19 27C13 45 5 36 5 23V9L24 2Z"/><path class="shield-check" d="m15 25 6 6 12-13"/></svg></span><div><strong>Your payment information is protected</strong><span>We use industry-standard encryption to keep your data safe.</span></div></div><div class="payment-actions"><button type="submit" class="btn btn-primary">Continue to payment <span aria-hidden="true">→</span></button></div></div>
           </div>
         </div>
       </form>
@@ -402,7 +387,7 @@
               <li>Certificate of participation / presentation.</li>
               <li>Inclusion of accepted abstracts in the conference proceedings (subject to guidelines).</li>
             </ul>
-            <p class="text-muted" style="font-size:.85rem">Accommodation, the social &amp; networking event, and accompanying-person access are optional add-ons and are charged separately as selected in the fee table above.</p>
+            <p class="text-muted" style="font-size:.85rem">Accommodation, the social &amp; networking event, and accompanying-person access are optional add-ons. Their prices are included in your summary when selected above.</p>
           </div>
         </details>
         <details class="policy-accordion">
@@ -436,7 +421,7 @@
         <details class="policy-accordion">
           <summary>Payment &amp; Governing Terms</summary>
           <div class="policy-body">
-            <p>All fees are stated in EUR (€). Applicable taxes/VAT, bank charges, payment gateway fees, or currency conversion charges may be additional to the published fees. By completing registration you agree to the conference <a href="information.html#privacy">privacy policy</a> and these registration terms.</p>
+            <p>All fees are stated in EUR (€). A 5% tax is added to the order subtotal after any coupon discount. Bank charges, payment gateway fees, or currency conversion charges may also apply. By completing registration you agree to the conference <a href="information.html#privacy">privacy policy</a> and these registration terms.</p>
           </div>
         </details>
       </div>
@@ -472,7 +457,7 @@
         </ol>
 
         <h4>Payment Information</h4>
-        <p>All fees are stated in EUR (€). Participants and organizations are responsible for selecting the correct category and applicable registration period. Applicable taxes/VAT, bank charges, payment gateway fees, transaction charges, or currency conversion charges, where applicable, may be additional to the published fees. Payment instructions will be provided through the official conference registration process.</p>
+        <p>All fees are stated in EUR (€). Participants and organizations are responsible for selecting the correct category and applicable registration period. A 5% tax is added to the order subtotal after any coupon discount. Bank charges, payment gateway fees, transaction charges, or currency conversion charges may also apply. Payment instructions will be provided through the official conference registration process.</p>
         <h4>Cancellation &amp; Refund Policy</h4>
         <p>Participants who are unable to attend MatAi 2027 may request cancellation according to the following schedule:</p>
         <div class="table-wrap mt-1">
@@ -494,7 +479,7 @@
         <p><strong>Conference Postponement or Cancellation.</strong> If MatAi 2027 is postponed, relocated, or cancelled due to circumstances beyond the reasonable control of the organizers, registered participants, exhibitors, and sponsors will be informed of the available arrangements.</p>
 
         <h4>Important Registration Notice</h4>
-        <p>Early Bird fees represent the base published rates. Mid-Term fees are €100 higher than the Early Bird rates, and On-Spot fees are €200 higher than the Early Bird rates. The applicable fee is determined by the date on which the registration, exhibition booking, or sponsorship commitment is completed according to the official conference registration schedule.</p>
+        <p>Early Bird, Mid-Term, and Late registration deadlines and fees are set by the organizers and may be updated in Admin. The applicable fee is determined by the registration period active when the registration is completed.</p>
 
         <h4>Privacy</h4>
         <p>Information provided during registration may be used for conference administration, communication, scheduling, certificates, and related organizational purposes in accordance with the <a href="information.html#privacy" target="_blank" rel="noopener">Privacy Policy</a>. Customized sponsorship packages may also be arranged based on organizational requirements and subject to approval by the conference organizing team.</p>
@@ -507,9 +492,10 @@
   </div>
 
   <div id="site-footer"></div>
-  <script src="js/site.js?v=20261010-live-sync2"></script>
+  <script src="js/site.js?v=20261016-color-audit"></script>
   <script src="js/forms.js"></script>
-  <script src="js/register.js"></script>
+  <script src="js/human-verification.js?v=20261016-color-audit"></script>
+  <script src="js/register.js?v=20261016-color-audit"></script>
   <script src="js/terms-modal.js"></script>
   <script src="js/checkout.js"></script>
 </body>

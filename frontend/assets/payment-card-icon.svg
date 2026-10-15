@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 40" role="img" aria-label="Payment card">
+  <rect x="2" y="5" width="44" height="30" rx="4" fill="#58616d"/>
+  <path d="M2 12h44v6H2z" fill="#dfe3e8"/>
+  <rect x="8" y="25" width="13" height="3" rx="1.5" fill="#dfe3e8"/>
+</svg>

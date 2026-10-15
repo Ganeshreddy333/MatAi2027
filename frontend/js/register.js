@@ -12,11 +12,10 @@
   var form = document.querySelector('form[data-form="register"]');
   if (!form) return;
 
-  // Active registration period. Early Bird is the current published rate;
-  // Mid-Term / On-Spot are shown for reference and set by completion date.
+  // The active registration period and fees are managed in Admin.
   var ACTIVE = "eb";
   var PERIOD_TO_CODE = { "Early Bird": "eb", "Mid-Term": "mt", "On-Spot": "os" };
-  var SERVICE_RATE = 0.05;
+  var TAX_RATE = 0.05;
   var DISCOUNT_CODES = {};
 
   // Indicative display currencies. Registration is billed in EUR (base = 1).
@@ -53,24 +52,155 @@
   var participantCount = id("participant-count");
   var summaryRegistrationPrice = id("summary-registration-price");
   var summaryParticipants = id("summary-participants");
+  var summaryAccommodation = id("summary-accommodation");
+  var summarySocial = id("summary-social");
+  var summaryAccompanying = id("summary-accompanying");
+  var summaryNights = id("summary-nights");
+  var summaryCheckIn = id("summary-check-in");
+  var summaryCheckOut = id("summary-check-out");
   var summaryDiscount = id("summary-discount");
   var summarySubtotal = id("summary-subtotal");
-  var summaryService = id("summary-service");
+  var summaryTax = id("summary-tax");
+  var summaryTaxLabel = id("summary-tax-label");
   var couponCode = id("coupon-code");
   var couponApply = id("coupon-apply");
   var couponMsg = id("coupon-msg");
   var activeDiscount = 0;
   var activeCoupon = "";
-  var captchaQuestion = id("captcha-question");
-  var captchaAnswer = id("captcha-answer");
+  var humanVerification = form.querySelector("[data-human-verification]");
   var paymentGateway = id("payment-gateway");
   var paymentMethodHidden = id("payment-method-hidden");
-  var captchaTotal = 0;
+  var registrationPeriodConfig = {
+    active: "Early Bird",
+    "Early Bird": { label: "Early Bird Registration", deadline: "To Be Announced" },
+    "Mid-Term": { label: "Mid Term Registration", deadline: "To Be Announced" },
+    "On-Spot": { label: "Late Registration", deadline: "To Be Announced" }
+  };
+  var lastRegistrationDate = new Date().toISOString().slice(0, 10);
+
+  function escapeHtml(value) {
+    return String(value == null ? "" : value).replace(/[&<>\"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+
+  function sourceQuantity(name) {
+    for (var i = 0; i < rows.length; i++) {
+      var input = rows[i].querySelector("input[data-qty]");
+      if (input && input.name === name) return input;
+    }
+    return null;
+  }
+
+  function renderRegistrationOptions() {
+    var target = id("registration-period-cards");
+    if (!target) return;
+    var periods = [
+      { name: "Early Bird", code: "eb" },
+      { name: "Mid-Term", code: "mt" },
+      { name: "On-Spot", code: "os" }
+    ];
+    var categories = rows.filter(function (tr) { return !tr.hasAttribute("data-fixed"); });
+    target.innerHTML = periods.map(function (period) {
+      var config = registrationPeriodConfig[period.name] || {};
+      var active = period.code === ACTIVE;
+      var label = config.label || (period.name === "On-Spot" ? "Late Registration" : period.name + " Registration");
+      if (period.name === "On-Spot" && label === "On-spot Registration") label = "Late Registration";
+      var deadline = formatDeadline(config.deadline);
+      var deadlinePassed = /^\d{4}-\d{2}-\d{2}$/.test(config.deadline || "") && config.deadline < new Date().toISOString().slice(0, 10);
+      var choices = categories.map(function (tr) {
+        var item = tr.getAttribute("data-item") || "Registration";
+        var price = Number(tr.getAttribute("data-" + period.code)) || 0;
+        var qty = tr.querySelector("input[data-qty]");
+        var control = active && qty
+          ? '<label class="registration-qty">Participants<input type="number" min="0" max="100" value="' + escapeHtml(qty.value || "0") + '" data-selection-for="' + escapeHtml(qty.name) + '" aria-label="Participants for ' + escapeHtml(item) + '"></label>'
+          : '<span class="registration-qty-unavailable">' + (deadlinePassed ? "Period completed" : "Period not active") + "</span>";
+        return '<div class="registration-choice"><div><strong>' + escapeHtml(item) + '</strong><span class="registration-choice-price">' + fmt(price) + '</span></div>' + control + '</div>';
+      }).join("");
+      return '<section class="registration-period-card' + (active ? ' active' : '') + '"><header><div><h4>' + escapeHtml(label) + '</h4><p>' + escapeHtml(deadline) + '</p></div>' + (active ? '<span class="period-active">Available</span>' : '') + '</header><div class="registration-choices">' + choices + '</div></section>';
+    }).join("");
+    target.querySelectorAll("[data-selection-for]").forEach(function (visible) {
+      visible.defaultValue = "0";
+      var source = sourceQuantity(visible.getAttribute("data-selection-for"));
+      if (source) visible.value = source.value;
+    });
+  }
+
+  function renderOptionalItems() {
+    function fixedRow(key) {
+      return rows.find(function (tr) { return tr.getAttribute("data-price-key") === key; });
+    }
+    function optionHtml(key, detail) {
+      var tr = fixedRow(key);
+      if (!tr) return "";
+      var qty = tr.querySelector("input[data-qty]");
+      var label = tr.getAttribute("data-item") || key;
+      var price = Number(tr.getAttribute("data-price")) || 0;
+      return '<div class="registration-addon-option"><div><strong>' + escapeHtml(label) + '</strong><span>' + escapeHtml(detail || "") + '</span></div><b>' + fmt(price) + '</b><label>Qty<input type="number" min="0" max="100" value="' + escapeHtml(qty ? qty.value : "0") + '" data-selection-for="' + escapeHtml(qty ? qty.name : "") + '" aria-label="Quantity for ' + escapeHtml(label) + '"></label></div>';
+    }
+    var addons = id("registration-addon-list");
+    if (addons) addons.innerHTML = optionHtml("addon_social", "per ticket") + optionHtml("addon_accompanying", "per person");
+    var sponsors = id("sponsorship-options");
+    if (sponsors) {
+      sponsors.innerHTML = rows.filter(function (tr) {
+        var key = tr.getAttribute("data-price-key") || "";
+        return key.indexOf("exhibition_") === 0 || key.indexOf("sponsor_") === 0;
+      }).map(function (tr) {
+        var key = tr.getAttribute("data-price-key");
+        return optionHtml(key, "");
+      }).join("");
+    }
+    form.querySelectorAll("#registration-addon-list [data-selection-for], #sponsorship-options [data-selection-for]").forEach(function (visible) {
+      visible.defaultValue = "0";
+      var source = sourceQuantity(visible.getAttribute("data-selection-for"));
+      if (source) visible.value = source.value;
+    });
+    var single = fixedRow("addon_accommodation_single");
+    var double = fixedRow("addon_accommodation_double");
+    var note = id("accommodation-rate-note");
+    if (note && single && double) {
+      note.textContent = "Single occupancy: " + fmt(Number(single.getAttribute("data-price")) || 0) + " per night · Double occupancy: " + fmt(Number(double.getAttribute("data-price")) || 0) + " per night.";
+    }
+  }
+
+  function syncSelectionInputs() {
+    form.querySelectorAll("[data-selection-for]").forEach(function (visible) {
+      var source = sourceQuantity(visible.getAttribute("data-selection-for"));
+      if (source) source.value = String(Math.max(0, Math.min(100, parseInt(visible.value, 10) || 0)));
+    });
+    var type = id("accommodation-type");
+    var nights = id("accommodation-nights");
+    var checkIn = id("check-in-date");
+    var checkOut = id("check-out-date");
+    var selected = type ? type.value : "";
+    var hasAccommodation = selected === "single" || selected === "double";
+    ["accommodation-nights-field", "accommodation-check-in-field", "accommodation-check-out-field"].forEach(function (fieldId) {
+      var field = id(fieldId);
+      if (field) field.hidden = !hasAccommodation;
+    });
+    if (!hasAccommodation) {
+      if (nights) nights.value = "1";
+      if (checkIn) checkIn.value = "";
+      if (checkOut) checkOut.value = "";
+    }
+    var nightCount = Math.max(1, Math.min(14, parseInt(nights && nights.value, 10) || 1));
+    if (hasAccommodation && checkIn && checkOut && checkIn.value) {
+      var checkoutDate = new Date(checkIn.value + "T00:00:00Z");
+      if (!isNaN(checkoutDate.getTime())) {
+        checkoutDate.setUTCDate(checkoutDate.getUTCDate() + nightCount);
+        checkOut.value = checkoutDate.toISOString().slice(0, 10);
+      }
+    } else if (checkOut) {
+      checkOut.value = "";
+    }
+    var singleQty = sourceQuantity("qty_accom_single");
+    var doubleQty = sourceQuantity("qty_accom_double");
+    if (singleQty) singleQty.value = selected === "single" ? String(nightCount) : "0";
+    if (doubleQty) doubleQty.value = selected === "double" ? String(nightCount) : "0";
+  }
 
   function applyRegistrationPricing(pricing) {
     if (!pricing) return;
-    var rate = Number(pricing.serviceRate);
-    if (isFinite(rate) && rate >= 0 && rate <= 1) SERVICE_RATE = rate;
     var fixedItems = pricing.fixedItems || {};
     rows.forEach(function (tr) {
       var key = tr.getAttribute("data-price-key");
@@ -81,6 +211,7 @@
       var cell = tr.querySelector(".fp[data-base]");
       if (cell) cell.setAttribute("data-base", String(price));
     });
+    renderOptionalItems();
     recalc();
   }
   function applyCoupons(coupons) {
@@ -100,15 +231,6 @@
     recalc();
   }
 
-  function buildCaptcha() {
-    if (!captchaQuestion || !captchaAnswer) return;
-    var a = 2 + Math.floor(Math.random() * 8);
-    var b = 1 + Math.floor(Math.random() * 9);
-    captchaTotal = a + b;
-    captchaQuestion.textContent = a + " + " + b + " =";
-    captchaAnswer.value = "";
-  }
-
   function rowUnitPrice(tr) {
     if (tr.hasAttribute("data-fixed")) return parseFloat(tr.getAttribute("data-price")) || 0;
     return parseFloat(tr.getAttribute("data-" + ACTIVE)) || 0;
@@ -119,6 +241,21 @@
     var parts = value.split("-");
     return new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]))
       .toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  }
+
+  function effectiveRegistrationPeriod(periods) {
+    var order = ["Early Bird", "Mid-Term", "On-Spot"];
+    var index = order.indexOf(periods && periods.active);
+    if (index < 0) index = 0;
+    var today = new Date().toISOString().slice(0, 10);
+    while (index < order.length - 1) {
+      var config = periods && periods[order[index]];
+      var deadline = config && config.deadline;
+      // A tier remains active through its deadline date, then advances the next day.
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(deadline || "") || deadline >= today) break;
+      index += 1;
+    }
+    return order[index];
   }
 
   /* ---- Optional admin-managed participation fees ---- */
@@ -140,17 +277,21 @@
         if (cell) cell.setAttribute("data-base", v);
       });
     });
+    renderRegistrationOptions();
     recalc();
   }
   function applyRegistrationPeriods(periods) {
     if (!periods) return;
-    ACTIVE = PERIOD_TO_CODE[periods.active] || ACTIVE;
+    registrationPeriodConfig = periods;
+    var effectivePeriod = effectiveRegistrationPeriod(periods);
+    ACTIVE = PERIOD_TO_CODE[effectivePeriod] || ACTIVE;
     var periodInput = id("registration-period");
-    if (periodInput) periodInput.value = periods.active || "Early Bird";
+    if (periodInput) periodInput.value = effectivePeriod;
     var order = ["Early Bird", "Mid-Term", "On-Spot"];
     form.querySelectorAll(".fee-table th.tier-h").forEach(function (th, i) {
       var p = order[i], row = periods[p] || {};
       var label = row.label || p;
+      if (p === "On-Spot" && label === "On-spot Registration") label = "Late Registration";
       var deadline = formatDeadline(row.deadline);
       th.textContent = label;
       var note = document.createElement("small");
@@ -165,6 +306,7 @@
       var cells = tr.querySelectorAll(".fp");
       if (cells[activeIndex]) cells[activeIndex].classList.add("eb");
     });
+    renderRegistrationOptions();
     recalc();
   }
   if (window.MATAI_CONTENT) applyFees(window.MATAI_CONTENT.fees);
@@ -177,6 +319,15 @@
     applyRegistrationPricing(e.detail && e.detail.registrationPricing);
     applyCoupons(e.detail && e.detail.coupons);
   });
+  // Recheck date boundaries while the registration page remains open.
+  window.setInterval(function () {
+    var today = new Date().toISOString().slice(0, 10);
+    var dateChanged = today !== lastRegistrationDate;
+    if (dateChanged || effectiveRegistrationPeriod(registrationPeriodConfig) !== (id("registration-period") && id("registration-period").value)) {
+      lastRegistrationDate = today;
+      applyRegistrationPeriods(registrationPeriodConfig);
+    }
+  }, 60000);
 
   /* ---- Billing "same as above" ---- */
   var billingSame = id("billing-same");
@@ -188,6 +339,7 @@
     s("billingName", g("fullName"));
     s("billingEmail", g("email"));
     s("billingCountry", g("country"));
+    s("billingCity", g("city"));
   }
   if (billingSame) {
     billingSame.addEventListener("change", function () {
@@ -197,6 +349,7 @@
   }
 
   function recalc() {
+    syncSelectionInputs();
     var ci = curInfo();
 
     // Re-render every price cell in the selected currency.
@@ -206,6 +359,10 @@
     });
 
     var grand = 0;
+    var registrationTotal = 0;
+    var accommodationTotal = 0;
+    var socialTotal = 0;
+    var accompanyingTotal = 0;
     var participants = 0;
     var items = [];
     rows.forEach(function (tr) {
@@ -216,6 +373,12 @@
       grand += line;
       if (!tr.hasAttribute("data-fixed")) {
         participants += qty;
+        registrationTotal += line;
+      } else {
+        var key = tr.getAttribute("data-price-key");
+        if (key === "addon_accommodation_single" || key === "addon_accommodation_double") accommodationTotal += line;
+        if (key === "addon_social") socialTotal += line;
+        if (key === "addon_accompanying") accompanyingTotal += line;
       }
       var rtot = tr.querySelector("[data-line]");
       if (rtot) rtot.textContent = fmt(line, ci);
@@ -225,8 +388,8 @@
 
     var discount = Math.round(grand * activeDiscount * 100) / 100;
     var subtotal = Math.max(0, grand - discount);
-    var service = Math.round(subtotal * SERVICE_RATE * 100) / 100;
-    var finalTotal = subtotal + service;
+    var tax = Math.round(subtotal * TAX_RATE * 100) / 100;
+    var finalTotal = subtotal + tax;
 
     // Build the summary table.
     if (sumBody) {
@@ -249,13 +412,25 @@
     if (totalEur) totalEur.value = finalTotal.toFixed(2);
     if (paymentGateway && paymentMethodHidden) paymentMethodHidden.value = paymentGateway.value;
     if (participantCount) participantCount.value = participants;
-    if (summaryRegistrationPrice) summaryRegistrationPrice.textContent = fmt(grand, ci);
+    if (summaryRegistrationPrice) summaryRegistrationPrice.textContent = fmt(registrationTotal, ci);
     if (summaryParticipants) summaryParticipants.textContent = participants;
+    if (summaryAccommodation) summaryAccommodation.textContent = fmt(accommodationTotal, ci);
+    if (summarySocial) summarySocial.textContent = fmt(socialTotal, ci);
+    if (summaryAccompanying) summaryAccompanying.textContent = fmt(accompanyingTotal, ci);
+    var bookedNights = (sourceQuantity("qty_accom_single") && num(sourceQuantity("qty_accom_single"))) ||
+      (sourceQuantity("qty_accom_double") && num(sourceQuantity("qty_accom_double"))) || 0;
+    if (summaryNights) summaryNights.textContent = bookedNights ? String(bookedNights) : "—";
+    if (summaryCheckIn) summaryCheckIn.textContent = id("check-in-date") && id("check-in-date").value || "—";
+    if (summaryCheckOut) summaryCheckOut.textContent = id("check-out-date") && id("check-out-date").value || "—";
     if (summaryDiscount) summaryDiscount.textContent = "-" + fmt(discount, ci);
     if (summarySubtotal) summarySubtotal.textContent = fmt(subtotal, ci);
-    if (summaryService) summaryService.textContent = fmt(service, ci);
+    if (summaryTax) summaryTax.textContent = fmt(tax, ci);
+    if (summaryTaxLabel) {
+      var taxPercent = (TAX_RATE * 100).toFixed(2).replace(/\.?0+$/, "");
+      summaryTaxLabel.textContent = "Tax (" + taxPercent + "%):";
+    }
 
-    // selectedItems is required — empty blocks submission via forms.js validate().
+    // Keep the selected-item list in the submitted record.
     if (selItems) {
       selItems.value = items.length
         ? items.map(function (it) { return it.name + " ×" + it.qty; }).join("; ")
@@ -283,13 +458,23 @@
   }
 
   form.addEventListener("submit", function (e) {
-    if (!captchaAnswer) return;
-    if (parseInt(captchaAnswer.value, 10) !== captchaTotal) {
+    if (!humanVerification || !window.MATAIHumanVerification || !window.MATAIHumanVerification.isVerified(form)) {
       e.preventDefault();
       e.stopImmediatePropagation();
-      var box = captchaAnswer.closest(".captcha-box");
-      if (box) box.classList.add("invalid");
-      buildCaptcha();
+      if (humanVerification) {
+        humanVerification.classList.add("invalid");
+        humanVerification.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      return;
+    }
+    if (!selItems || !selItems.value.trim()) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      var emptyStatus = form.querySelector(".form-status");
+      if (emptyStatus) {
+        emptyStatus.className = "form-status err";
+        emptyStatus.textContent = "Select at least one registration category or optional item.";
+      }
       return;
     }
     if (paymentGateway && paymentGateway.value === "Stripe / Card Payment") {
@@ -333,23 +518,48 @@
       });
     }
   }, true);
-  if (captchaAnswer) {
-    captchaAnswer.addEventListener("input", function () {
-      var box = captchaAnswer.closest(".captcha-box");
-      if (box) box.classList.remove("invalid");
-    });
-  }
   form.addEventListener("reset", function () {
     setTimeout(function () {
       if (billingGrid) billingGrid.classList.remove("locked");
       activeDiscount = 0;
       activeCoupon = "";
+      syncPaymentChoice();
       if (couponMsg) couponMsg.textContent = "Enter a conference coupon code if one has been provided.";
-      buildCaptcha();
       recalc();
     }, 0);
   });
 
-  buildCaptcha();
+  function syncPaymentChoice() {
+    var choices = form.querySelectorAll('input[name="paymentGatewayChoice"]');
+    choices.forEach(function (choice) {
+      var card = choice.closest(".payment-method-card");
+      if (card) card.classList.toggle("selected", choice.checked);
+      if (choice.checked && paymentGateway) paymentGateway.value = choice.value;
+    });
+    if (paymentGateway && paymentMethodHidden) paymentMethodHidden.value = paymentGateway.value;
+  }
+  form.querySelectorAll('input[name="paymentGatewayChoice"]').forEach(function (choice) {
+    choice.addEventListener("change", function () {
+      syncPaymentChoice();
+      recalc();
+    });
+  });
+  syncPaymentChoice();
+
+  renderRegistrationOptions();
+  renderOptionalItems();
+  var params = new URLSearchParams(location.search);
+  var categoryPrefill = (params.get("cat") || params.get("pkg") || "").toLowerCase();
+  if (categoryPrefill) {
+    var preferred = rows.find(function (tr) {
+      return !tr.hasAttribute("data-fixed") && (tr.getAttribute("data-item") || "").toLowerCase().indexOf(categoryPrefill) !== -1;
+    });
+    var preferredQty = preferred && preferred.querySelector("input[data-qty]");
+    if (preferredQty) {
+      preferredQty.value = "1";
+      var visibleQty = form.querySelector('[data-selection-for="' + preferredQty.name + '"]');
+      if (visibleQty) visibleQty.value = "1";
+    }
+  }
   recalc();
 })();

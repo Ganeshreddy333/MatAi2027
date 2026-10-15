@@ -27,6 +27,7 @@ const ROOT = __dirname;
 const FRONTEND_DIR = path.join(ROOT, "..", "frontend");
 const DATA_DIR = path.join(ROOT, "data");
 const UPLOAD_DIR = path.join(DATA_DIR, "uploads");
+const IMAGE_UPLOAD_DIR = path.join(DATA_DIR, "images");
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "matai-admin-2027";
 const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY || "";
@@ -42,8 +43,8 @@ const PUBLIC_BASE_URL = (process.env.PUBLIC_BASE_URL || "http://localhost:" + PO
 
 // Allowed form kinds -> required fields (server-side validation)
 const FORMS = {
-  abstract: ["title", "authorName", "email", "institution", "country", "abstract"],
-  register: ["fullName", "email", "category", "period", "institution", "country"],
+  abstract: ["title", "authorName", "email", "institution", "country", "session", "abstract"],
+  register: ["fullName", "email", "period", "institution", "country"],
   contact:  ["fullName", "email", "subject", "message"],
   brochure: ["fullName", "email"]
 };
@@ -51,6 +52,7 @@ const KINDS = ["register", "abstract", "contact", "brochure"];
 
 fs.mkdirSync(DATA_DIR, { recursive: true });
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+fs.mkdirSync(IMAGE_UPLOAD_DIR, { recursive: true });
 
 const ABSTRACT_UPLOAD_TYPES = {
   ".pdf": ["application/pdf", "application/octet-stream"],
@@ -75,6 +77,47 @@ const abstractUpload = multer({
     callback(null, true);
   }
 });
+const IMAGE_UPLOAD_TYPES = {
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".png": "image/png",
+  ".gif": "image/gif",
+  ".webp": "image/webp"
+};
+const imageUpload = multer({
+  storage: multer.diskStorage({
+    destination: (_req, _file, callback) => callback(null, IMAGE_UPLOAD_DIR),
+    filename: (_req, file, callback) => {
+      const extension = path.extname(file.originalname).toLowerCase();
+      callback(null, crypto.randomBytes(24).toString("hex") + extension);
+    }
+  }),
+  limits: { fileSize: 5 * 1024 * 1024, files: 1 },
+  fileFilter: (_req, file, callback) => {
+    const extension = path.extname(file.originalname).toLowerCase();
+    if (IMAGE_UPLOAD_TYPES[extension] !== file.mimetype) {
+      return callback(new Error("Upload a JPEG, PNG, GIF, or WebP image."));
+    }
+    callback(null, true);
+  }
+});
+
+async function hasValidImageSignature(file) {
+  const handle = await fsp.open(file.path, "r");
+  try {
+    const buffer = Buffer.alloc(12);
+    const result = await handle.read(buffer, 0, buffer.length, 0);
+    const signature = buffer.subarray(0, result.bytesRead);
+    const extension = path.extname(file.originalname).toLowerCase();
+    if (extension === ".jpg" || extension === ".jpeg") return signature.length >= 3 && signature[0] === 0xff && signature[1] === 0xd8 && signature[2] === 0xff;
+    if (extension === ".png") return signature.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+    if (extension === ".gif") return signature.subarray(0, 6).toString("ascii").match(/^GIF8[79]a$/) !== null;
+    if (extension === ".webp") return signature.subarray(0, 4).toString("ascii") === "RIFF" && signature.subarray(8, 12).toString("ascii") === "WEBP";
+    return false;
+  } finally {
+    await handle.close();
+  }
+}
 
 function parseAbstractUpload(req, res, next) {
   if (req.params.kind !== "abstract") return next();
@@ -145,10 +188,9 @@ const DEFAULT_CONTENT = {
     active: "Early Bird",
     "Early Bird": { label: "Early Bird Registration", deadline: "To Be Announced" },
     "Mid-Term": { label: "Mid Term Registration", deadline: "To Be Announced" },
-    "On-Spot": { label: "On-spot Registration", deadline: "To Be Announced" }
+    "On-Spot": { label: "Late Registration", deadline: "To Be Announced" }
   },
   registrationPricing: {
-    serviceRate: 0.05,
     fixedItems: {
       exhibition_standard: 3500,
       exhibition_premium: 4500,
@@ -331,6 +373,19 @@ const REGISTRATION_ITEMS = [
   { field: "qty_accom_double", label: "Accommodation — Double Occupancy", fixed: "addon_accommodation_double" }
 ];
 const REGISTRATION_PERIODS = ["Early Bird", "Mid-Term", "On-Spot"];
+function effectiveRegistrationPeriod(periods) {
+  let index = REGISTRATION_PERIODS.indexOf(periods && periods.active);
+  if (index < 0) index = 0;
+  const today = new Date().toISOString().slice(0, 10);
+  while (index < REGISTRATION_PERIODS.length - 1) {
+    const current = periods && periods[REGISTRATION_PERIODS[index]];
+    const deadline = current && current.deadline;
+    // A tier remains active through its deadline date, then advances the next day.
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(deadline || "") || deadline >= today) break;
+    index += 1;
+  }
+  return REGISTRATION_PERIODS[index];
+}
 async function prepareRegistration(input) {
   const data = Object.assign({}, input);
   const missing = FORMS.register.filter((field) => {
@@ -360,8 +415,7 @@ async function prepareRegistration(input) {
   }
 
   const content = mergeDefaults(DEFAULT_CONTENT, await storage.loadContent());
-  const configuredPeriod = content.registrationPeriods && content.registrationPeriods.active;
-  const period = REGISTRATION_PERIODS.includes(configuredPeriod) ? configuredPeriod : "Early Bird";
+  const period = effectiveRegistrationPeriod(content.registrationPeriods);
   const items = [];
   let grossCents = 0;
   let participantCount = 0;
@@ -389,7 +443,7 @@ async function prepareRegistration(input) {
     const unitCents = Math.round(price * 100);
     grossCents += unitCents * quantity;
     if (!item.fixed) participantCount += quantity;
-    items.push({ name: item.label, quantity, unitCents });
+    items.push({ name: item.label, category: item.category || "", quantity, unitCents });
   }
   if (!items.length) {
     const error = new Error("Select at least one registration item.");
@@ -416,18 +470,21 @@ async function prepareRegistration(input) {
   }
   const discountCents = Math.round(grossCents * discountPercent);
   const subtotalCents = Math.max(0, grossCents - discountCents);
-  const serviceRate = Number(content.registrationPricing && content.registrationPricing.serviceRate);
-  const validServiceRate = Number.isFinite(serviceRate) && serviceRate >= 0 && serviceRate <= 1 ? serviceRate : 0;
-  const serviceCents = Math.round(subtotalCents * validServiceRate);
-  const totalCents = subtotalCents + serviceCents;
+  const validTaxRate = 0.05;
+  const taxCents = Math.round(subtotalCents * validTaxRate);
+  const totalCents = subtotalCents + taxCents;
   const amount = totalCents / 100;
   data.period = period;
   data.participantCount = participantCount;
+  data.category = items.filter((item) => item.category)
+    .map((item) => item.name).join(", ") || "Add-ons only";
   data.selectedItems = items.map((item) => item.name + " ×" + item.quantity).join("; ");
   data.totalPrice = amount.toFixed(2);
   data.totalPriceEUR = amount.toFixed(2);
+  data.taxRate = validTaxRate;
+  data.taxAmount = (taxCents / 100).toFixed(2);
   data.paymentMethod = gateway;
-  return { data, items, amount, totalCents, grossCents, discountCents, serviceCents, period };
+  return { data, items, amount, totalCents, grossCents, discountCents, taxCents, period };
 }
 
 async function stripeRequest(endpoint, params, method) {
@@ -1168,7 +1225,29 @@ app.put("/admin/api/content", requireAuth, async (req, res) => {
   }
 });
 
+app.post("/admin/api/upload-image", requireAuth, (req, res) => {
+  imageUpload.single("image")(req, res, async (err) => {
+    if (err) {
+      const tooLarge = err instanceof multer.MulterError && err.code === "LIMIT_FILE_SIZE";
+      return res.status(tooLarge ? 413 : 400).json({ ok: false, error: tooLarge ? "Images must be 5 MB or smaller." : err.message });
+    }
+    if (!req.file) return res.status(400).json({ ok: false, error: "Choose an image to upload." });
+    try {
+      if (!(await hasValidImageSignature(req.file))) {
+        await removeUploadedFile(req.file);
+        return res.status(400).json({ ok: false, error: "The uploaded file is not a valid image." });
+      }
+      return res.json({ ok: true, path: "/uploads/" + path.basename(req.file.filename) });
+    } catch (uploadError) {
+      await removeUploadedFile(req.file);
+      console.error("Could not validate uploaded image:", uploadError);
+      return res.status(500).json({ ok: false, error: "Could not validate the uploaded image." });
+    }
+  });
+});
+
 /* ---------- Static site + SPA fallback ---------- */
+app.use("/uploads", express.static(IMAGE_UPLOAD_DIR, { dotfiles: "deny", index: false, maxAge: "1d" }));
 app.use(express.static(FRONTEND_DIR, { extensions: ["html"] }));
 
 app.get(/^\/(?!api\/|admin\/).*/, (req, res) => {

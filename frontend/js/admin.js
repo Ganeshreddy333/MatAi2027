@@ -89,7 +89,7 @@
   function loadAll() {
     api("/admin/api/stats").then(function (j) { if (j && j.ok) renderStats(j.stats); })
       .catch(function (err) { if (err.message !== "unauth") toast("Could not load dashboard statistics", true); });
-    if (current === "content") loadContent();
+    if (current === "content" || current === "pages" || current === "speakers") loadContent();
     else loadKind(current);
   }
 
@@ -113,9 +113,14 @@
     var view = t.getAttribute("data-view");
     document.querySelectorAll(".a-tab").forEach(function (b) { b.classList.toggle("active", b === t); });
     var isSubmissions = view === "submissions";
-    document.getElementById("content-view").style.display = isSubmissions ? "none" : "block";
+    var isPages = view === "pages";
+    var isSpeakers = view === "speakers";
+    document.getElementById("content-view").style.display = isSubmissions || isPages || isSpeakers ? "none" : "block";
+    el("speakers-view").style.display = isSpeakers ? "block" : "none";
+    el("pages-view").style.display = isPages ? "block" : "none";
     document.getElementById("sub-view").style.display = isSubmissions ? "block" : "none";
     document.querySelector(".a-header-actions").style.display = isSubmissions ? "none" : "flex";
+    el("save-content").style.display = isPages ? "none" : "inline-flex";
     el("stats").style.display = view === "data" ? "grid" : "none";
     if (isSubmissions) {
       current = el("submission-kind").value || "all";
@@ -123,19 +128,29 @@
       loadKind(current);
       return;
     }
+    if (isPages) {
+      current = "pages";
+      el("main-title").textContent = "Website Pages";
+      el("pages-index").style.display = "block";
+      el("page-editor-view").style.display = "none";
+      renderPageList();
+      return;
+    }
+    if (isSpeakers) {
+      current = "speakers";
+      el("main-title").textContent = "Speakers";
+      return;
+    }
     current = "content";
     el("main-title").textContent = view === "content" ? "Website Content" : t.textContent.trim();
     var targets = {
-      content: "media-editor",
-      speakers: "speaker-editor",
-      media: "media-editor",
       data: "stats",
       information: "conference-information",
       settings: "registration-settings",
       coupons: "coupon-settings",
       accommodation: "accommodation-prices"
     };
-    var target = el(targets[view] || "media-editor");
+    var target = el(targets[view] || "conference-information");
     if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
@@ -378,8 +393,7 @@
     renderPeriods(c.registrationPeriods || {});
     renderFixedPrices(c.registrationPricing || {});
     renderCoupons(c.coupons || []);
-    renderPagePicker();
-    loadPageEditor(currentEditPage);
+    renderPageList();
     renderMembers(c.committee || []);
     renderSpeakers(c.speakers || []);
   }
@@ -410,7 +424,7 @@
     var head = "<tr><th>Period</th>" + FEE_CATS.map(function (c) { return "<th>" + c + "</th>"; }).join("") + "</tr>";
     var rows = FEE_PERIODS.map(function (p) {
       var row = fees[p] || {};
-      return "<tr><td>" + p + "</td>" + FEE_CATS.map(function (c) {
+      return "<tr><td>" + (p === "On-Spot" ? "Late" : p) + "</td>" + FEE_CATS.map(function (c) {
         return "<td><input type='number' data-fee='" + esc(p) + "|" + c + "' value='" + esc(row[c] != null ? row[c] : 0) + "'></td>";
       }).join("") + "</tr>";
     }).join("");
@@ -420,14 +434,19 @@
   function renderPeriods(periods) {
     var active = periods.active || "Early Bird";
     el("reg-active").innerHTML = FEE_PERIODS.map(function (p) {
-      return "<option" + (p === active ? " selected" : "") + ">" + p + "</option>";
+      var label = p === "On-Spot" ? "Late" : p;
+      return "<option value='" + esc(p) + "'" + (p === active ? " selected" : "") + ">" + esc(label) + "</option>";
     }).join("");
     el("periods-list").innerHTML = FEE_PERIODS.map(function (p) {
       var row = periods[p] || {};
       var deadline = /^\d{4}-\d{2}-\d{2}$/.test(row.deadline || "") ? row.deadline : "";
+      var periodTitle = p === "On-Spot" ? "Late" : p;
+      var defaultLabel = p === "On-Spot" ? "Late Registration" : p;
+      var periodLabel = row.label || defaultLabel;
+      if (p === "On-Spot" && periodLabel === "On-spot Registration") periodLabel = defaultLabel;
       return "<div class='a-period' data-period='" + esc(p) + "'>" +
-        "<div class='a-row'><label style='width:90px;color:var(--a-muted);font-size:.8rem'>" + esc(p) + "</label>" +
-        "<input class='a-input' data-pf='label' value='" + esc(row.label || p) + "' placeholder='Display label'>" +
+        "<div class='a-row'><label style='width:90px;color:var(--a-muted);font-size:.8rem'>" + esc(periodTitle) + "</label>" +
+        "<input class='a-input' data-pf='label' value='" + esc(periodLabel) + "' placeholder='Display label'>" +
         "<label class='a-date-field'>Deadline<input class='a-input' data-pf='deadline' type='date' value='" + deadline + "'></label></div></div>";
     }).join("");
   }
@@ -441,8 +460,6 @@
         "' value='" + esc(value != null ? value : 0) + "' aria-label='" + esc(item[1]) + " price'></label></td></tr>";
     }).join("");
     el("item-prices").innerHTML = "<thead><tr><th>Registration item</th><th>Price (EUR)</th></tr></thead><tbody>" + rows + "</tbody>";
-    var serviceRate = Number(pricing.serviceRate);
-    el("service-rate").value = isFinite(serviceRate) ? String(serviceRate * 100) : "5";
   }
 
   function renderCoupons(coupons) {
@@ -477,19 +494,34 @@
     }).filter(function (coupon) { return coupon.code; });
   }
 
-  function renderPagePicker() {
-    var sel = el("page-select");
-    if (!sel || sel.options.length) return;
-    sel.innerHTML = PAGE_FILES.map(function (p) {
-      return "<option value='" + esc(p.href) + "'>" + esc(p.label) + "</option>";
+  function renderPageList() {
+    var list = el("page-list");
+    if (!list) return;
+    list.innerHTML = PAGE_FILES.map(function (p) {
+      return "<button class='a-page-link' type='button' data-open-page='" + esc(p.href) + "'><span>" + esc(p.label) + "</span><b>Open page →</b></button>";
     }).join("");
-    sel.value = currentEditPage;
   }
+
+  el("page-list").addEventListener("click", function (e) {
+    var button = e.target.closest("[data-open-page]");
+    if (!button) return;
+    currentEditPage = button.getAttribute("data-open-page");
+    var page = PAGE_FILES.find(function (p) { return p.href === currentEditPage; });
+    el("page-editor-title").textContent = "Edit " + (page ? page.label : "Website Page");
+    el("pages-index").style.display = "none";
+    el("page-editor-view").style.display = "block";
+    el("main-title").textContent = page ? page.label : "Edit Website Page";
+    loadPageEditor(currentEditPage);
+  });
+  el("back-to-pages").addEventListener("click", function () {
+    el("page-editor-view").style.display = "none";
+    el("pages-index").style.display = "block";
+    el("main-title").textContent = "Website Pages";
+    renderPageList();
+  });
 
   function loadPageEditor(page) {
     currentEditPage = page || currentEditPage;
-    var sel = el("page-select");
-    if (sel) sel.value = currentEditPage;
     var box = el("page-sections-editor");
     if (!box) return;
     box.innerHTML = "<p class='a-sub'>Loading page sections...</p>";
@@ -510,11 +542,13 @@
           var titleEl = section.querySelector("h2,h3,.eyebrow,p.lead");
           var title = titleEl ? titleEl.textContent.trim() : ("Section " + (i + 1));
           var currentHtml = saved[key] && saved[key].html != null ? saved[key].html : section.innerHTML.trim();
-          return "<div class='a-page-section' data-sec='" + key + "'>" +
+          var deleted = saved[key] && saved[key].deleted;
+          return "<div class='a-page-section" + (deleted ? " is-deleted" : "") + "' data-sec='" + key + "'" + (deleted ? " data-deleted='true'" : "") + ">" +
             "<div class='a-row section-title'><strong>" + esc(title || ("Section " + (i + 1))) + "</strong>" +
             "<div class='a-action-buttons'><button class='a-btn ghost sm' data-reset-section='" + key + "' type='button'>Use Original</button>" +
-            "<button class='a-btn sm' data-save-section type='button'>Save Section</button></div></div>" +
-            "<textarea class='a-input page-html' rows='10' data-original='" + esc(section.innerHTML.trim()) + "'>" + esc(currentHtml) + "</textarea>" +
+            "<button class='a-btn ghost sm' data-remove-section type='button'>Remove Section</button>" +
+            "<button class='a-btn ghost sm' data-restore-section type='button'>Undo Remove</button></div></div>" +
+            "<div class='a-input page-html' contenteditable='true' data-original='" + esc(section.innerHTML.trim()) + "'>" + currentHtml + "</div>" +
           "</div>";
         }).join("");
         var addedKeys = Object.keys(saved).filter(function (key) {
@@ -526,38 +560,43 @@
         sectionHtml += addedKeys.map(function (key) {
           return addedSectionEditor(key, saved[key] && saved[key].html || "");
         }).join("");
+        box.setAttribute("data-original-section-count", String(sections.length));
         box.innerHTML = sectionHtml;
       })
       .catch(function () {
         box.innerHTML = "<p class='a-empty'>Could not load this page for editing.</p>";
       });
   }
-
-  el("load-page-sections").addEventListener("click", function () {
-    loadPageEditor(el("page-select").value);
-  });
-  el("page-select").addEventListener("change", function () {
-    loadPageEditor(el("page-select").value);
-  });
   el("page-sections-editor").addEventListener("click", function (e) {
     var btn = e.target.closest("[data-reset-section]");
     if (btn) {
       var wrap = btn.closest("[data-sec]");
-      var ta = wrap && wrap.querySelector("textarea");
-      if (ta) ta.value = ta.getAttribute("data-original") || "";
+      var editor = wrap && wrap.querySelector("[contenteditable]");
+      if (editor) editor.innerHTML = editor.getAttribute("data-original") || "";
       return;
     }
-    if (e.target.closest("[data-save-section]")) saveContent();
+    var restore = e.target.closest("[data-restore-section]");
+    if (restore) {
+      var restoreRow = restore.closest("[data-sec]");
+      if (restoreRow) { restoreRow.removeAttribute("data-deleted"); restoreRow.classList.remove("is-deleted"); }
+      return;
+    }
     var remove = e.target.closest("[data-remove-section]");
-    if (remove) remove.closest("[data-sec]").remove();
+    if (remove) {
+      var removeRow = remove.closest("[data-sec]");
+      if (removeRow && Number(removeRow.getAttribute("data-sec").slice(4)) <
+          Number(el("page-sections-editor").getAttribute("data-original-section-count") || 0)) {
+        removeRow.setAttribute("data-deleted", "true");
+        removeRow.classList.add("is-deleted");
+      } else if (removeRow) removeRow.remove();
+    }
   });
 
   function addedSectionEditor(key, html) {
     return "<div class='a-page-section' data-sec='" + esc(key) + "'>" +
       "<div class='a-row section-title'><strong>Added Section</strong>" +
-      "<div class='a-action-buttons'><button class='a-btn ghost sm' data-remove-section type='button'>Remove Section</button>" +
-      "<button class='a-btn sm' data-save-section type='button'>Save Section</button></div></div>" +
-      "<textarea class='a-input page-html' rows='10' data-original=''>" + esc(html) + "</textarea>" +
+      "<div class='a-action-buttons'><button class='a-btn ghost sm' data-remove-section type='button'>Remove Section</button></div></div>" +
+      "<div class='a-input page-html' contenteditable='true' data-original=''>" + html + "</div>" +
       "</div>";
   }
 
@@ -594,6 +633,54 @@
   /* ---------- Committee members editor ---------- */
   var COMMITTEE_GROUPS = ["Scientific Committee", "International Advisory Committee"];
 
+  function imageUploadField(prefix, photo) {
+    var safePhoto = /^(https?:\/\/|\/|\.\.?\/)/i.test(String(photo || "")) ? String(photo) : "";
+    return "<div class='a-image-upload' data-image-upload>" +
+      "<div class='a-image-preview'>" +
+        "<img data-image-preview src=\"" + esc(safePhoto) + "\" alt=\"Selected profile photo\"" + (safePhoto ? "" : " hidden") + ">" +
+        "<span data-image-empty" + (safePhoto ? " hidden" : "") + ">No image selected</span>" +
+      "</div>" +
+      "<div class='a-image-controls'><label class='a-btn ghost sm'>Upload image<input type='file' accept='image/jpeg,image/png,image/gif,image/webp' data-image-file hidden></label>" +
+        "<button class='a-btn ghost sm' type='button' data-clear-image>Remove image</button><span class='a-sub' data-image-status>JPEG, PNG, GIF, or WebP; up to 5 MB</span></div>" +
+      "<input type='hidden' data-" + prefix + "='photo' value=\"" + esc(photo || "") + "\">" +
+    "</div>";
+  }
+
+  function handleImageUploadEvent(e, list, prefix) {
+    var clear = e.target.closest("[data-clear-image]");
+    if (clear) {
+      var clearBox = clear.closest("[data-image-upload]");
+      clearBox.querySelector("[data-" + prefix + "='photo']").value = "";
+      clearBox.querySelector("[data-image-preview]").hidden = true;
+      clearBox.querySelector("[data-image-preview]").removeAttribute("src");
+      clearBox.querySelector("[data-image-empty]").hidden = false;
+      clearBox.querySelector("[data-image-status]").textContent = "Image removed. Save to publish this change.";
+      return;
+    }
+    var fileInput = e.target.closest("[data-image-file]");
+    if (!fileInput || !fileInput.files || !fileInput.files[0]) return;
+    var box = fileInput.closest("[data-image-upload]");
+    var status = box.querySelector("[data-image-status]");
+    var formData = new FormData();
+    formData.append("image", fileInput.files[0]);
+    status.textContent = "Uploading image...";
+    api("/admin/api/upload-image", { method: "POST", body: formData }).then(function (result) {
+      var path = result && result.path;
+      if (!path) throw new Error("The uploaded image path was not returned.");
+      box.querySelector("[data-" + prefix + "='photo']").value = path;
+      var preview = box.querySelector("[data-image-preview]");
+      preview.src = path;
+      preview.hidden = false;
+      box.querySelector("[data-image-empty]").hidden = true;
+      status.textContent = "Image uploaded. Save to publish it.";
+    }).catch(function (err) {
+      if (err.message !== "unauth") {
+        status.textContent = err.message || "Image upload failed.";
+        toast(status.textContent, true);
+      }
+    }).finally(function () { fileInput.value = ""; });
+  }
+
   function memberRow(m) {
     m = m || {};
     var opts = COMMITTEE_GROUPS.map(function (g) {
@@ -611,9 +698,7 @@
         "<input class='a-input' data-mf='role' value='" + esc(m.role || "") + "' placeholder='Role / Department / Research area'>" +
         "<input class='a-input' data-mf='org' value='" + esc(m.org || "") + "' placeholder='Institution — Country'>" +
       "</div>" +
-      "<div class='a-row'>" +
-        "<input class='a-input' data-mf='photo' value='" + esc(m.photo || "") + "' placeholder='Photo URL (optional, e.g. images/member1.jpg)'>" +
-      "</div>" +
+      imageUploadField("mf", m.photo) +
       "<div class='a-row'>" +
         "<textarea class='a-input' data-mf='bio' rows='2' placeholder='Short biography (optional)'>" + esc(m.bio || "") + "</textarea>" +
       "</div>";
@@ -630,6 +715,8 @@
     var rm = e.target.closest("[data-rmmember]"); if (!rm) return;
     rm.closest("[data-member]").remove();
   });
+  el("members-list").addEventListener("change", function (e) { handleImageUploadEvent(e, el("members-list"), "mf"); });
+  el("members-list").addEventListener("click", function (e) { handleImageUploadEvent(e, el("members-list"), "mf"); });
   el("add-member").addEventListener("click", function () {
     el("members-list").appendChild(memberRow({ group: COMMITTEE_GROUPS[0] }));
   });
@@ -654,9 +741,7 @@
         "<input class='a-input' data-sf='role' value='" + esc(m.role || "") + "' placeholder='Title / Position / Research area'>" +
         "<input class='a-input' data-sf='org' value='" + esc(m.org || "") + "' placeholder='Institution / Organization — Country'>" +
       "</div>" +
-      "<div class='a-row'>" +
-        "<input class='a-input' data-sf='photo' value='" + esc(m.photo || "") + "' placeholder='Photo URL (optional, e.g. images/speaker1.jpg)'>" +
-      "</div>" +
+      imageUploadField("sf", m.photo) +
       "<div class='a-row'>" +
         "<input class='a-input' data-sf='topic' value='" + esc(m.topic || "") + "' placeholder='Presentation / focus (optional)'>" +
       "</div>" +
@@ -676,6 +761,8 @@
     var rm = e.target.closest("[data-rmspeaker]"); if (!rm) return;
     rm.closest("[data-speaker]").remove();
   });
+  el("speakers-list").addEventListener("change", function (e) { handleImageUploadEvent(e, el("speakers-list"), "sf"); });
+  el("speakers-list").addEventListener("click", function (e) { handleImageUploadEvent(e, el("speakers-list"), "sf"); });
   el("add-speaker").addEventListener("click", function () {
     el("speakers-list").appendChild(speakerRow({ group: SPEAKER_GROUPS[0] }));
   });
@@ -705,12 +792,18 @@
       fixedItems[inp.getAttribute("data-fixed-price")] = Math.max(0, Number(inp.value) || 0);
     });
     var pages = Object.assign({}, (contentData && contentData.pages) || {});
-    if (currentEditPage) {
+    var pageRows = document.querySelectorAll("#page-sections-editor [data-sec]");
+    var editingPageNow = el("page-editor-view").style.display !== "none" && pageRows.length > 0;
+    if (currentEditPage && editingPageNow) {
       pages[currentEditPage] = {};
-      document.querySelectorAll("#page-sections-editor [data-sec]").forEach(function (row) {
+      pageRows.forEach(function (row) {
         var key = row.getAttribute("data-sec");
-        var html = row.querySelector("textarea").value;
-        pages[currentEditPage][key] = { html: html };
+        if (row.getAttribute("data-deleted") === "true") {
+          pages[currentEditPage][key] = { deleted: true };
+        } else {
+          var editor = row.querySelector("[contenteditable='true']");
+          pages[currentEditPage][key] = { html: editor ? editor.innerHTML : "" };
+        }
       });
     }
     var committee = [];
@@ -740,7 +833,6 @@
       site: { theme: el("c-theme").value.trim(), dateText: el("c-dates").value.trim(), city: el("c-city").value.trim() },
       dates: dates, fees: fees, registrationPeriods: registrationPeriods,
       registrationPricing: {
-        serviceRate: Math.min(100, Math.max(0, Number(el("service-rate").value) || 0)) / 100,
         fixedItems: fixedItems
       },
       coupons: readCoupons(), pages: pages, committee: committee, speakers: speakers

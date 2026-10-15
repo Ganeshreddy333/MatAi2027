@@ -1,4 +1,4 @@
-/* ================================================================
+﻿/* ================================================================
    MatAi 2027 — shared site script
    Injects header + footer, handles nav, reveal, tabs, accordion,
    countdown. Pure DOM (works via file:// or a server).
@@ -27,6 +27,27 @@
       { id: "scientific-committee", label: "Scientific Committee" },
       { id: "international-advisory", label: "International Advisory Committee" },
       { id: "committee-cta", label: "Join the Scientific Community" }
+    ],
+    "contact.html": [
+      { id: "contact-overview", label: "Contact Overview" },
+      { id: "contact-details", label: "MatAi 2027" },
+      { id: "contact-help", label: "What We Can Help With" },
+      { id: "contact-glance", label: "At a Glance" }
+    ],
+    "brochure.html": [
+      { id: "brochure-glance", label: "MatAi 2027 at a Glance" },
+      { id: "brochure-details", label: "Conference Brochure" }
+    ],
+    "sessions.html": [
+      { id: "sessions-overview", label: "Scientific Sessions Overview" },
+      { id: "sessions-pillars", label: "Four Major Scientific Pillars" },
+      { id: "sessions-accommodation", label: "Session Formats" },
+      { id: "sessions-present", label: "Present Your Research" }
+    ],
+    "registration.html": [
+      { id: "registration-steps", label: "Registration Steps" },
+      { id: "registration-details", label: "Registration" },
+      { id: "registration-policies", label: "What's Included & Registration Policies" }
     ],
     "speakers.html": [
       { id: "speaker-overview", label: "Conference Speaker Overview" },
@@ -109,30 +130,34 @@
   }
 
   var PAGES = [
-    { href: "index.html", label: "Home" },
+    {
+      href: "index.html",
+      label: "Home"
+    },
     {
       href: "about.html",
       label: "About the Conference",
       drop: [
-        { href: "about.html", label: "About the Conference" },
-        { href: "committee.html", label: "Scientific Committee" },
-        { href: "venue.html", label: "Venue" },
-        { href: "sponsors.html", label: "Sponsors & Exhibition" }
+        { href: "about.html", label: "About the Conference", drop: pageDrop("about.html") }
       ]
     },
-    { href: "speakers.html", label: "Speakers" },
+    { href: "committee.html", label: "Scientific Committee", drop: pageDrop("committee.html") },
+    { href: "speakers.html", label: "Speakers", drop: pageDrop("speakers.html") },
+    { href: "abstract-submission.html", label: "Abstract Submission", drop: pageDrop("abstract-submission.html").concat([
+      { href: "sessions.html", label: "Scientific Sessions", drop: pageDrop("sessions.html") }
+    ]) },
+    { href: "venue.html", label: "Venue", drop: pageDrop("venue.html") },
     {
       href: "information.html",
       label: "Information",
       drop: [
-        { href: "information.html", label: "Conference Information" },
-        { href: "contact.html", label: "Contact" },
-        { href: "brochure.html", label: "Conference Brochure" },
-        { href: "sessions.html", label: "Scientific Sessions" }
+        { href: "information.html", label: "Conference Information", drop: pageDrop("information.html") },
+        { href: "brochure.html", label: "Conference Brochure", drop: pageDrop("brochure.html") }
       ]
     },
-    { href: "abstract-submission.html", label: "Abstract Submission", drop: pageDrop("abstract-submission.html") },
-    { href: "registration.html", label: "Registration" }
+    { href: "sponsors.html", label: "Sponsors & Exhibition", drop: pageDrop("sponsors.html") },
+    { href: "registration.html", label: "Registration", drop: pageDrop("registration.html") },
+    { href: "contact.html", label: "Contact", drop: pageDrop("contact.html") }
   ];
 
   var current = (location.pathname.split("/").pop() || "index.html").toLowerCase();
@@ -140,17 +165,24 @@
 
   /* ---------- Build header ---------- */
   function buildHeader() {
+    function renderNavItem(item) {
+      var hasDrop = item.drop && item.drop.length;
+      var submenu = hasDrop
+        ? '<ul class="dropdown">' + item.drop.map(renderNavItem).join("") + "</ul>"
+        : "";
+      return '<li' + (hasDrop ? ' class="has-drop"' : "") + '>' +
+        '<a href="' + item.href + '"' + (hasDrop ? ' aria-haspopup="true" aria-expanded="false"' : "") + ">" +
+        item.label + "</a>" + submenu + "</li>";
+    }
+
     var links = PAGES.map(function (p) {
       var active = p.href.split("#")[0] === current || (p.drop || []).some(function (item) {
         return item.href.split("#")[0] === current;
       }) ? " active" : "";
-      var hasDrop = p.drop ? " has-drop" : "";
-      var dd = "";
-      if (p.drop) {
-        dd = '<ul class="dropdown">' + p.drop.map(function (d) {
-          return '<li><a href="' + d.href + '">' + d.label + "</a></li>";
-        }).join("") + "</ul>";
-      }
+      var hasDrop = p.drop && p.drop.length ? " has-drop" : "";
+      var dd = p.drop && p.drop.length
+        ? '<ul class="dropdown">' + p.drop.map(renderNavItem).join("") + "</ul>"
+        : "";
       return '<li class="' + (active + hasDrop).trim() + '">' +
         '<a href="' + p.href + '"' + (p.drop ? ' aria-haspopup="true" aria-expanded="false"' : "") + ">" +
         p.label + "</a>" + dd + "</li>";
@@ -161,7 +193,7 @@
       '<div class="container nav">' +
         '<a class="brand" href="index.html">' +
           '<span class="logo">Ai</span>' +
-          '<span>MatAi 2027<small>Materials · Engineering · AI</small></span>' +
+          '<span class="brand-title"><span class="brand-mat">Mat</span><span class="brand-ai">Ai</span> <span class="brand-year">2027</span><small>Materials · Engineering · AI</small></span>' +
         '</a>' +
         '<nav><ul class="nav-links" id="navLinks">' + links + '</ul></nav>' +
         '<div class="nav-cta">' +
@@ -181,7 +213,7 @@
         '<div class="footer-grid">' +
           '<div class="footer-brand">' +
             '<div class="logo">Ai</div>' +
-            '<strong style="color:#fff;font-size:1.1rem;font-family:var(--font-head)">MatAi 2027</strong>' +
+            '<strong class="footer-wordmark"><span class="brand-mat">Mat</span><span class="brand-ai">Ai</span> <span class="brand-year">2027</span></strong>' +
             '<p>International Conference on Materials Science, Engineering &amp; Artificial Intelligence.</p>' +
             '<p><strong style="color:#fff">October 13–14, 2027</strong><br>Berlin, Germany</p>' +
           '</div>' +
@@ -250,10 +282,10 @@
         var item = e.target.parentNode;
         if (item.classList.contains("has-drop")) {
           e.preventDefault();
-          links.querySelectorAll(".has-drop.drop-open").forEach(function (li) {
-            if (li !== item) {
-              li.classList.remove("drop-open");
-              var otherTrigger = li.querySelector(":scope > a");
+          Array.prototype.forEach.call(item.parentNode.children, function (sibling) {
+            if (sibling !== item && sibling.classList.contains("has-drop") && sibling.classList.contains("drop-open")) {
+              var otherTrigger = sibling.querySelector(":scope > a");
+              sibling.classList.remove("drop-open");
               if (otherTrigger) otherTrigger.setAttribute("aria-expanded", "false");
             }
           });
